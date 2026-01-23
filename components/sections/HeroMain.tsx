@@ -7,7 +7,7 @@ import { company, keySellingPoints } from '@/lib/constants/company';
 
 export function HeroMain() {
   return (
-    <section className="relative min-h-[600px] h-[85vh] sm:h-[90vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[500px] h-[75vh] sm:h-[90vh] pt-20 sm:pt-0 flex items-center overflow-hidden">
       {/* Background Image with zoom animation */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 animate-[scaleIn_1.5s_ease-out]">
