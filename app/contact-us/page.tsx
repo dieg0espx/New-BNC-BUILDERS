@@ -27,7 +27,7 @@ const contactMethods = [
   {
     icon: Phone,
     title: 'Call Us',
-    description: 'Speak directly with our kitchen remodel San Diego team',
+    description: 'Speak directly with our team',
     value: company.phone,
     href: `tel:${company.phone.replace(/[^0-9]/g, '')}`,
     action: 'Call Now',
@@ -35,7 +35,7 @@ const contactMethods = [
   {
     icon: MapPin,
     title: 'Visit Us',
-    description: 'Our remodeling Escondido office location',
+    description: 'Our office location',
     value: company.address.full,
     href: 'https://maps.google.com/?q=101+State+Pl+Suite+N+Escondido+CA+92029',
     action: 'Get Directions',
@@ -54,22 +54,22 @@ const values = [
   {
     icon: Shield,
     title: 'Licensed & Insured',
-    description: 'Entrust your kitchen remodel Escondido CA or bathroom remodeling San Diego to licensed professionals.',
+    description: 'Entrust your project to licensed, insured professionals.',
   },
   {
     icon: CreditCard,
     title: 'Financing Available',
-    description: 'Flexible payment solutions for ADUs San Diego, kitchen remodeling services, and deck repair San Diego.',
+    description: 'Flexible payment solutions to fit your budget.',
   },
   {
     icon: Languages,
-    title: 'Hablamos Espanol',
-    description: 'Kitchen remodel San Diego and bathroom remodeling Escondido by a Spanish-speaking team.',
+    title: 'Hablamos Español',
+    description: 'Remodeling services provided by a Spanish-speaking team.',
   },
   {
     icon: FileText,
     title: 'Free Estimates',
-    description: 'Free quotes for kitchen renovation San Diego, room addition San Diego, and exterior remodeling.',
+    description: 'Get started with a completely free quote.',
   },
 ];
 
@@ -84,8 +84,8 @@ export default function ContactUsPage() {
     <>
       {/* Hero */}
       <HeroSubpage
-        title="Contact BNC Builders for Kitchen Remodel Escondido & More"
-        subtitle="Get a free consultation for kitchen remodeling Escondido CA, bathroom remodeling San Diego, ADUs San Diego, deck repair contractor, room addition San Diego, and exterior remodeling. Our team is ready to bring your vision to life."
+        title="Let's Build Something Amazing Together"
+        subtitle="Contact us today for a free consultation and estimate. Our team is ready to bring your vision to life."
         backgroundImage={bannerImages.faq}
       />
 
@@ -108,10 +108,10 @@ export default function ContactUsPage() {
                   </span>
                 </div>
                 <h2 className="text-3xl font-bold text-dark mb-2">
-                  Request a Free Kitchen Remodel San Diego Estimate
+                  Request a Free Estimate
                 </h2>
                 <p className="text-zinc-600 mb-8">
-                  Fill out the form for kitchen remodel Escondido CA, bathroom remodeling San Diego, ADUs Los Angeles, kitchen remodeling services, deck repair San Diego, or any remodeling Escondido project. Our team will be in touch shortly.
+                  Fill out the form below and a member of our team will be in touch shortly to discuss your project.
                 </p>
                 <ContactForm />
               </div>
@@ -143,7 +143,7 @@ export default function ContactUsPage() {
                   {/* CTA */}
                   <div className="mt-8 pt-6 border-t border-white/10">
                     <p className="text-sm text-zinc-400 mb-4">
-                      Ready for kitchen remodel Escondido or bathroom remodeling? Call now!
+                      Ready to get started? Call us now!
                     </p>
                     <a
                       href={`tel:${company.phone.replace(/[^0-9]/g, '')}`}
@@ -161,7 +161,7 @@ export default function ContactUsPage() {
                 <div className="bg-white rounded-2xl p-8 shadow-lg hover-lift">
                   <h3 className="text-lg font-bold text-dark mb-4 flex items-center gap-2">
                     <MapPin className="w-5 h-5 text-gold" />
-                    Kitchen Remodeling Services Areas
+                    Areas We Serve
                   </h3>
                   <div className="grid grid-cols-2 gap-2">
                     {serviceAreas.map((area) => (
@@ -175,7 +175,7 @@ export default function ContactUsPage() {
                     href="/areas-we-serve"
                     className="inline-flex items-center gap-1 text-gold font-semibold text-sm mt-4 hover:gap-2 transition-all link-underline"
                   >
-                    View All Kitchen Remodel San Diego Service Areas
+                    View All Service Areas
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -232,10 +232,10 @@ export default function ContactUsPage() {
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="text-center md:text-left">
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                  Ready for Kitchen Remodel Escondido CA or Bathroom Remodeling San Diego?
+                  Ready to Start Your Project?
                 </h2>
                 <p className="text-white/80">
-                  30+ years of experience. Licensed & insured. Free estimates for kitchen remodeling services, ADUs San Diego, deck repair contractor, and more.
+                  30+ years of experience. Licensed & insured. Free estimates.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
