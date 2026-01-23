@@ -86,7 +86,7 @@ export function QuickContactForm() {
 
   if (submitted) {
     return (
-      <section className="relative z-20 -mt-[50px]">
+      <section className="relative z-20 -mt-[30px] sm:-mt-[50px]">
         <div className="max-w-5xl mx-auto px-4 sm:px-5">
           <div className="bg-gold py-4 sm:py-5 px-4 sm:px-6 rounded-lg shadow-lg flex items-center justify-center gap-3">
             <CheckCircle className="w-6 h-6 text-white" />
@@ -100,7 +100,7 @@ export function QuickContactForm() {
   }
 
   return (
-    <section className="relative z-20 -mt-[50px]">
+    <section className="relative z-20 -mt-[30px] sm:-mt-[50px]">
       <form onSubmit={handleSubmit}>
         {/* Step 1 */}
         <div className={`${step === 1 ? 'block' : 'hidden'}`}>
