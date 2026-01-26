@@ -2,9 +2,7 @@
 
 import { Metadata } from 'next';
 import { company } from '../constants/company';
-import { specialImages, CLOUDINARY_BASE_URL } from '../constants/images';
-
-const defaultOgImage = `${CLOUDINARY_BASE_URL}/${specialImages.socialShare}`;
+import { CLOUDINARY_BASE_URL } from '../constants/images';
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com';
 
 interface PageMetadataOptions {
@@ -26,7 +24,7 @@ export function generatePageMetadata({
   title,
   description,
   path = '',
-  ogImage = defaultOgImage,
+  ogImage = '/og-image.jpg',
   keywords = [],
   noIndex = false,
   article,
@@ -148,7 +146,7 @@ export const defaultMetadata: Metadata = {
     description: 'Professional home remodeling services in Escondido & San Diego County. Kitchen, bathroom, ADU construction & more. 30+ years experience.',
     images: [
       {
-        url: defaultOgImage,
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
         alt: `${company.name} - Home Remodeling`,
@@ -165,7 +163,7 @@ export const defaultMetadata: Metadata = {
     description: 'Professional home remodeling services in Escondido & San Diego County. Kitchen, bathroom, ADU construction & more.',
     images: [
       {
-        url: defaultOgImage,
+        url: '/og-image.jpg',
         alt: `${company.name} - Home Remodeling`,
       },
     ],
@@ -185,11 +183,18 @@ export const defaultMetadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/favicon/favicon.ico', sizes: 'any' },
+      { url: '/favicon/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/favicon/favicon.svg', type: 'image/svg+xml' },
     ],
-    apple: '/apple-icon',
+    apple: [
+      { url: '/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      { rel: 'mask-icon', url: '/favicon/favicon.svg', color: '#CF9C39' },
+    ],
   },
-  manifest: '/manifest.webmanifest',
+  manifest: '/favicon/site.webmanifest',
   verification: {
     // Add your verification codes here when available
     // google: 'your-google-site-verification-code',
@@ -203,8 +208,8 @@ export const defaultMetadata: Metadata = {
   },
   applicationName: company.name,
   other: {
-    'msapplication-TileColor': '#C9A227',
-    'theme-color': '#C9A227',
+    'msapplication-TileColor': '#CF9C39',
+    'theme-color': '#CF9C39',
     'mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-status-bar-style': 'default',
