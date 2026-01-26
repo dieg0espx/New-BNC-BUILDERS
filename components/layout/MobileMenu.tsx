@@ -40,26 +40,27 @@ export function MobileMenu({ isOpen, onClose, items }: MobileMenuProps) {
 
       {/* Menu Panel */}
       <div
-        className={`fixed inset-y-0 right-0 w-full max-w-sm bg-white shadow-2xl z-50 lg:hidden transform transition-transform duration-300 ease-out ${
+        className={`fixed inset-y-0 right-0 w-full max-w-sm bg-white shadow-2xl z-50 lg:hidden transform transition-transform duration-300 ease-out flex flex-col ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <div className="flex flex-col h-full">
-          {/* Header */}
-          <div className="flex items-center justify-between px-5 py-4 border-b border-zinc-800/20 bg-gold">
-            <span className="text-lg font-bold text-zinc-800">Menu</span>
-            <button
-              type="button"
-              onClick={onClose}
-              className="p-2 text-zinc-800 hover:text-white transition-colors rounded-full hover:bg-zinc-800/10"
-              aria-label="Close menu"
-            >
-              <X className="w-6 h-6" />
-            </button>
-          </div>
+        {/* Header - Fixed at top */}
+        <div className="flex items-center justify-between px-5 py-4 border-b border-zinc-800/20 bg-gold flex-shrink-0">
+          <span className="text-lg font-bold text-zinc-800">Menu</span>
+          <button
+            type="button"
+            onClick={onClose}
+            className="p-2 text-zinc-800 hover:text-white transition-colors rounded-full hover:bg-zinc-800/10"
+            aria-label="Close menu"
+          >
+            <X className="w-6 h-6" />
+          </button>
+        </div>
 
+        {/* Scrollable Content - Navigation + Footer */}
+        <div className="flex-1 overflow-y-auto">
           {/* Navigation */}
-          <nav className="flex-1 overflow-y-auto py-2">
+          <nav className="py-2">
             {items.map((item) => (
               <MobileNavItem key={item.href + item.label} item={item} onClose={onClose} />
             ))}

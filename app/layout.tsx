@@ -33,7 +33,7 @@ export default function RootLayout({
       <body className={`${ptSans.variable} antialiased`}>
         <ScrollToTop />
         <Header />
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen pt-[72px] md:pt-[112px]">{children}</main>
         <Footer />
       </body>
     </html>
