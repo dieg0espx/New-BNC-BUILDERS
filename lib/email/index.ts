@@ -60,7 +60,7 @@ export async function sendContactEmail(data: ContactFormData): Promise<void> {
         .header h1 { margin: 0; font-size: 24px; }
         .content { padding: 20px; background-color: #f9f9f9; }
         .field { margin-bottom: 15px; }
-        .label { font-weight: bold; color: #191B1E; }
+        .label { font-weight: bold; color: #CF9C39; }
         .value { margin-top: 5px; }
         .message-box { background-color: white; padding: 15px; border-left: 4px solid #CF9C39; margin-top: 20px; }
         .footer { text-align: center; padding: 20px; font-size: 12px; color: #666; }
@@ -153,12 +153,12 @@ export async function sendCareersEmail(data: CareersFormData): Promise<void> {
       <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
         .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-        .header { background-color: #191B1E; color: white; padding: 20px; text-align: center; }
+        .header { background-color: #CF9C39; color: white; padding: 20px; text-align: center; }
         .header h1 { margin: 0; font-size: 24px; }
         .accent { color: #CF9C39; }
         .content { padding: 20px; background-color: #f9f9f9; }
         .field { margin-bottom: 15px; }
-        .label { font-weight: bold; color: #191B1E; }
+        .label { font-weight: bold; color: #CF9C39; }
         .value { margin-top: 5px; }
         .message-box { background-color: white; padding: 15px; border-left: 4px solid #CF9C39; margin-top: 20px; }
         .footer { text-align: center; padding: 20px; font-size: 12px; color: #666; }
@@ -250,7 +250,7 @@ export async function sendAutoReply(email: string, firstName: string): Promise<v
         .header { background-color: #CF9C39; color: white; padding: 30px; text-align: center; }
         .header h1 { margin: 0; font-size: 28px; }
         .content { padding: 30px; background-color: #ffffff; }
-        .content h2 { color: #191B1E; }
+        .content h2 { color: #CF9C39; }
         .highlight { background-color: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0; }
         .cta { background-color: #CF9C39; color: white; padding: 12px 24px; text-decoration: none; display: inline-block; border-radius: 5px; margin-top: 20px; }
         .footer { text-align: center; padding: 20px; font-size: 12px; color: #666; border-top: 1px solid #eee; }

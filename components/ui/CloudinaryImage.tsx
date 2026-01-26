@@ -26,10 +26,14 @@ export function CloudinaryImage({
   sizes,
   quality = 80,
 }: CloudinaryImageProps) {
-  const src = buildCloudinaryUrl(publicId, {
-    quality: 'auto',
-    format: 'auto',
-  });
+  // Support both local paths (starting with /) and Cloudinary public IDs
+  const isLocalPath = publicId.startsWith('/');
+  const src = isLocalPath
+    ? publicId
+    : buildCloudinaryUrl(publicId, {
+        quality: 'auto',
+        format: 'auto',
+      });
 
   if (fill) {
     return (

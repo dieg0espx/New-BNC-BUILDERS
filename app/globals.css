@@ -8,7 +8,7 @@
   /* Brand Colors */
   --gold: #CF9C39;
   --gold-light: #E3C778;
-  --dark: #191B1E;
+  --dark: #CF9C39;
   --light: #F4F4F4;
   --text-dark: #3B3630;
 
@@ -24,13 +24,13 @@
 /* Background Colors */
 .bg-gold { background-color: #CF9C39 !important; }
 .bg-gold-light { background-color: #E3C778 !important; }
-.bg-dark { background-color: #191B1E !important; }
+.bg-dark { background-color: #CF9C39 !important; }
 .bg-gray { background-color: #F4F4F4 !important; }
 
 /* Text Colors */
 .text-gold { color: #CF9C39 !important; }
 .text-gold-light { color: #E3C778 !important; }
-.text-dark { color: #191B1E !important; }
+.text-dark { color: #CF9C39 !important; }
 .text-white { color: #FFFFFF !important; }
 .text-zinc-300 { color: #d4d4d8 !important; }
 .text-zinc-400 { color: #a1a1aa !important; }
