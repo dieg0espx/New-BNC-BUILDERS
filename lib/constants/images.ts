@@ -45,7 +45,7 @@ export const bannerImages = {
 // Hero/Main Stage Images
 export const heroImages = {
   mainStageBg: 'v1767036018/BNC-BUILDERS/assets_mainstage_mainstage-bg.2505220944305.jpg',
-  mainStageImg: 'v1767036018/BNC-BUILDERS/assets_mainstage_mainstage-img.2505221031508.jpg',
+  mainStageImg: 'v1769542129/Copy_of_lifestyle16_umejja.jpg',
 };
 
 // Content Images
