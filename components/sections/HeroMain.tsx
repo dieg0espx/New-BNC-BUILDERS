@@ -67,8 +67,8 @@ export function HeroMain() {
                 <CloudinaryImage
                   publicId={heroImages.mainStageImg}
                   alt="Beautiful kitchen remodel Escondido CA project showcasing BNC Builders craftsmanship"
-                  width={420}
-                  height={300}
+                  width={480}
+                  height={350}
                   className="rounded-lg shadow-2xl hover:shadow-gold/20 transition-shadow duration-500"
                 />
               </div>
