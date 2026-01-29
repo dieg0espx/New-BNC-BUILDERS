@@ -31,12 +31,30 @@ export const coreValues: CoreValue[] = [
 ];
 
 export const keySellingPoints = [
-  'Fully licensed and insured contractor trusted for kitchen remodel Escondido CA, bathroom remodeling San Diego, and projects throughout the region',
-  'Flexible financing options make your ADUs San Diego, ADUs Los Angeles, room addition San Diego, or garage remodeling project affordable',
-  'Hablamos Español - bilingual team ready to discuss your kitchen remodeling services, deck repair San Diego, or remodeling Escondido needs',
-  'Free detailed estimates for kitchen remodel San Diego, exterior remodeling, outdoor kitchens, and landscape remodeling projects',
-  'BBB accredited business known for exceptional bathroom remodeling Escondido, bathroom remodel Escondido, and kitchen renovation San Diego results',
-  'Top-rated craftsmanship for kitchen remodel Poway, Escondido kitchen remodeling, deck repair contractor work, and 3D landscape design near me consultations',
+  {
+    title: 'Licensed & Insured',
+    description: 'Fully licensed and insured contractor trusted for kitchen remodel Escondido CA, bathroom remodeling San Diego, and projects throughout the region',
+  },
+  {
+    title: 'Financing Available',
+    description: 'Flexible financing options make your ADUs San Diego, ADUs Los Angeles, room addition San Diego, or garage remodeling project affordable',
+  },
+  {
+    title: 'Hablamos Español',
+    description: 'Bilingual team ready to discuss your kitchen remodeling services, deck repair San Diego, or remodeling Escondido needs',
+  },
+  {
+    title: 'Free Estimates',
+    description: 'Free detailed estimates for kitchen remodel San Diego, exterior remodeling, outdoor kitchens, and landscape remodeling projects',
+  },
+  {
+    title: 'BBB Accredited',
+    description: 'BBB accredited business known for exceptional bathroom remodeling Escondido, bathroom remodel Escondido, and kitchen renovation San Diego results',
+  },
+  {
+    title: 'Top-Rated Craftsmanship',
+    description: 'Top-rated craftsmanship for kitchen remodel Poway, Escondido kitchen remodeling, deck repair contractor work, and 3D landscape design near me consultations',
+  },
 ];
 
 export const serviceAreas = [

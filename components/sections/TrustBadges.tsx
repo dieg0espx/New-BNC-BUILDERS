@@ -25,7 +25,7 @@ export function TrustBadges({
           <div ref={pointsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6 sm:mb-8">
             {keySellingPoints.map((point, index) => (
               <div
-                key={point}
+                key={point.title}
                 className={`flex items-start gap-3 bg-zinc-50 rounded-xl p-4 hover:bg-gold/5 hover:shadow-md transition-all card-animate ${pointsInView ? 'in-view' : ''}`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
@@ -38,7 +38,10 @@ export function TrustBadges({
                     />
                   </svg>
                 </div>
-                <span className="font-medium text-sm text-zinc-700">{point}</span>
+                <div>
+                  <h3 className="font-bold text-zinc-900 mb-1">{point.title}</h3>
+                  <p className="text-sm text-zinc-600">{point.description}</p>
+                </div>
               </div>
             ))}
           </div>
