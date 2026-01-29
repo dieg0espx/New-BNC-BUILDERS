@@ -64,10 +64,9 @@ export function HeroMain() {
           <div className="hidden lg:block">
             <div className="relative animate-[fadeInRight_0.8s_ease-out_0.5s_both]">
               {/* Experience Badge */}
-              <div className="absolute -top-6 -right-6 z-10">
-                <div className="bg-gold rounded-full w-28 h-28 flex flex-col items-center justify-center shadow-xl border-4 border-white/20">
-                  <span className="text-2xl font-bold text-white leading-none">30+</span>
-                  <span className="text-[10px] text-white/90 font-medium uppercase tracking-wide text-center leading-tight mt-1">Years<br/>Experience</span>
+              <div className="absolute -top-3 -right-3 z-10">
+                <div className="bg-gold rounded-lg px-4 py-3 shadow-xl">
+                  <span className="text-xl font-bold text-white">30+ Years Experience</span>
                 </div>
               </div>
               <div className="animate-float">
