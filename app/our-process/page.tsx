@@ -18,19 +18,19 @@ const steps = [
   {
     number: '02',
     title: 'Custom Design & Pricing',
-    description: 'Our team creates detailed plans with material options that match your budget. For kitchen remodeling services and remodeling Escondido projects, you see 3D renderings before we begin. Transparent pricing means no surprises - you know exactly what you are getting and what it costs.',
+    description: `Our team creates detailed plans with material options that match your budget. For kitchen remodeling services and remodeling Escondido projects, you see 3D renderings before we begin. Transparent pricing means no surprises - you know exactly what you're getting and what it costs.`,
     icon: ClipboardList,
   },
   {
     number: '03',
     title: 'Expert Construction',
-    description: 'Our skilled craftsmen bring your vision to life, whether it is ADUs San Diego, deck repair San Diego, or a complete kitchen renovation San Diego. Your dedicated project manager provides daily updates. We protect your home, respect your schedule, and maintain clean work areas throughout.',
+    description: `Our skilled craftsmen bring your vision to life, whether it's ADUs San Diego, deck repair San Diego, or a complete kitchen renovation San Diego. Your dedicated project manager provides daily updates. We protect your home, respect your schedule, and maintain clean work areas throughout.`,
     icon: Hammer,
   },
   {
     number: '04',
     title: 'Quality Walkthrough',
-    description: 'Your bathroom remodeling Escondido, exterior remodeling, or landscape remodeling project is not complete until you are genuinely delighted. We walk through every detail together, address any concerns, and ensure your finished space exceeds expectations before we call it done.',
+    description: `Your bathroom remodeling Escondido, exterior remodeling, or landscape remodeling project isn't complete until you're genuinely delighted. We walk through every detail together, address any concerns, and ensure your finished space exceeds expectations before we call it done.`,
     icon: Key,
   },
 ];
@@ -143,7 +143,7 @@ function WhatToExpectSection() {
 
   const items = [
     { q: 'How long will my project take?', a: 'Timelines depend on scope. A bathroom remodeling Escondido typically runs 3-4 weeks. A kitchen remodel San Diego averages 6-10 weeks. ADUs San Diego take 8-14 months including permits. We provide detailed schedules during consultation so you can plan accordingly.' },
-    { q: 'Who handles permits and inspections?', a: 'We do. Our team manages all permitting for your kitchen remodeling services, ADUs Los Angeles, deck repair San Diego, or room addition San Diego project. You should not have to navigate bureaucracy - that is our job.' },
+    { q: 'Who handles permits and inspections?', a: `We do. Our team manages all permitting for your kitchen remodeling services, ADUs Los Angeles, deck repair San Diego, or room addition San Diego project. You shouldn't have to navigate bureaucracy - that's our job.` },
     { q: 'Can my family stay home during construction?', a: 'Usually yes. We phase work to minimize disruption, contain dust and debris, and maintain safe pathways. For major kitchen remodel Escondido CA projects, we can set up temporary cooking areas. We discuss logistics during planning.' },
     { q: 'What happens if something unexpected comes up?', a: 'Older homes have surprises. When our remodeling Escondido team discovers something unexpected, we stop, explain the situation, present options with pricing, and let you decide how to proceed. No work happens without your approval.' },
   ];

@@ -199,11 +199,11 @@ export default function AreasWeServePage() {
               },
               {
                 title: 'Same-Day Response',
-                description: 'Being local means we can visit your property quickly, answer questions promptly, and start your deck repair contractor project sooner.',
+                description: 'Being local means we can visit your property quickly, answer questions promptly, and start your deck repair project sooner.',
               },
               {
                 title: 'Reputation Matters',
-                description: 'Your neighbors are our neighbors. We stake our garage remodeling and outdoor kitchens reputation on every project we complete.',
+                description: 'Your neighbors are our neighbors. We stake our reputation for garage remodeling and outdoor kitchens on every project we complete.',
               },
             ].map((item, index) => (
               <div key={index} className="p-6">
@@ -218,7 +218,7 @@ export default function AreasWeServePage() {
       {/* CTA */}
       <CTABanner
         title="Ready to Transform Your San Diego Home?"
-        subtitle="Whether you need kitchen remodel Poway, bathroom remodeling Escondido, ADUs San Diego, room addition San Diego, or complete exterior remodelers services, BNC Builders is ready to bring your vision to life."
+        subtitle="Whether you need kitchen remodel Poway, bathroom remodeling Escondido, ADUs San Diego, room addition San Diego, or complete exterior remodeling services, BNC Builders is ready to bring your vision to life."
         primaryAction={{ label: 'Start Your Project', href: '/contact-us' }}
       />
     </>

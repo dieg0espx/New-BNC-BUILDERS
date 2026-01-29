@@ -130,7 +130,7 @@ export default function AboutUsPage() {
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
               <p className="text-2xl md:text-3xl text-dark leading-relaxed font-light">
-                We believe that a kitchen renovation San Diego family, a bathroom remodel Escondido project, or an ADUs San Diego build should feel exciting - not overwhelming. Our mission is to deliver craftsmanship that makes a lasting difference while making the entire experience enjoyable.
+                We believe that a San Diego kitchen renovation, an Escondido bathroom remodel, or an ADU build should feel exciting - not overwhelming. Our mission is to deliver craftsmanship that makes a lasting difference while making the entire experience enjoyable.
               </p>
             </div>
           </AnimatedSection>
@@ -172,7 +172,7 @@ export default function AboutUsPage() {
                   Genuine Care
                 </h3>
                 <p className="text-zinc-600 group-hover:text-white/90 transition-colors">
-                  Your kitchen remodeling Escondido CA dream matters to us. Your 3D landscape design near me vision matters. Every room addition San Diego, exterior remodelers project, and outdoor kitchens installation gets our full attention because your satisfaction is our reputation.
+                  Your kitchen remodeling Escondido CA dream matters to us. Your 3D landscape design vision matters. Every room addition San Diego, exterior remodelers project, and outdoor kitchens installation gets our full attention because your satisfaction is our reputation.
                 </p>
               </div>
             </AnimatedSection>

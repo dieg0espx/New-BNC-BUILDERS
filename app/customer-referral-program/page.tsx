@@ -19,7 +19,7 @@ export default function CustomerReferralProgramPage() {
       {/* Hero */}
       <HeroSubpage
         title="Share the BNC Builders Experience, Earn Rewards"
-        subtitle="Our best projects come from referrals. When you send friends, family, or neighbors our way for kitchen remodel San Diego, bathroom remodeling Escondido, ADUs San Diego, or any remodeling Escondido project, we say thank you with rewards you will actually use."
+        subtitle="Our best projects come from referrals. When you send friends, family, or neighbors our way for kitchen remodel San Diego, bathroom remodeling Escondido, ADUs San Diego, or any remodeling Escondido project, we say thank you with rewards you'll actually use."
         backgroundImage={bannerImages.faq}
       />
 

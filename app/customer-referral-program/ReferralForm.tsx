@@ -100,7 +100,7 @@ Project Interest: ${formData.projectInterest || 'Not specified'}`,
             Thank you for referring a friend to BNC Builders! We appreciate your trust in our services.
           </p>
           <p className="text-sm text-zinc-500">
-            We will reach out to your referral soon. Once they complete a project with us, we will send your Refer and Dine reward!
+            We'll reach out to your referral soon. Once they complete a project with us, we'll send your Refer and Dine reward!
           </p>
           <button
             onClick={() => setSubmitted(false)}

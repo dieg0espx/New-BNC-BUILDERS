@@ -63,7 +63,7 @@ const coreValues = [
   {
     icon: Award,
     title: 'Master Craftsmanship',
-    description: 'Three decades of expertise powers every kitchen remodel San Diego, kitchen remodel Poway, bathroom remodeling San Diego, and exterior remodelers project we undertake.',
+    description: 'Three decades of expertise powers every kitchen remodel San Diego, kitchen remodel Poway, bathroom remodeling San Diego, and exterior remodeling project we undertake.',
     highlight: '30+ Years',
     points: ['Licensed professionals', 'Premium materials only', 'Built to last'],
   },

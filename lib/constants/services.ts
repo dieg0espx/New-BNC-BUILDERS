@@ -244,8 +244,8 @@ export const services: Service[] = [
     description: 'Expand your living space without the hassle of moving',
     heroHeading: 'Add Space Without Leaving Home',
     heroContent: [
-      'Your family has grown, your needs have changed, but you love your neighborhood. BNC Builders room addition San Diego services let you stay in the home you love while adding the space you need - no moving trucks required.',
-      'We specialize in seamless additions that look like they were always part of your home. Our room addition San Diego team matches rooflines, siding, and architectural details so your expansion enhances rather than disrupts your home\'s original character.',
+      `Your family has grown, your needs have changed, but you love your neighborhood. BNC Builders' room addition San Diego services let you stay in the home you love while adding the space you need - no moving trucks required.`,
+      `We specialize in seamless additions that look like they were always part of your home. Our room addition San Diego team matches rooflines, siding, and architectural details so your expansion enhances rather than disrupts your home's original character.`,
       'Guest bedrooms, home offices, expanded kitchens, entertainment rooms, in-law suites - whatever space you need, BNC Builders delivers room addition San Diego excellence that adds both square footage and property value.',
     ],
     features: [
@@ -304,7 +304,7 @@ export const services: Service[] = [
     description: 'Expert planning and permitting for stress-free project starts',
     heroHeading: 'Start Your Project On Solid Ground',
     heroContent: [
-      'The difference between a smooth construction project and a nightmare often comes down to planning. BNC Builders pre-construction services ensure your ADUs San Diego, ADUs Los Angeles, or major remodeling Escondido project starts right and stays on track.',
+      `The difference between a smooth construction project and a nightmare often comes down to planning. BNC Builders' pre-construction services ensure your ADUs San Diego, ADUs Los Angeles, or major remodeling Escondido project starts right and stays on track.`,
       'Our comprehensive pre-construction packages cover everything before the first hammer swings - site analysis, architectural drawings, engineering, permits, material selection, and detailed scheduling. We eliminate surprises before they become expensive problems.',
       'Whether you are building ADUs San Diego, planning ADUs Los Angeles, or embarking on a major renovation, our pre-construction expertise sets you up for success.',
     ],
@@ -399,7 +399,7 @@ export const services: Service[] = [
       {
         number: 2,
         title: 'Design Creation',
-        description: 'We create detailed exterior remodeling plans, often with 3D landscape design near me technology so you can visualize the finished result.',
+        description: 'We create detailed exterior remodeling plans, often with 3D landscape design technology so you can visualize the finished result.',
       },
       {
         number: 3,
@@ -439,7 +439,7 @@ export const services: Service[] = [
       },
       {
         question: 'How long does it take to build ADUs Los Angeles?',
-        answer: 'Total timeline for ADUs Los Angeles runs 8-14 months including design, permits, and construction. BNC Builders\' aggressive permit management often shortens typical timelines.',
+        answer: `Total timeline for ADUs Los Angeles runs 8-14 months including design, permits, and construction. BNC Builders' proactive permit management often shortens typical timelines.`,
       },
       {
         question: 'Can I build an ADU in my backyard?',
@@ -538,9 +538,9 @@ export const services: Service[] = [
     description: 'Durable, beautiful hardscape features that define outdoor spaces',
     heroHeading: 'Structure Your Outdoor Paradise',
     heroContent: [
-      'Great landscaping needs great bones. BNC Builders hardscaping services create the patios, walkways, retaining walls, and structural features that form the foundation of stunning outdoor spaces.',
+      `Great landscaping needs great bones. BNC Builders' hardscaping services create the patios, walkways, retaining walls, and structural features that form the foundation of stunning outdoor spaces.`,
       'Our hardscaping installations use quality materials - natural stone, pavers, concrete, and brick - designed to handle San Diego weather while looking beautiful for decades. We understand proper base preparation, drainage, and construction techniques that prevent settling and cracking.',
-      'From intimate courtyard patios to expansive entertainment areas, BNC Builders hardscaping expertise transforms your landscape remodeling vision into lasting reality.',
+      `From intimate courtyard patios to expansive entertainment areas, BNC Builders' hardscaping expertise transforms your landscape remodeling vision into lasting reality.`,
     ],
     features: [
       'Patio design and installation',
@@ -594,7 +594,7 @@ export const services: Service[] = [
     description: 'Entertain in style with fully-equipped outdoor cooking areas',
     heroHeading: 'Cook, Gather, And Celebrate Outside',
     heroContent: [
-      'San Diego weather begs for outdoor living. BNC Builders outdoor kitchens transform your backyard into the ultimate entertainment destination - fully equipped cooking spaces where you can prepare entire meals without missing a moment with guests.',
+      `San Diego weather begs for outdoor living. BNC Builders' outdoor kitchens transform your backyard into the ultimate entertainment destination - fully equipped cooking spaces where you can prepare entire meals without missing a moment with guests.`,
       'Our outdoor kitchens range from simple built-in grilling stations to complete chef-worthy setups with refrigeration, sinks, storage, and seating. We design outdoor kitchens that flow naturally with your landscape and lifestyle.',
       'Quality construction matters outdoors even more than inside. Our outdoor kitchens use weather-resistant materials, proper ventilation, and professional gas and electrical connections that perform reliably for years.',
     ],
@@ -618,12 +618,12 @@ export const services: Service[] = [
         answer: 'Usually yes, especially for gas and electrical work. BNC Builders handles all permitting for outdoor kitchens as part of our comprehensive service.',
       },
       {
-        question: 'What about outdoor kitchens maintenance?',
+        question: 'What about outdoor kitchen maintenance?',
         answer: 'Our outdoor kitchens use low-maintenance materials. Regular cleaning and annual appliance checks keep everything running smoothly. We provide care instructions with every project.',
       },
       {
         question: 'Can you add outdoor kitchens to existing patios?',
-        answer: 'Often yes! We evaluate your existing hardscape and make recommendations. Sometimes minor modifications enable outdoor kitchens installation on existing surfaces.',
+        answer: 'Often yes! We evaluate your existing hardscape and make recommendations. Sometimes minor modifications enable outdoor kitchen installation on existing surfaces.',
       },
     ],
     process: [
@@ -654,9 +654,9 @@ export const services: Service[] = [
     description: 'Comprehensive landscape makeovers that reinvent outdoor spaces',
     heroHeading: 'Reimagine Your Entire Landscape',
     heroContent: [
-      'Your outdoor space has potential you might not see yet. BNC Builders landscape remodeling services envision and execute complete outdoor transformations - from tired, neglected yards to stunning environments you actually want to spend time in.',
+      `Your outdoor space has potential you might not see yet. BNC Builders' landscape remodeling services envision and execute complete outdoor transformations - from tired, neglected yards to stunning environments you actually want to spend time in.`,
       'Our landscape remodeling approach combines hardscaping foundations, thoughtful plantings, functional zones, and finishing touches into cohesive designs. We create outdoor rooms for entertaining, relaxation, play, and whatever else your lifestyle demands.',
-      'Whether you want drought-tolerant elegance, lush tropical vibes, or clean modern minimalism, BNC Builders landscape remodeling expertise brings your vision to life with plants and features suited to our San Diego climate.',
+      `Whether you want drought-tolerant elegance, lush tropical vibes, or clean modern minimalism, BNC Builders' landscape remodeling expertise brings your vision to life with plants and features suited to our San Diego climate.`,
     ],
     features: [
       'Complete yard redesign and installation',
@@ -710,9 +710,9 @@ export const services: Service[] = [
     description: 'See your project before we build with advanced 3D visualization',
     heroHeading: 'Walk Through Your New Landscape Before We Build',
     heroContent: [
-      'Imagine seeing your completed project before a single shovel breaks ground. BNC Builders 3D landscape design near me services use advanced visualization technology to create photorealistic renderings of your landscape remodeling project.',
-      'Our 3D landscape design near me technology eliminates guesswork. You will see exactly how proposed features fit your space, how plants will look at maturity, and how lighting transforms the scene after dark. Make informed decisions with confidence.',
-      'This powerful tool helps you visualize outdoor kitchens placement, patio proportions, plant selections, and every other element of your landscape remodeling before committing to construction.',
+      `Imagine seeing your completed project before a single shovel breaks ground. BNC Builders' 3D landscape design services use advanced visualization technology to create photorealistic renderings of your landscape remodeling project.`,
+      'Our 3D landscape design technology eliminates guesswork. You will see exactly how proposed features fit your space, how plants will look at maturity, and how lighting transforms the scene after dark. Make informed decisions with confidence.',
+      'This powerful tool helps you visualize outdoor kitchen placement, patio proportions, plant selections, and every other element of your landscape remodeling before committing to construction.',
     ],
     features: [
       'Photorealistic 3D renderings',
@@ -726,33 +726,33 @@ export const services: Service[] = [
     ],
     faqs: [
       {
-        question: 'How does 3D landscape design near me save money?',
+        question: 'How does 3D landscape design save money?',
         answer: 'By visualizing your project first, you catch design issues before construction begins. Changes on screen cost nothing - changes during construction can be expensive.',
       },
       {
         question: 'Can I see different material options?',
-        answer: 'Absolutely. Our 3D landscape design near me technology lets you compare different pavers, plant selections, and finishes side by side before making decisions.',
+        answer: 'Absolutely. Our 3D landscape design technology lets you compare different pavers, plant selections, and finishes side by side before making decisions.',
       },
       {
         question: 'How long does 3D design take?',
-        answer: 'Initial 3D landscape design near me concepts typically take 1-2 weeks after our site visit. Revisions are incorporated quickly as you refine your vision.',
+        answer: 'Initial 3D landscape design concepts typically take 1-2 weeks after our site visit. Revisions are incorporated quickly as you refine your vision.',
       },
     ],
     process: [
       {
         number: 1,
         title: 'Property Survey',
-        description: 'We measure your property precisely and photograph existing conditions - the foundation for accurate 3D landscape design near me modeling.',
+        description: 'We measure your property precisely and photograph existing conditions - the foundation for accurate 3D landscape design modeling.',
       },
       {
         number: 2,
         title: '3D Development',
-        description: 'Our designers build detailed 3D landscape design near me models incorporating your preferences, showing proposed features from multiple angles.',
+        description: 'Our designers build detailed 3D landscape design models incorporating your preferences, showing proposed features from multiple angles.',
       },
       {
         number: 3,
         title: 'Refinement & Approval',
-        description: 'We present your 3D landscape design near me visualization, incorporate your feedback, and refine until you approve the final design for construction.',
+        description: 'We present your 3D landscape design visualization, incorporate your feedback, and refine until you approve the final design for construction.',
       },
     ],
     category: 'exterior',
