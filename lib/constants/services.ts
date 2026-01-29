@@ -245,7 +245,7 @@ export const services: Service[] = [
     heroHeading: 'Add Space Without Leaving Home',
     heroContent: [
       'Your family has grown, your needs have changed, but you love your neighborhood. BNC Builders room addition San Diego services let you stay in the home you love while adding the space you need - no moving trucks required.',
-      'We specialize in seamless additions that look like they were always part of your home. Our room addition San Diego team matches rooflines, siding, and architectural details so your expansion enhances rather than disrupts your home original character.',
+      'We specialize in seamless additions that look like they were always part of your home. Our room addition San Diego team matches rooflines, siding, and architectural details so your expansion enhances rather than disrupts your home\'s original character.',
       'Guest bedrooms, home offices, expanded kitchens, entertainment rooms, in-law suites - whatever space you need, BNC Builders delivers room addition San Diego excellence that adds both square footage and property value.',
     ],
     features: [
@@ -439,7 +439,7 @@ export const services: Service[] = [
       },
       {
         question: 'How long does it take to build ADUs Los Angeles?',
-        answer: 'Total timeline for ADUs Los Angeles runs 8-14 months including design, permits, and construction. BNC Builders aggressive permit management often shortens typical timelines.',
+        answer: 'Total timeline for ADUs Los Angeles runs 8-14 months including design, permits, and construction. BNC Builders\' aggressive permit management often shortens typical timelines.',
       },
       {
         question: 'Can I build an ADU in my backyard?',

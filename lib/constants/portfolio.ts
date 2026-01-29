@@ -121,7 +121,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'Kitchens',
     categorySlug: 'kitchens',
     location: 'Escondido, CA',
-    description: 'This kitchen remodel Escondido CA project honors the home original craftsman character while adding modern conveniences. Custom millwork, marble surfaces, and brass fixtures create timeless elegance the homeowners will enjoy for decades.',
+    description: 'This kitchen remodel Escondido CA project honors the home\'s original craftsman character while adding modern conveniences. Custom millwork, marble surfaces, and brass fixtures create timeless elegance the homeowners will enjoy for decades.',
     featuredImage: 'BNC-BUILDERS/projects/kitchens/SouthElm/_DSC0013',
     images: [
       'BNC-BUILDERS/projects/kitchens/SouthElm/_DSC0013',
@@ -140,7 +140,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'Kitchens',
     categorySlug: 'kitchens',
     location: 'Encinitas, CA',
-    description: 'Magazine-worthy results from this Escondido kitchen remodeling collaboration with the homeowner interior designer. The dramatic range hood, custom backsplash, and statement lighting create a kitchen that functions as beautifully as it photographs.',
+    description: 'Magazine-worthy results from this Escondido kitchen remodeling collaboration with the homeowner\'s interior designer. The dramatic range hood, custom backsplash, and statement lighting create a kitchen that functions as beautifully as it photographs.',
     featuredImage: 'BNC-BUILDERS/projects/kitchens/StewartWay/A7402402',
     images: [
       'BNC-BUILDERS/projects/kitchens/StewartWay/A7402402',

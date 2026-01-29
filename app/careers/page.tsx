@@ -76,7 +76,7 @@ export default function CareersPage() {
     <>
       {/* Hero */}
       <HeroSubpage
-        title="Build Your Career With San Diego Leading Remodeling Team"
+        title="Build Your Career With San Diego's Leading Remodeling Team"
         subtitle="BNC Builders is growing. We are looking for skilled craftspeople, project managers, and support staff who share our commitment to quality and client satisfaction. Join a team that builds better lives - for homeowners and employees alike."
         backgroundImage={bannerImages.faq}
       />
@@ -89,7 +89,7 @@ export default function CareersPage() {
               Why Talented People Choose BNC Builders
             </h2>
             <p className="text-lg text-zinc-600">
-              We are not just another construction company. BNC Builders has built its reputation on quality kitchen remodel Escondido CA projects, bathroom remodeling San Diego transformations, ADUs San Diego builds, and complete remodeling Escondido solutions. Our team members take pride in craftsmanship that makes real differences in people lives. We offer competitive pay, consistent work, growth opportunities, and a culture that values collaboration over competition.
+              We are not just another construction company. BNC Builders has built its reputation on quality kitchen remodel Escondido CA projects, bathroom remodeling San Diego transformations, ADUs San Diego builds, and complete remodeling Escondido solutions. Our team members take pride in craftsmanship that makes real differences in people's lives. We offer competitive pay, consistent work, growth opportunities, and a culture that values collaboration over competition.
             </p>
           </div>
         </Container>
