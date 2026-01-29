@@ -22,6 +22,14 @@ export function HeroMain() {
         <div className="absolute inset-0 bg-gradient-to-r from-zinc-900/90 via-zinc-900/70 to-zinc-900/40" />
       </div>
 
+      {/* Experience Badge - Top Right */}
+      <div className="absolute top-24 sm:top-28 right-4 sm:right-8 z-20 animate-[fadeInRight_0.8s_ease-out_0.3s_both]">
+        <div className="bg-gold rounded-full w-24 h-24 sm:w-32 sm:h-32 flex flex-col items-center justify-center shadow-xl border-4 border-white/20">
+          <span className="text-2xl sm:text-3xl font-bold text-white leading-none">30+</span>
+          <span className="text-[10px] sm:text-xs text-white/90 font-medium uppercase tracking-wide text-center leading-tight mt-1">Years<br/>Experience</span>
+        </div>
+      </div>
+
       {/* Content */}
       <Container className="relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
