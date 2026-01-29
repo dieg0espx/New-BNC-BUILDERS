@@ -38,9 +38,15 @@ export const mainNavigation: NavItem[] = [
   },
   { label: 'Our Process', href: '/our-process' },
   { label: 'Reviews', href: '/reviews' },
-  { label: 'Portfolio', href: '/portfolio' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'Areas We Serve', href: '/areas-we-serve' },
+  {
+    label: 'Resources',
+    href: '#',
+    children: [
+      { label: 'Portfolio', href: '/portfolio' },
+      { label: 'Blog', href: '/blog' },
+      { label: 'Areas We Serve', href: '/areas-we-serve' },
+    ],
+  },
   { label: 'Contact Us', href: '/contact-us' },
 ];
 
