@@ -1,7 +1,7 @@
 // BNC Builders - Careers Form API Route
 
 import { NextRequest, NextResponse } from 'next/server';
-import { sendCareersToGHL } from '@/lib/ghl';
+import { sendCareersEmail } from '@/lib/email';
 
 interface CareersFormData {
   firstName: string;
@@ -63,12 +63,8 @@ export async function POST(request: NextRequest) {
       resumeUrl: body.resumeUrl?.trim(),
     };
 
-    // Send to GoHighLevel CRM
-    const ghlResult = await sendCareersToGHL(formData);
-
-    if (!ghlResult.success) {
-      console.error('GHL webhook failed:', ghlResult.error);
-    }
+    // Send email to BNC careers team
+    await sendCareersEmail(formData);
 
     return NextResponse.json(
       { success: true, message: 'Thank you for your application! We will review it and get back to you soon.' },
