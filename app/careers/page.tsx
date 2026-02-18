@@ -2,9 +2,10 @@
 
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import { HeroSubpage } from '@/components/sections';
-import { Container, Section, Button, ReCaptcha, ReCaptchaRef } from '@/components/ui';
+import { Container, Section, Button } from '@/components/ui';
+import { useReCaptchaV3 } from '@/components/ui/ReCaptcha';
 import { bannerImages } from '@/lib/constants/images';
 import { coreValues } from '@/lib/constants/company';
 import { CheckCircle, Send } from 'lucide-react';
@@ -34,8 +35,7 @@ export default function CareersPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
-  const recaptchaRef = useRef<ReCaptchaRef>(null);
+  const { executeRecaptcha } = useReCaptchaV3();
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -49,14 +49,16 @@ export default function CareersPage() {
     setIsSubmitting(true);
     setError(null);
 
-    // Validate reCAPTCHA
-    if (!recaptchaToken) {
-      setError('Please complete the reCAPTCHA verification.');
-      setIsSubmitting(false);
-      return;
-    }
-
     try {
+      // Execute reCAPTCHA v3
+      const recaptchaToken = await executeRecaptcha('careers_form');
+
+      if (!recaptchaToken) {
+        setError('Failed to verify reCAPTCHA. Please try again.');
+        setIsSubmitting(false);
+        return;
+      }
+
       const response = await fetch('/api/careers', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -71,18 +73,12 @@ export default function CareersPage() {
       if (response.ok && data.success) {
         setSubmitted(true);
         setFormData(initialFormData);
-        setRecaptchaToken(null);
-        recaptchaRef.current?.reset();
       } else {
         setError(data.message || 'Failed to submit application. Please try again.');
-        recaptchaRef.current?.reset();
-        setRecaptchaToken(null);
       }
     } catch (err) {
       console.error('Form submission error:', err);
       setError('Failed to submit application. Please try again or contact us directly.');
-      recaptchaRef.current?.reset();
-      setRecaptchaToken(null);
     } finally {
       setIsSubmitting(false);
     }
@@ -277,14 +273,6 @@ export default function CareersPage() {
                 />
               </div>
 
-              {/* reCAPTCHA */}
-              <ReCaptcha
-                ref={recaptchaRef}
-                onChange={(token) => setRecaptchaToken(token)}
-                onExpired={() => setRecaptchaToken(null)}
-                onError={() => setRecaptchaToken(null)}
-              />
-
               {/* Error Message */}
               {error && (
                 <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
@@ -296,7 +284,7 @@ export default function CareersPage() {
                 type="submit"
                 size="lg"
                 className="w-full flex items-center justify-center gap-2"
-                disabled={isSubmitting || !recaptchaToken}
+                disabled={isSubmitting}
               >
                 {isSubmitting ? (
                   <>

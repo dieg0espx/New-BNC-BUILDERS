@@ -1,61 +1,71 @@
-// BNC Builders - ReCaptcha v2 Component
+// BNC Builders - ReCaptcha v3 Component (Invisible)
 
 'use client';
 
-import { useRef, forwardRef, useImperativeHandle } from 'react';
-import ReCAPTCHA from 'react-google-recaptcha';
+import { useEffect } from 'react';
 
-interface ReCaptchaProps {
-  onChange?: (token: string | null) => void;
-  onError?: () => void;
-  onExpired?: () => void;
-  theme?: 'light' | 'dark';
-  size?: 'compact' | 'normal';
+declare global {
+  interface Window {
+    grecaptcha: {
+      ready: (callback: () => void) => void;
+      execute: (siteKey: string, options: { action: string }) => Promise<string>;
+    };
+  }
 }
 
 export interface ReCaptchaRef {
-  reset: () => void;
-  execute: () => void;
-  getValue: () => string | null;
+  execute: (action?: string) => Promise<string | null>;
 }
 
-export const ReCaptcha = forwardRef<ReCaptchaRef, ReCaptchaProps>(
-  ({ onChange, onError, onExpired, theme = 'light', size = 'normal' }, ref) => {
-    const recaptchaRef = useRef<ReCAPTCHA>(null);
+// Hook to load and execute reCAPTCHA v3
+export function useReCaptchaV3() {
+  const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
-    const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+  useEffect(() => {
+    if (!siteKey) {
+      console.error('ReCaptcha site key is not configured');
+      return;
+    }
 
-    useImperativeHandle(ref, () => ({
-      reset: () => {
-        recaptchaRef.current?.reset();
-      },
-      execute: () => {
-        recaptchaRef.current?.execute();
-      },
-      getValue: () => {
-        return recaptchaRef.current?.getValue() || null;
-      },
-    }));
+    // Load reCAPTCHA v3 script
+    if (!document.querySelector('#recaptcha-v3-script')) {
+      const script = document.createElement('script');
+      script.id = 'recaptcha-v3-script';
+      script.src = `https://www.google.com/recaptcha/api.js?render=${siteKey}`;
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
+    }
+  }, [siteKey]);
 
+  const executeRecaptcha = async (action: string = 'submit'): Promise<string | null> => {
     if (!siteKey) {
       console.error('ReCaptcha site key is not configured');
       return null;
     }
 
-    return (
-      <div className="flex justify-center my-4">
-        <ReCAPTCHA
-          ref={recaptchaRef}
-          sitekey={siteKey}
-          onChange={onChange}
-          onErrored={onError}
-          onExpired={onExpired}
-          theme={theme}
-          size={size}
-        />
-      </div>
-    );
-  }
-);
+    try {
+      return await new Promise((resolve) => {
+        window.grecaptcha.ready(async () => {
+          try {
+            const token = await window.grecaptcha.execute(siteKey, { action });
+            resolve(token);
+          } catch (error) {
+            console.error('reCAPTCHA execution error:', error);
+            resolve(null);
+          }
+        });
+      });
+    } catch (error) {
+      console.error('reCAPTCHA error:', error);
+      return null;
+    }
+  };
+
+  return { executeRecaptcha };
+}
+
+// Legacy component for backwards compatibility (not rendered, just returns null)
+export const ReCaptcha = () => null;
 
 ReCaptcha.displayName = 'ReCaptcha';

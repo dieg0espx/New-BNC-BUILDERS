@@ -2,8 +2,9 @@
 
 'use client';
 
-import { useState, useRef } from 'react';
-import { Button, ReCaptcha, ReCaptchaRef } from '@/components/ui';
+import { useState } from 'react';
+import { Button } from '@/components/ui';
+import { useReCaptchaV3 } from '@/components/ui/ReCaptcha';
 import { CheckCircle, Download } from 'lucide-react';
 
 interface FormData {
@@ -25,8 +26,7 @@ export function ADUHandbookForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
-  const recaptchaRef = useRef<ReCaptchaRef>(null);
+  const { executeRecaptcha } = useReCaptchaV3();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -38,14 +38,16 @@ export function ADUHandbookForm() {
     setIsSubmitting(true);
     setError(null);
 
-    // Validate reCAPTCHA
-    if (!recaptchaToken) {
-      setError('Please complete the reCAPTCHA verification.');
-      setIsSubmitting(false);
-      return;
-    }
-
     try {
+      // Execute reCAPTCHA v3
+      const recaptchaToken = await executeRecaptcha('adu_handbook');
+
+      if (!recaptchaToken) {
+        setError('Failed to verify reCAPTCHA. Please try again.');
+        setIsSubmitting(false);
+        return;
+      }
+
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -63,18 +65,12 @@ export function ADUHandbookForm() {
       if (response.ok && data.success) {
         setSubmitted(true);
         setFormData(initialFormData);
-        setRecaptchaToken(null);
-        recaptchaRef.current?.reset();
       } else {
         setError(data.message || 'Failed to submit. Please try again.');
-        recaptchaRef.current?.reset();
-        setRecaptchaToken(null);
       }
     } catch (err) {
       console.error('Form submission error:', err);
       setError('Failed to submit. Please try again or call us directly.');
-      recaptchaRef.current?.reset();
-      setRecaptchaToken(null);
     } finally {
       setIsSubmitting(false);
     }
@@ -173,14 +169,6 @@ export function ADUHandbookForm() {
           />
         </div>
 
-        {/* reCAPTCHA */}
-        <ReCaptcha
-          ref={recaptchaRef}
-          onChange={(token) => setRecaptchaToken(token)}
-          onExpired={() => setRecaptchaToken(null)}
-          onError={() => setRecaptchaToken(null)}
-        />
-
         {error && (
           <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
             {error}
@@ -191,7 +179,7 @@ export function ADUHandbookForm() {
           type="submit"
           size="lg"
           className="w-full flex items-center justify-center gap-2"
-          disabled={isSubmitting || !recaptchaToken}
+          disabled={isSubmitting}
         >
           {isSubmitting ? (
             <>
