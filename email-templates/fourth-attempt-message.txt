@@ -1,0 +1,10 @@
+Good morning {{Client Name}},
+
+This is Zaira Diaz with BNC Builders following up regarding your {{Project Type}} project.
+
+We haven't heard back yet and wanted to check in one more time before closing out your request. Please reply or call 866-985-6313 if you'd still like assistance.
+
+Thank you,
+Zaira Diaz
+CRS
+BNC Builders

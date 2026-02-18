@@ -1,0 +1,12 @@
+Good morning {{Client Name}},
+
+This is Zaira Diaz with BNC Builders. Thank you for reaching out regarding your {{Project Type}} project.
+
+We'd love to gather a bit more information and see how we can best assist you. Please feel free to reply to this message or give us a call at 866-985-6313 at your convenience.
+
+We look forward to speaking with you.
+
+Kind regards,
+Zaira Diaz
+BNC Builders
+Phone: 866-985-6313

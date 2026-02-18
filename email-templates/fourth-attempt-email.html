@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow-Up Regarding Your {{Project Type}} Request</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #666666;
+            line-height: 1.6;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        .header {
+            background-color: #1A1A2E;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header img {
+            max-width: 200px;
+            height: auto;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .content h1 {
+            font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+            color: #1A1A2E;
+            font-size: 28px;
+            margin: 0 0 20px 0;
+            font-weight: 700;
+        }
+        .content p {
+            margin: 0 0 15px 0;
+            font-size: 16px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 16px 32px;
+            background: linear-gradient(to bottom right, #F5A623, #FFB800);
+            color: #1A1A2E;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(245, 166, 35, 0.3);
+        }
+        .signature {
+            margin-top: 30px;
+            font-size: 16px;
+        }
+        .signature .name {
+            font-weight: 700;
+            color: #1A1A2E;
+        }
+        .signature .company {
+            color: #F5A623;
+            font-weight: 600;
+        }
+        .footer {
+            background-color: #1A1A2E;
+            color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer-contact {
+            margin: 20px 0;
+        }
+        .footer-contact p {
+            margin: 8px 0;
+            color: #ffffff;
+        }
+        .footer-contact a {
+            color: #F5A623;
+            text-decoration: none;
+        }
+        .footer-contact a:hover {
+            color: #FFB800;
+        }
+        .divider {
+            height: 1px;
+            background-color: #E0E0E0;
+            margin: 30px 0;
+        }
+        .license {
+            color: #F5A623;
+            font-weight: 600;
+            margin: 15px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            .content {
+                padding: 30px 20px;
+            }
+            .content h1 {
+                font-size: 24px;
+            }
+            .cta-button {
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <img src="https://res.cloudinary.com/dku1gnuat/image/upload/v1767035996/BNC-BUILDERS/images_brand_logo-light.2505220829366.png" alt="BNC Builders Inc." />
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <h1>Follow-Up Regarding Your Request</h1>
+
+            <p>Good morning {{Client Name}},</p>
+
+            <p>I hope you are doing well. I am following up once more regarding your <strong>{{Project Type}}</strong> inquiry with BNC Builders.</p>
+
+            <p>If you are still interested in moving forward or would like to discuss next steps, please feel free to reply to this email or call us at <strong>866-985-6313</strong>.</p>
+
+            <p>We will be happy to assist if and when you're ready.</p>
+
+            <div style="text-align: center;">
+                <a href="tel:8669856313" class="cta-button">Call Us: 866-985-6313</a>
+            </div>
+
+            <div class="signature">
+                <p>Kind regards,<br>
+                <span class="name">Zaira Diaz</span><br>
+                <span class="company">BNC Builders</span><br>
+                Phone: <a href="tel:8669856313" style="color: #F5A623; text-decoration: none;">866-985-6313</a></p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-contact">
+                <p class="license">License #: 1050284</p>
+                <p><strong>BNC Builders Inc.</strong></p>
+                <p>Transforming San Diego Homes With Expert Craftsmanship</p>
+                <div class="divider" style="background-color: #666666; max-width: 200px; margin: 20px auto;"></div>
+                <p>
+                    <a href="tel:8669856313">866-985-6313</a>
+                </p>
+                <p>101 State Pl Suite N<br>Escondido, CA 92029</p>
+                <p>Monday - Saturday, 8:00am - 5:00pm</p>
+                <p style="margin-top: 15px;">Hablamos Español</p>
+            </div>
+
+            <div class="divider" style="background-color: #666666;"></div>
+
+            <p style="font-size: 12px; color: #999999; margin-top: 20px;">
+                &copy; 2024 BNC Builders Inc. All rights reserved.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

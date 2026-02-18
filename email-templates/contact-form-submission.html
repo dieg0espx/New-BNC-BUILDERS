@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Contact Form Submission - BNC Builders Inc.</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #666666;
+            line-height: 1.6;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        .header {
+            background-color: #1A1A2E;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header img {
+            max-width: 200px;
+            height: auto;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .content h1 {
+            font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+            color: #1A1A2E;
+            font-size: 28px;
+            margin: 0 0 20px 0;
+            font-weight: 700;
+        }
+        .content h2 {
+            font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+            color: #1A1A2E;
+            font-size: 22px;
+            margin: 30px 0 15px 0;
+            font-weight: 600;
+        }
+        .content p {
+            margin: 0 0 15px 0;
+            font-size: 16px;
+        }
+        .info-box {
+            background-color: #F5F5F5;
+            border-left: 4px solid #F5A623;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .submission-details {
+            background-color: #F5F5F5;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        .detail-row {
+            margin: 15px 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #E0E0E0;
+        }
+        .detail-row:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .detail-label {
+            font-weight: 700;
+            color: #1A1A2E;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .detail-value {
+            color: #666666;
+            font-size: 16px;
+        }
+        .footer {
+            background-color: #1A1A2E;
+            color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer-contact {
+            margin: 20px 0;
+        }
+        .footer-contact p {
+            margin: 8px 0;
+            color: #ffffff;
+        }
+        .footer-contact a {
+            color: #F5A623;
+            text-decoration: none;
+        }
+        .footer-contact a:hover {
+            color: #FFB800;
+        }
+        .divider {
+            height: 1px;
+            background-color: #E0E0E0;
+            margin: 30px 0;
+        }
+        .license {
+            color: #F5A623;
+            font-weight: 600;
+            margin: 15px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            .content {
+                padding: 30px 20px;
+            }
+            .content h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <img src="https://res.cloudinary.com/dku1gnuat/image/upload/v1767035996/BNC-BUILDERS/images_brand_logo-light.2505220829366.png" alt="BNC Builders Inc." />
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <h1>New Contact Form Submission</h1>
+            <p>You have received a new contact form submission from your website.</p>
+
+            <div class="submission-details">
+                <div class="detail-row">
+                    <span class="detail-label">Name</span>
+                    <span class="detail-value">{{customer_name}}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Email</span>
+                    <span class="detail-value"><a href="mailto:{{customer_email}}" style="color: #F5A623;">{{customer_email}}</a></span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Phone</span>
+                    <span class="detail-value"><a href="tel:{{customer_phone}}" style="color: #F5A623;">{{customer_phone}}</a></span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Service Interest</span>
+                    <span class="detail-value">{{service_interest}}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Message</span>
+                    <span class="detail-value">{{message}}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Submitted On</span>
+                    <span class="detail-value">{{submission_date}}</span>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p><strong>Action Required:</strong> Please follow up with this lead within 24 hours for the best conversion rate.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-contact">
+                <p class="license">License #: 1050284</p>
+                <p><strong>BNC Builders Inc.</strong></p>
+                <p>Transforming San Diego Homes With Expert Craftsmanship</p>
+                <div class="divider" style="background-color: #666666; max-width: 200px; margin: 20px auto;"></div>
+                <p>
+                    <a href="tel:7609933204">(760) 993-3204</a>
+                </p>
+                <p>101 State Pl Suite N<br>Escondido, CA 92029</p>
+                <p>Monday - Saturday, 8:00am - 5:00pm</p>
+                <p style="margin-top: 15px;">Hablamos Español</p>
+            </div>
+
+            <div class="divider" style="background-color: #666666;"></div>
+
+            <p style="font-size: 12px; color: #999999; margin-top: 20px;">
+                &copy; 2024 BNC Builders Inc. All rights reserved.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

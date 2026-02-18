@@ -2,7 +2,8 @@
 
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import { ReCaptcha, ReCaptchaRef } from '@/components/ui';
 import { CheckCircle } from 'lucide-react';
 
 interface FormData {
@@ -36,6 +37,8 @@ export function QuickContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
+  const recaptchaRef = useRef<ReCaptchaRef>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -59,23 +62,39 @@ export function QuickContactForm() {
     setIsSubmitting(true);
     setError(null);
 
+    // Validate reCAPTCHA
+    if (!recaptchaToken) {
+      setError('Please complete the reCAPTCHA verification.');
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          recaptchaToken,
+        }),
       });
 
       const data = await response.json();
 
       if (response.ok && data.success) {
         setSubmitted(true);
+        setRecaptchaToken(null);
+        recaptchaRef.current?.reset();
       } else {
         setError(data.message || 'Failed to send. Please try again.');
+        recaptchaRef.current?.reset();
+        setRecaptchaToken(null);
       }
     } catch (err) {
       console.error('Form submission error:', err);
       setError('Failed to send. Please try again.');
+      recaptchaRef.current?.reset();
+      setRecaptchaToken(null);
     } finally {
       setIsSubmitting(false);
     }
@@ -162,6 +181,13 @@ export function QuickContactForm() {
                   {error}
                 </div>
               )}
+              <ReCaptcha
+                ref={recaptchaRef}
+                onChange={(token) => setRecaptchaToken(token)}
+                onExpired={() => setRecaptchaToken(null)}
+                onError={() => setRecaptchaToken(null)}
+                size="compact"
+              />
               <div className="flex flex-col md:flex-row items-stretch gap-3 sm:gap-4">
             <input
               type="tel"
@@ -196,7 +222,7 @@ export function QuickContactForm() {
               </button>
               <button
                 type="submit"
-                disabled={isSubmitting || !formData.phone || !formData.reason}
+                disabled={isSubmitting || !formData.phone || !formData.reason || !recaptchaToken}
                 className="flex-1 md:flex-none bg-zinc-800 hover:bg-zinc-700 text-white px-4 sm:px-8 py-3 rounded-full font-bold uppercase tracking-wider transition-all disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap text-sm sm:text-base"
               >
                 {isSubmitting ? 'Sending...' : 'Get Estimate'}

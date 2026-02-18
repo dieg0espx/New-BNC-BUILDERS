@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You For Contacting BNC Builders Inc.</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #666666;
+            line-height: 1.6;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        .header {
+            background-color: #1A1A2E;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header img {
+            max-width: 200px;
+            height: auto;
+        }
+        .banner {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, #1A1A2E 0%, #0D1B2A 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .banner h1 {
+            font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+            color: #ffffff;
+            font-size: 36px;
+            margin: 0;
+            font-weight: 700;
+        }
+        .banner .accent {
+            color: #F5A623;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .content h2 {
+            font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+            color: #1A1A2E;
+            font-size: 24px;
+            margin: 30px 0 15px 0;
+            font-weight: 600;
+        }
+        .content p {
+            margin: 0 0 15px 0;
+            font-size: 16px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 16px 32px;
+            background: linear-gradient(to bottom right, #F5A623, #FFB800);
+            color: #1A1A2E;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(245, 166, 35, 0.3);
+        }
+        .info-box {
+            background-color: #F5F5F5;
+            border-left: 4px solid #F5A623;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .services-grid {
+            display: table;
+            width: 100%;
+            margin: 25px 0;
+        }
+        .service-item {
+            display: table-row;
+        }
+        .service-icon {
+            display: table-cell;
+            width: 40px;
+            padding: 10px 15px 10px 0;
+            vertical-align: top;
+        }
+        .service-icon::before {
+            content: "✓";
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            background-color: #F5A623;
+            color: #1A1A2E;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .service-text {
+            display: table-cell;
+            padding: 10px 0;
+            vertical-align: top;
+            font-size: 16px;
+        }
+        .footer {
+            background-color: #1A1A2E;
+            color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer-contact {
+            margin: 20px 0;
+        }
+        .footer-contact p {
+            margin: 8px 0;
+            color: #ffffff;
+        }
+        .footer-contact a {
+            color: #F5A623;
+            text-decoration: none;
+        }
+        .footer-contact a:hover {
+            color: #FFB800;
+        }
+        .divider {
+            height: 1px;
+            background-color: #E0E0E0;
+            margin: 30px 0;
+        }
+        .license {
+            color: #F5A623;
+            font-weight: 600;
+            margin: 15px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            .content {
+                padding: 30px 20px;
+            }
+            .banner h1 {
+                font-size: 28px;
+            }
+            .cta-button {
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <img src="https://res.cloudinary.com/dku1gnuat/image/upload/v1767035996/BNC-BUILDERS/images_brand_logo-light.2505220829366.png" alt="BNC Builders Inc." />
+        </div>
+
+        <!-- Banner -->
+        <div class="banner">
+            <h1>Welcome to the <span class="accent">BNC Builders</span> Family!</h1>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <p style="font-size: 18px;"><strong>Hi {{customer_name}},</strong></p>
+
+            <p>Thank you for reaching out to BNC Builders Inc.! We're thrilled that you're considering us to help transform your space.</p>
+
+            <p>With over 30 years of combined experience and 900+ completed projects across San Diego County, we pride ourselves on delivering exceptional craftsmanship, clear communication, and results that exceed expectations.</p>
+
+            <h2>Our Services</h2>
+
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon"></div>
+                    <div class="service-text">Kitchen Remodeling</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"></div>
+                    <div class="service-text">Bathroom Remodeling</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"></div>
+                    <div class="service-text">ADU Construction</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"></div>
+                    <div class="service-text">Room Additions</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"></div>
+                    <div class="service-text">Exterior Remodeling</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"></div>
+                    <div class="service-text">Landscape & Hardscaping</div>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="tel:7609933204" class="cta-button">Call Now: (760) 993-3204</a>
+            </div>
+
+            <div class="info-box">
+                <p><strong>What sets us apart:</strong></p>
+                <p style="margin: 10px 0;">✓ Licensed & Insured (License #1050284)<br>
+                ✓ BBB Accredited Business<br>
+                ✓ Free Detailed Estimates<br>
+                ✓ Flexible Financing Available<br>
+                ✓ Bilingual Team - Hablamos Español</p>
+            </div>
+
+            <h2>We'll Be In Touch Soon</h2>
+
+            <p>Our team will review your request and contact you within 24 hours. In the meantime, feel free to browse our portfolio, read customer reviews, or give us a call if you have any questions.</p>
+
+            <p>We look forward to bringing your vision to life!</p>
+
+            <p style="margin-top: 30px;">
+                <strong>The BNC Builders Team</strong><br>
+                <span style="color: #F5A623;">Transforming San Diego Homes With Expert Craftsmanship</span>
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-contact">
+                <p class="license">License #: 1050284</p>
+                <p><strong>BNC Builders Inc.</strong></p>
+                <p>Transforming San Diego Homes With Expert Craftsmanship</p>
+                <div class="divider" style="background-color: #666666; max-width: 200px; margin: 20px auto;"></div>
+                <p>
+                    <a href="tel:7609933204">(760) 993-3204</a>
+                </p>
+                <p>101 State Pl Suite N<br>Escondido, CA 92029</p>
+                <p>Monday - Saturday, 8:00am - 5:00pm</p>
+                <p style="margin-top: 15px;">Hablamos Español</p>
+            </div>
+
+            <div class="divider" style="background-color: #666666;"></div>
+
+            <p style="font-size: 12px; color: #999999; margin-top: 20px;">
+                &copy; 2024 BNC Builders Inc. All rights reserved.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

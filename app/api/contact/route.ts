@@ -2,6 +2,7 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 import { sendContactToGHL } from '@/lib/ghl';
+import { verifyRecaptcha } from '@/lib/recaptcha';
 
 interface ContactFormData {
   firstName: string;
@@ -44,6 +45,15 @@ function validateContactData(data: Partial<ContactFormData>): { valid: boolean; 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
+
+    // Verify reCAPTCHA
+    const recaptchaResult = await verifyRecaptcha(body.recaptchaToken);
+    if (!recaptchaResult.success) {
+      return NextResponse.json(
+        { success: false, message: recaptchaResult.error || 'reCAPTCHA verification failed' },
+        { status: 400 }
+      );
+    }
 
     // Validate the data
     const validation = validateContactData(body);

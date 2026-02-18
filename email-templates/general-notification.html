@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification - BNC Builders Inc.</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #666666;
+            line-height: 1.6;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        .header {
+            background-color: #1A1A2E;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header img {
+            max-width: 200px;
+            height: auto;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .content h1 {
+            font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+            color: #1A1A2E;
+            font-size: 28px;
+            margin: 0 0 20px 0;
+            font-weight: 700;
+        }
+        .content h2 {
+            font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+            color: #1A1A2E;
+            font-size: 22px;
+            margin: 30px 0 15px 0;
+            font-weight: 600;
+        }
+        .content p {
+            margin: 0 0 15px 0;
+            font-size: 16px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 16px 32px;
+            background: linear-gradient(to bottom right, #F5A623, #FFB800);
+            color: #1A1A2E;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(245, 166, 35, 0.3);
+        }
+        .info-box {
+            background-color: #F5F5F5;
+            border-left: 4px solid #F5A623;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .alert-box {
+            background-color: #FFF8E1;
+            border-left: 4px solid #F5A623;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .alert-box p {
+            color: #1A1A2E;
+            margin: 0;
+        }
+        .footer {
+            background-color: #1A1A2E;
+            color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer-contact {
+            margin: 20px 0;
+        }
+        .footer-contact p {
+            margin: 8px 0;
+            color: #ffffff;
+        }
+        .footer-contact a {
+            color: #F5A623;
+            text-decoration: none;
+        }
+        .footer-contact a:hover {
+            color: #FFB800;
+        }
+        .divider {
+            height: 1px;
+            background-color: #E0E0E0;
+            margin: 30px 0;
+        }
+        .license {
+            color: #F5A623;
+            font-weight: 600;
+            margin: 15px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            .content {
+                padding: 30px 20px;
+            }
+            .content h1 {
+                font-size: 24px;
+            }
+            .cta-button {
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <img src="https://res.cloudinary.com/dku1gnuat/image/upload/v1767035996/BNC-BUILDERS/images_brand_logo-light.2505220829366.png" alt="BNC Builders Inc." />
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <h1>{{email_subject}}</h1>
+
+            <p>Hi {{customer_name}},</p>
+
+            <p>{{main_message}}</p>
+
+            <!-- Optional Alert Box -->
+            <!-- Uncomment if you need to highlight important information -->
+            <!--
+            <div class="alert-box">
+                <p><strong>Important:</strong> {{alert_message}}</p>
+            </div>
+            -->
+
+            <!-- Optional CTA Button -->
+            <!-- Uncomment and customize if you need a call-to-action -->
+            <!--
+            <div style="text-align: center;">
+                <a href="{{cta_link}}" class="cta-button">{{cta_text}}</a>
+            </div>
+            -->
+
+            <h2>Need Assistance?</h2>
+
+            <p>If you have any questions or need further assistance, our team is here to help. Feel free to reach out to us:</p>
+
+            <div class="info-box">
+                <p>
+                    <strong>Phone:</strong> <a href="tel:7609933204" style="color: #F5A623;">(760) 993-3204</a><br>
+                    <strong>Office Hours:</strong> Monday - Saturday, 8:00am - 5:00pm<br>
+                    <strong>Address:</strong> 101 State Pl Suite N, Escondido, CA 92029
+                </p>
+            </div>
+
+            <p>Thank you for choosing BNC Builders for your home transformation needs.</p>
+
+            <p style="margin-top: 30px;">
+                <strong>Best regards,</strong><br>
+                <strong>The BNC Builders Team</strong><br>
+                <span style="color: #F5A623;">Transforming San Diego Homes With Expert Craftsmanship</span>
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-contact">
+                <p class="license">License #: 1050284</p>
+                <p><strong>BNC Builders Inc.</strong></p>
+                <p>Transforming San Diego Homes With Expert Craftsmanship</p>
+                <div class="divider" style="background-color: #666666; max-width: 200px; margin: 20px auto;"></div>
+                <p>
+                    <a href="tel:7609933204">(760) 993-3204</a>
+                </p>
+                <p>101 State Pl Suite N<br>Escondido, CA 92029</p>
+                <p>Monday - Saturday, 8:00am - 5:00pm</p>
+                <p style="margin-top: 15px;">Hablamos Español</p>
+            </div>
+
+            <div class="divider" style="background-color: #666666;"></div>
+
+            <p style="font-size: 12px; color: #999999; margin-top: 20px;">
+                &copy; 2024 BNC Builders Inc. All rights reserved.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
