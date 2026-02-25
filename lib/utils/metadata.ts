@@ -24,7 +24,7 @@ export function generatePageMetadata({
   title,
   description,
   path = '',
-  ogImage = '/og-image.jpg',
+  ogImage = '/openGraph.png',
   keywords = [],
   noIndex = false,
   article,
@@ -34,6 +34,9 @@ export function generatePageMetadata({
     : `${title} | ${company.name}`;
 
   const canonicalUrl = `${SITE_URL}${path}`;
+
+  // Ensure absolute URL for OpenGraph image for better compatibility
+  const absoluteOgImage = ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage}`;
 
   const metadata: Metadata = {
     title: fullTitle,
@@ -50,10 +53,12 @@ export function generatePageMetadata({
       locale: 'en_US',
       images: [
         {
-          url: ogImage,
+          url: absoluteOgImage,
+          secureUrl: absoluteOgImage,
           width: 1200,
           height: 630,
           alt: title,
+          type: 'image/png',
         },
       ],
     },
@@ -61,7 +66,7 @@ export function generatePageMetadata({
       card: 'summary_large_image',
       title: fullTitle,
       description,
-      images: [ogImage],
+      images: [absoluteOgImage],
       creator: '@bncbuilders',
       site: '@bncbuilders',
     },
@@ -146,11 +151,12 @@ export const defaultMetadata: Metadata = {
     description: 'Professional home remodeling services in Escondido & San Diego County. Kitchen, bathroom, ADU construction & more. 30+ years experience.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: `${SITE_URL}/openGraph.png`,
+        secureUrl: `${SITE_URL}/openGraph.png`,
         width: 1200,
         height: 630,
         alt: `${company.name} - Home Remodeling`,
-        type: 'image/jpeg',
+        type: 'image/png',
       },
     ],
     countryName: 'United States',
@@ -163,7 +169,7 @@ export const defaultMetadata: Metadata = {
     description: 'Professional home remodeling services in Escondido & San Diego County. Kitchen, bathroom, ADU construction & more.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: `${SITE_URL}/openGraph.png`,
         alt: `${company.name} - Home Remodeling`,
       },
     ],
