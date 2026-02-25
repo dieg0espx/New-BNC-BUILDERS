@@ -43,7 +43,7 @@ export default function RootLayout({
         <meta name="twitter:image:alt" content="BNC Builders - Home Remodeling" />
         {/* WhatsApp and Messaging Apps */}
         <link rel="image_src" href={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com'}/openGraph.png`} />
-        <meta itemprop="image" content={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com'}/openGraph.png`} />
+        <meta itemProp="image" content={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com'}/openGraph.png`} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
