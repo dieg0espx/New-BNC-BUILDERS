@@ -76,6 +76,7 @@ export const backgroundImages = {
 export const specialImages = {
   referAndDine: 'v1767045244/BNC-BUILDERS/images_Refer-and-Dine-BNC-pic.2506231131021.jpg',
   socialShare: 'v1767218053/BNC-BUILDERS/images_Social-Share.jpg.jpg',
+  openGraph: 'BNC-BUILDERS/openGraph.png', // OpenGraph social media image
   travisTestimonial: 'v1767036033/BNC-BUILDERS/media_vpics_BNC-builder-testimonial-travis-vpic.jpg',
   aduHandbookCover: 'v1767218069/BNC-BUILDERS/assets_pack_foreground_ADU-handbook-image-cover-resize.2506231244171.jpg.jpg',
 };

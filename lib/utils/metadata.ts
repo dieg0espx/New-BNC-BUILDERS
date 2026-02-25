@@ -2,7 +2,7 @@
 
 import { Metadata } from 'next';
 import { company } from '../constants/company';
-import { CLOUDINARY_BASE_URL } from '../constants/images';
+import { CLOUDINARY_BASE_URL, specialImages } from '../constants/images';
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com';
 
 interface PageMetadataOptions {
@@ -24,7 +24,7 @@ export function generatePageMetadata({
   title,
   description,
   path = '',
-  ogImage = '/api/og',
+  ogImage = `${CLOUDINARY_BASE_URL}/${specialImages.openGraph}`,
   keywords = [],
   noIndex = false,
   article,
@@ -36,7 +36,7 @@ export function generatePageMetadata({
   const canonicalUrl = `${SITE_URL}${path}`;
 
   // Ensure absolute URL for OpenGraph image for better compatibility
-  const absoluteOgImage = ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage}`;
+  const absoluteOgImage = ogImage;
 
   const metadata: Metadata = {
     title: fullTitle,
@@ -151,8 +151,8 @@ export const defaultMetadata: Metadata = {
     description: 'Professional home remodeling services in Escondido & San Diego County. Kitchen, bathroom, ADU construction & more. 30+ years experience.',
     images: [
       {
-        url: `${SITE_URL}/api/og`,
-        secureUrl: `${SITE_URL}/api/og`,
+        url: `${CLOUDINARY_BASE_URL}/${specialImages.openGraph}`,
+        secureUrl: `${CLOUDINARY_BASE_URL}/${specialImages.openGraph}`,
         width: 1200,
         height: 630,
         alt: `${company.name} - Home Remodeling`,
@@ -169,7 +169,7 @@ export const defaultMetadata: Metadata = {
     description: 'Professional home remodeling services in Escondido & San Diego County. Kitchen, bathroom, ADU construction & more.',
     images: [
       {
-        url: `${SITE_URL}/api/og`,
+        url: `${CLOUDINARY_BASE_URL}/${specialImages.openGraph}`,
         alt: `${company.name} - Home Remodeling`,
       },
     ],
