@@ -32,18 +32,18 @@ export default function RootLayout({
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <meta name="theme-color" content="#CF9C39" />
         {/* Enhanced OpenGraph and Social Media Compatibility */}
-        <meta property="og:image" content={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com'}/openGraph.jpg`} />
-        <meta property="og:image:secure_url" content={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com'}/openGraph.jpg`} />
+        <meta property="og:image" content={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com'}/opengraph-image`} />
+        <meta property="og:image:secure_url" content={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com'}/opengraph-image`} />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="BNC Builders - Home Remodeling" />
         {/* Twitter/X Card Tags */}
-        <meta name="twitter:image" content={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com'}/openGraph.jpg`} />
+        <meta name="twitter:image" content={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com'}/opengraph-image`} />
         <meta name="twitter:image:alt" content="BNC Builders - Home Remodeling" />
         {/* WhatsApp and Messaging Apps */}
-        <link rel="image_src" href={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com'}/openGraph.jpg`} />
-        <meta itemProp="image" content={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com'}/openGraph.jpg`} />
+        <link rel="image_src" href={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com'}/opengraph-image`} />
+        <meta itemProp="image" content={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com'}/opengraph-image`} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
