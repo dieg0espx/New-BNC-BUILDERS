@@ -33,7 +33,7 @@ export default function ADULandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Side - Content */}
-            <div className="order-2 lg:order-1">
+            <div className="order-1">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark leading-tight mb-6">
                 Build a High-Quality ADU in {displayCity} With an Experienced Construction Team
               </h1>
@@ -96,7 +96,7 @@ export default function ADULandingPage() {
             </div>
 
             {/* Right Side - Form Card */}
-            <div className="order-1 lg:order-2">
+            <div className="order-2">
               <LandingPageForm variant="short" formType="adu" city={displayCity} />
             </div>
           </div>
