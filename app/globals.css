@@ -44,6 +44,8 @@
 /* Hover Text Colors */
 .hover\:text-gold:hover { color: #CF9C39 !important; }
 .hover\:text-gold-light:hover { color: #E3C778 !important; }
+.hover\:text-white:hover { color: #FFFFFF !important; }
+.hover\:text-dark:hover { color: #3B3630 !important; }
 
 /* Background with opacity */
 .bg-gold\/10 { background-color: rgba(207, 156, 57, 0.1) !important; }
