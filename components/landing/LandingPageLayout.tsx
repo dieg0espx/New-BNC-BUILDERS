@@ -1,4 +1,4 @@
-// BNC Builders - Landing Page Layout (No Header, No Navigation)
+// BNC Builders - Landing Page Layout
 // Used for paid search landing pages with conversion optimization
 
 'use client';
