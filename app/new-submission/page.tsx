@@ -12,7 +12,7 @@ export default function NewSubmissionPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [submitMessage, setSubmitMessage] = useState('');
-  const executeRecaptcha = useReCaptchaV3('admin_form');
+  const { executeRecaptcha } = useReCaptchaV3();
 
   // Form state
   const [formData, setFormData] = useState({
@@ -57,7 +57,7 @@ export default function NewSubmissionPage() {
 
     try {
       // Execute reCAPTCHA
-      const recaptchaToken = await executeRecaptcha();
+      const recaptchaToken = await executeRecaptcha('admin_form');
 
       // Submit to the same contact API endpoint
       const response = await fetch('/api/contact', {
