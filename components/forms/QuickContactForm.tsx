@@ -84,6 +84,12 @@ export function QuickContactForm() {
 
       if (response.ok && data.success) {
         setSubmitted(true);
+
+        // Push generate_lead event to dataLayer for GTM tracking
+        if (typeof window !== 'undefined') {
+          (window as any).dataLayer = (window as any).dataLayer || [];
+          (window as any).dataLayer.push({ event: 'generate_lead' });
+        }
       } else {
         setError(data.message || 'Failed to send. Please try again.');
       }

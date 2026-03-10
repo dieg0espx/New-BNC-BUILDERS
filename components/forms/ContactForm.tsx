@@ -76,6 +76,12 @@ export function ContactForm() {
       if (response.ok && data.success) {
         setSubmitted(true);
         setFormData(initialFormData);
+
+        // Push generate_lead event to dataLayer for GTM tracking
+        if (typeof window !== 'undefined') {
+          (window as any).dataLayer = (window as any).dataLayer || [];
+          (window as any).dataLayer.push({ event: 'generate_lead' });
+        }
       } else {
         setError(data.message || 'Failed to send message. Please try again.');
       }

@@ -65,6 +65,12 @@ export function ADUHandbookForm() {
       if (response.ok && data.success) {
         setSubmitted(true);
         setFormData(initialFormData);
+
+        // Push ADU handbook download event to dataLayer for GTM tracking
+        if (typeof window !== 'undefined') {
+          (window as any).dataLayer = (window as any).dataLayer || [];
+          (window as any).dataLayer.push({ event: 'adu_handbook_download' });
+        }
       } else {
         setError(data.message || 'Failed to submit. Please try again.');
       }

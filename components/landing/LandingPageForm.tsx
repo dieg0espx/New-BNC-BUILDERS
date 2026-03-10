@@ -79,13 +79,10 @@ export const LandingPageForm = forwardRef<HTMLDivElement, LandingPageFormProps>(
         if (response.ok && data.success) {
           setSubmitted(true);
 
-          // Track conversion in Google Ads
-          if (typeof window !== 'undefined' && (window as any).gtag) {
-            (window as any).gtag('event', 'conversion', {
-              send_to: 'AW-16672110303/form_submit',
-              value: 1.0,
-              currency: 'USD',
-            });
+          // Push generate_lead event to dataLayer for GTM tracking (GA4 + Google Ads conversion)
+          if (typeof window !== 'undefined') {
+            (window as any).dataLayer = (window as any).dataLayer || [];
+            (window as any).dataLayer.push({ event: 'generate_lead' });
           }
         } else {
           setError(data.message || 'Failed to send request. Please try again.');
