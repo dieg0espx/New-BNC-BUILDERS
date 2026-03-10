@@ -48,6 +48,8 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
+      </head>
+      <body className={`${ptSans.variable} antialiased`}>
         {/* Google Tag Manager */}
         <Script
           id="gtm-script"
@@ -60,8 +62,6 @@ export default function RootLayout({
               })(window,document,'script','dataLayer','GTM-WPZSVJGL');`,
           }}
         />
-      </head>
-      <body className={`${ptSans.variable} antialiased`}>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
