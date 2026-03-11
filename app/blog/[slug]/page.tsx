@@ -152,7 +152,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <div className="flex items-center gap-2">
                 <span className="text-sm text-zinc-500">Share:</span>
                 <a
-                  href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://bncbuilders.com/blog/${post.slug}`)}`}
+                  href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://bncbuildersinc.com/blog/${post.slug}`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-8 h-8 rounded-full bg-zinc-100 hover:bg-gold hover:text-white flex items-center justify-center transition-colors"
@@ -162,7 +162,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   </svg>
                 </a>
                 <a
-                  href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(`https://bncbuilders.com/blog/${post.slug}`)}&text=${encodeURIComponent(post.title)}`}
+                  href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(`https://bncbuildersinc.com/blog/${post.slug}`)}&text=${encodeURIComponent(post.title)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-8 h-8 rounded-full bg-zinc-100 hover:bg-gold hover:text-white flex items-center justify-center transition-colors"
@@ -172,7 +172,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   </svg>
                 </a>
                 <a
-                  href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(`https://bncbuilders.com/blog/${post.slug}`)}&title=${encodeURIComponent(post.title)}`}
+                  href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(`https://bncbuildersinc.com/blog/${post.slug}`)}&title=${encodeURIComponent(post.title)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-8 h-8 rounded-full bg-zinc-100 hover:bg-gold hover:text-white flex items-center justify-center transition-colors"

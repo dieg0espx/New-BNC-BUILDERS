@@ -43,7 +43,7 @@ export default function RemodelLandingLayout({
             '@type': 'LocalBusiness',
             name: company.name,
             description: 'Expert home remodeling contractor in North County San Diego',
-            url: 'https://bncbuilders.com',
+            url: 'https://bncbuildersinc.com',
             telephone: company.phone,
             address: {
               '@type': 'PostalAddress',

@@ -131,8 +131,8 @@ npm start
 - http://localhost:3000/lp/adu
 
 ### Test URLs (Production)
-- https://bncbuilders.com/lp/remodel
-- https://bncbuilders.com/lp/adu
+- https://bncbuildersinc.com/lp/remodel
+- https://bncbuildersinc.com/lp/adu
 
 ## 🎯 Conversion Enhancements
 

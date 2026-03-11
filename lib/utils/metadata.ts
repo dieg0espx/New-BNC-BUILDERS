@@ -3,7 +3,7 @@
 import { Metadata } from 'next';
 import { company } from '../constants/company';
 import { CLOUDINARY_BASE_URL } from '../constants/images';
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com';
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuildersinc.com';
 
 interface PageMetadataOptions {
   title: string;

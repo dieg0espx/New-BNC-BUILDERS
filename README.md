@@ -2,7 +2,7 @@
 
 The official website for **BNC Builders Inc.**, a licensed and insured home remodeling contractor based in Escondido, CA serving the greater San Diego and Los Angeles areas. Built with Next.js 16, React 19, and Tailwind CSS 4.
 
-**Live site:** [bncbuilders.com](https://bncbuilders.com)
+**Live site:** [bncbuildersinc.com](https://bncbuildersinc.com)
 
 ## About BNC Builders
 
@@ -141,7 +141,7 @@ Create a `.env.local` file:
 
 ```env
 # Site
-NEXT_PUBLIC_SITE_URL=https://bncbuilders.com
+NEXT_PUBLIC_SITE_URL=https://bncbuildersinc.com
 
 # Resend (email notifications)
 RESEND_API_KEY=re_xxxxxxxxxxxx

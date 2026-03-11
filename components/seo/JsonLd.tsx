@@ -2,7 +2,7 @@
 
 import { company } from '@/lib/constants/company';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuildersinc.com';
 
 // Organization Schema
 export function OrganizationJsonLd() {
@@ -17,7 +17,7 @@ export function OrganizationJsonLd() {
     image: `${SITE_URL}/og-image.jpg`,
     description: 'Professional home remodeling services in Escondido & San Diego County. Kitchen, bathroom, ADU construction & more.',
     telephone: company.phone,
-    email: 'info@bncbuilders.com',
+    email: 'info@bncbuildersinc.com',
     address: {
       '@type': 'PostalAddress',
       streetAddress: company.address.street,

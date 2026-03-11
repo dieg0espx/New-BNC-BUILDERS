@@ -4,7 +4,7 @@ import { MetadataRoute } from 'next';
 import { portfolioCategories, portfolioProjects } from '@/lib/constants/portfolio';
 import { blogPosts } from '@/lib/constants/blog';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuildersinc.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const currentDate = new Date().toISOString();

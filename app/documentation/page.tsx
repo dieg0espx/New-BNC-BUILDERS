@@ -351,7 +351,7 @@ Each service has its own page with:
 • Instant rollbacks
 
 **Domain:**
-• Primary: bncbuilders.com
+• Primary: bncbuildersinc.com
 • Managed through Vercel or registrar
 
 **To Deploy Changes:**
@@ -362,7 +362,7 @@ Each service has its own page with:
 ];
 
 const quickReference = [
-  { label: 'Main Domain', value: 'bncbuilders.com' },
+  { label: 'Main Domain', value: 'bncbuildersinc.com' },
   { label: 'Framework', value: 'Next.js 16' },
   { label: 'Hosting', value: 'Vercel' },
   { label: 'Images', value: 'Cloudinary' },
