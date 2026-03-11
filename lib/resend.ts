@@ -11,7 +11,7 @@ export type EmailOptions = {
 }
 
 export async function sendEmail(options: EmailOptions) {
-  const from = process.env.EMAIL_FROM || 'BNC Builders <noreply@bncbuilders.com>'
+  const from = process.env.EMAIL_FROM || 'BNC Builders <noreply@comcreate.org>'
 
   const { data, error } = await resend.emails.send({
     from,

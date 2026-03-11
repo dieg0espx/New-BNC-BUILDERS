@@ -145,7 +145,7 @@ NEXT_PUBLIC_SITE_URL=https://bncbuilders.com
 
 # Resend (email notifications)
 RESEND_API_KEY=re_xxxxxxxxxxxx
-EMAIL_FROM=BNC Builders <noreply@bncbuilders.com>
+EMAIL_FROM=BNC Builders <noreply@comcreate.org>
 
 # GoHighLevel CRM
 GHL_WEBHOOK_URL=
