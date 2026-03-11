@@ -32,7 +32,7 @@ export function HeroMain() {
   }, []);
 
   return (
-    <section className="relative min-h-[500px] h-[75vh] sm:h-[90vh] pt-20 sm:pt-0 flex items-center overflow-hidden">
+    <section className="relative min-h-[600px] min-h-[85dvh] sm:min-h-[90vh] pt-20 sm:pt-0 pb-12 sm:pb-0 flex items-center overflow-hidden">
       {/* Background Image with zoom animation */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 animate-[scaleIn_1.5s_ease-out]">
@@ -41,14 +41,14 @@ export function HeroMain() {
             alt="Home remodeling background"
             fill
             priority
-            className="object-cover"
+            className="object-cover object-center sm:object-right"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-zinc-900/90 via-zinc-900/70 to-zinc-900/40" />
       </div>
 
       {/* Content */}
-      <Container className="relative z-10">
+      <Container className="relative z-10 py-6 sm:py-0">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="text-white">
             <p className="text-gold-light font-semibold mb-2 text-sm sm:text-base animate-[fadeInUp_0.6s_ease-out_0.2s_both]">
