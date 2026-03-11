@@ -5,8 +5,8 @@ import { CompanyInfo, CoreValue, Accolade } from '../types';
 export const company: CompanyInfo = {
   name: 'BNC Builders Inc.',
   tagline: 'Transforming San Diego Homes With Expert Craftsmanship',
-  phone: '(760) 993-3204',
-  phoneLink: '+17609933204',
+  phone: '(760) 658-6238',
+  phoneLink: '+17606586238',
   address: {
     street: '101 State Pl Suite N',
     city: 'Escondido',

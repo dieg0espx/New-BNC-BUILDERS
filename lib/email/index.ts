@@ -258,7 +258,7 @@ export async function sendAutoReply(email: string, firstName: string): Promise<v
           </div>
 
           <p><strong>Contact us directly:</strong></p>
-          <p>Phone: <a href="tel:+17602497207">(760) 249-7207</a></p>
+          <p>Phone: <a href="tel:+17606586238">(760) 658-6238</a></p>
           <p>Email: <a href="mailto:contact@bncbuilders.net">contact@bncbuilders.net</a></p>
 
           <p style="margin-top: 30px;">In the meantime, feel free to browse our portfolio to see examples of our work:</p>
@@ -283,7 +283,7 @@ What happens next?
 A member of our team will review your inquiry and get back to you within 1-2 business days. If you need immediate assistance, please don't hesitate to call us.
 
 Contact us directly:
-Phone: (760) 249-7207
+Phone: (760) 658-6238
 Email: contact@bncbuilders.net
 
 In the meantime, feel free to browse our portfolio at https://www.bncbuildersinc.com/portfolio

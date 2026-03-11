@@ -89,7 +89,7 @@ export const LandingPageForm = forwardRef<HTMLDivElement, LandingPageFormProps>(
         }
       } catch (err) {
         console.error('Form submission error:', err);
-        setError('Failed to send request. Please call us at (760) 993-3204.');
+        setError('Failed to send request. Please call us at (760) 658-6238.');
       } finally {
         setIsSubmitting(false);
       }
@@ -320,7 +320,7 @@ export const LandingPageForm = forwardRef<HTMLDivElement, LandingPageFormProps>(
           </button>
 
           <p className="text-center text-zinc-600 text-sm">
-            Or call <a href="tel:+17609933204" className="text-gold font-semibold hover:underline">(760) 993-3204</a>
+            Or call <a href="tel:+17606586238" className="text-gold font-semibold hover:underline">(760) 658-6238</a>
           </p>
 
           <p className="text-center text-sm text-zinc-500">
