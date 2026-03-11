@@ -43,7 +43,7 @@ export default function AreasWeServePage() {
       {/* Hero */}
       <HeroSubpage
         title="Serving San Diego County Homeowners Since 2019"
-        subtitle="From our Escondido headquarters, BNC Builders brings expert craftsmanship to communities throughout the region. Kitchen remodel Escondido CA, bathroom remodeling San Diego, ADUs San Diego - wherever you call home, we are ready to help."
+        subtitle="From our Escondido headquarters, BNC Builders brings expert craftsmanship to communities throughout the region. Whatever your project, wherever you call home, we are ready to help."
         backgroundImage={bannerImages.areasWeServe}
       />
 
@@ -59,7 +59,7 @@ export default function AreasWeServePage() {
                 Your Neighbors in the Remodeling Business
               </h2>
               <p className="text-lg text-zinc-600 mb-6">
-                BNC Builders is not a faceless corporation - we are your neighbors. Our team lives and works in San Diego County, which means we understand local architectural styles, climate considerations, and what permits require. When you choose us for your kitchen remodel San Diego, bathroom remodeling Escondido, or ADUs Los Angeles project, you are working with people who genuinely care about our shared community.
+                BNC Builders is not a faceless corporation - we are your neighbors. Our team lives and works in San Diego County, which means we understand local architectural styles, climate considerations, and permit requirements. When you choose us, you are working with people who genuinely care about our shared community.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -123,7 +123,7 @@ export default function AreasWeServePage() {
               Communities We Proudly Serve
             </h2>
             <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
-              From coastal Carlsbad to inland Escondido, BNC Builders delivers the same exceptional kitchen remodeling services, bathroom remodeling San Diego expertise, and ADUs San Diego quality to every neighborhood we work in.
+              From coastal Carlsbad to inland Escondido, BNC Builders delivers the same level of craftsmanship and care to every neighborhood we work in.
             </p>
           </div>
 
@@ -148,7 +148,7 @@ export default function AreasWeServePage() {
           </div>
 
           <p className="text-center text-zinc-500 mt-8">
-            Don&apos;t see your city? <Link href="/contact-us" className="text-gold hover:underline font-medium">Reach out</Link> - we likely serve your area for remodeling Escondido and surrounding communities!
+            Don&apos;t see your city? <Link href="/contact-us" className="text-gold hover:underline font-medium">Reach out</Link> - we likely serve your area.
           </p>
         </Container>
       </Section>
@@ -161,7 +161,7 @@ export default function AreasWeServePage() {
               Full-Service Capabilities Everywhere We Work
             </h2>
             <p className="text-zinc-600">
-              Every community receives our complete range of kitchen remodel Escondido CA, bathroom remodeling Escondido, ADUs Los Angeles, deck repair San Diego, exterior remodeling, and landscape remodeling services.
+              Every community receives our full range of services - from kitchen and bathroom remodels to ADUs, deck repairs, and landscape transformations.
             </p>
           </div>
 
@@ -195,15 +195,15 @@ export default function AreasWeServePage() {
             {[
               {
                 title: 'Permit Expertise',
-                description: 'We know San Diego County codes, inspectors, and approval processes inside out. Your kitchen renovation San Diego project moves faster.',
+                description: 'We know San Diego County codes, inspectors, and approval processes inside out. Your project moves faster.',
               },
               {
                 title: 'Same-Day Response',
-                description: 'Being local means we can visit your property quickly, answer questions promptly, and start your deck repair project sooner.',
+                description: 'Being local means, we can visit your property quickly, answer questions promptly, and get started sooner.',
               },
               {
                 title: 'Reputation Matters',
-                description: 'Your neighbors are our neighbors. We stake our reputation for garage remodeling and outdoor kitchens on every project we complete.',
+                description: 'Your neighbors are our neighbors. We stake our reputation on every project we complete.',
               },
             ].map((item, index) => (
               <div key={index} className="p-6">
@@ -218,7 +218,7 @@ export default function AreasWeServePage() {
       {/* CTA */}
       <CTABanner
         title="Ready to Transform Your San Diego Home?"
-        subtitle="Whether you need kitchen remodel Poway, bathroom remodeling Escondido, ADUs San Diego, room addition San Diego, or complete exterior remodeling services, BNC Builders is ready to bring your vision to life."
+        subtitle="Whether you need a kitchen remodel, bathroom renovation, ADU, or exterior transformation, BNC Builders is ready to bring your vision to life."
         primaryAction={{ label: 'Start Your Project', href: '/contact-us' }}
       />
     </>

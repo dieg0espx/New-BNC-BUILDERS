@@ -52,13 +52,13 @@ export function HeroMain() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="text-white">
             <p className="text-gold-light font-semibold mb-2 text-sm sm:text-base animate-[fadeInUp_0.6s_ease-out_0.2s_both]">
-              Escondido&apos;s Most Trusted Kitchen Remodel & Bathroom Remodeling Team
+              Escondido&apos;s Most Trusted Home Remodeling Team
             </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 sm:mb-6 leading-tight text-white animate-[fadeInUp_0.6s_ease-out_0.4s_both]">
               Build Your Dream Home Without The Stress
             </h1>
             <p className="text-lg sm:text-xl text-zinc-300 mb-6 sm:mb-8 max-w-lg animate-[fadeInUp_0.6s_ease-out_0.6s_both]">
-              BNC Builders transforms San Diego homes with stunning kitchen remodel Escondido CA projects, bathroom remodeling San Diego makeovers, custom ADUs, and complete exterior remodeling. We handle every detail so you can relax.
+              BNC Builders is a full-service design-build contractor in San Diego County. From 3D design previews to permits to the final walk-through, we manage every detail of your kitchen, bathroom, ADU, or exterior renovation - so you get standout results without the stress.
             </p>
 
             {/* Stats */}
@@ -109,7 +109,7 @@ export function HeroMain() {
               </div>
               <CloudinaryImage
                 publicId={heroImages.mainStageImg}
-                alt="Beautiful kitchen remodel Escondido CA project showcasing BNC Builders craftsmanship"
+                alt="Beautiful BNC Builders home remodeling project showcasing expert craftsmanship"
                 width={480}
                 height={350}
                 className="rounded-lg shadow-2xl hover:shadow-gold/20 transition-shadow duration-500"

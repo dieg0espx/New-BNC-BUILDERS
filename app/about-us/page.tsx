@@ -34,7 +34,7 @@ export default function AboutUsPage() {
       {/* Hero */}
       <HeroSubpage
         title="Meet the Team Behind Your Dream Home"
-        subtitle="BNC Builders has spent decades perfecting the art of kitchen remodel Escondido CA projects, bathroom remodeling San Diego transformations, ADUs San Diego construction, and complete remodeling Escondido homeowners love."
+        subtitle="BNC Builders has spent decades transforming homes across Escondido, San Diego, and the surrounding areas - from kitchens and bathrooms to complete ADU builds and exterior renovations."
         backgroundImage={bannerImages.faq}
       />
 
@@ -72,13 +72,13 @@ export default function AboutUsPage() {
               </h2>
               <div className="space-y-4 text-zinc-600 leading-relaxed">
                 <p>
-                  BNC Builders started with a simple belief: every homeowner deserves a contractor who treats their project like it&apos;s their own home. Since 2019, we&apos;ve built our reputation on that principle, completing kitchen remodel San Diego projects, bathroom remodeling Escondido renovations, and ADUs Los Angeles builds that consistently exceed expectations.
+                  BNC Builders started with a simple belief: every homeowner deserves a contractor who treats their project like it&apos;s their own home. Since 2019, we&apos;ve built our reputation on quality and care, consistently exceeding expectations across San Diego County and Los Angeles.
                 </p>
                 <p>
-                  Our team brings over three decades of combined construction experience to every kitchen remodel Escondido project, every deck repair San Diego job, and every room addition San Diego expansion. We&apos;ve learned that successful Escondido remodeling isn&apos;t just about skilled hands - it&apos;s about listening to what homeowners actually need.
+                  Our team brings over three decades of combined construction experience to every project. We&apos;ve learned that great remodeling isn&apos;t just about craftsmanship - it&apos;s about listening to what homeowners need and delivering it with care.
                 </p>
                 <p className="font-medium text-dark">
-                  Today, BNC Builders is the go-to choice for kitchen remodeling services, bathroom remodeling San Diego, exterior remodeling, landscape remodeling, outdoor kitchens, garage remodeling, and everything in between. We&apos;re not just contractors - we&apos;re neighbors building better homes for our community.
+                  Today, homeowners choose BNC Builders for everything from kitchen and bathroom remodeling to outdoor living spaces and garage conversions. We&apos;re not just contractors - we&apos;re your neighbors, building better homes across our community.
                 </p>
               </div>
               <div className="flex flex-wrap gap-4 mt-8">
@@ -94,6 +94,10 @@ export default function AboutUsPage() {
                   <CheckCircle className="w-5 h-5 text-gold" />
                   <span>Bilingual Team</span>
                 </div>
+                <div className="flex items-center gap-2 text-sm text-zinc-600 hover:text-gold transition-colors">
+                  <CheckCircle className="w-5 h-5 text-gold" />
+                  <span>Est. 2019</span>
+                </div>
               </div>
             </AnimatedSection>
             <AnimatedSection animation="fade-in-right" delay={200}>
@@ -101,7 +105,7 @@ export default function AboutUsPage() {
                 <div className="relative rounded-lg overflow-hidden shadow-2xl hover-lift image-reveal">
                   <CloudinaryImage
                     publicId={contentImages.contentre1}
-                    alt="BNC Builders craftsmanship on display in a kitchen remodel Escondido CA project"
+                    alt="BNC Builders team craftsmanship on display during a home remodeling project"
                     width={600}
                     height={450}
                     className="w-full h-auto"
@@ -130,7 +134,7 @@ export default function AboutUsPage() {
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
               <p className="text-2xl md:text-3xl text-dark leading-relaxed font-light">
-                We believe that a San Diego kitchen renovation, an Escondido bathroom remodel, or an ADU build should feel exciting - not overwhelming. Our mission is to deliver craftsmanship that makes a lasting difference while making the entire experience enjoyable.
+                We believe your remodel should feel exciting, not overwhelming. Our mission is to deliver craftsmanship that makes a lasting difference while making the entire experience enjoyable.
               </p>
             </div>
           </AnimatedSection>
@@ -158,7 +162,7 @@ export default function AboutUsPage() {
                   Uncompromising Quality
                 </h3>
                 <p className="text-zinc-600 group-hover:text-white/90 transition-colors">
-                  Whether it&apos;s a kitchen remodel Poway project, bathroom remodeling Escondido makeover, or deck repair contractor work, we use only premium materials and time-tested techniques. Cutting corners isn&apos;t in our vocabulary.
+                  We use only premium materials and time-tested techniques on every project. Cutting corners isn&apos;t in our vocabulary.
                 </p>
               </div>
             </AnimatedSection>
@@ -172,7 +176,7 @@ export default function AboutUsPage() {
                   Genuine Care
                 </h3>
                 <p className="text-zinc-600 group-hover:text-white/90 transition-colors">
-                  Your kitchen remodeling Escondido CA dream matters to us. Your 3D landscape design vision matters. Every room addition San Diego, exterior remodelers project, and outdoor kitchens installation gets our full attention because your satisfaction is our reputation.
+                  Your vision matters to us. Every project gets our full attention because your satisfaction is our reputation.
                 </p>
               </div>
             </AnimatedSection>
@@ -186,7 +190,7 @@ export default function AboutUsPage() {
                   Stress-Free Process
                 </h3>
                 <p className="text-zinc-600 group-hover:text-white/90 transition-colors">
-                  From ADUs Los Angeles permits to deck repair San Diego scheduling, we handle the headaches. Our kitchen remodel San Diego clients and Escondido kitchen remodeling customers simply enjoy watching their vision come to life.
+                  From permits to scheduling, we handle the headaches so you can relax and enjoy watching your vision come to life.
                 </p>
               </div>
             </AnimatedSection>
@@ -225,20 +229,20 @@ export default function AboutUsPage() {
               </h2>
               <div className="space-y-4 text-zinc-600">
                 <p>
-                  Hundreds of San Diego families have trusted BNC Builders for their kitchen remodel Escondido CA projects, bathroom remodeling San Diego renovations, garage remodeling conversions, and landscape remodeling transformations. Here&apos;s why they keep recommending us:
+                  Hundreds of families across San Diego County trust BNC Builders for their home renovations. Here&apos;s why they keep recommending us:
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3 hover:translate-x-1 transition-transform">
                     <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
-                    <span>Crystal-clear pricing with no hidden fees on any kitchen remodeling services or remodeling Escondido project</span>
+                    <span>Crystal-clear pricing with no hidden fees on any project</span>
                   </li>
                   <li className="flex items-start gap-3 hover:translate-x-1 transition-transform">
                     <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
-                    <span>Daily updates throughout your ADUs San Diego build or deck repair project</span>
+                    <span>Daily updates throughout your build so you always know what&apos;s happening</span>
                   </li>
                   <li className="flex items-start gap-3 hover:translate-x-1 transition-transform">
                     <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
-                    <span>Premium outdoor decking material and fixtures backed by solid warranties</span>
+                    <span>Premium materials and fixtures backed by solid warranties</span>
                   </li>
                   <li className="flex items-start gap-3 hover:translate-x-1 transition-transform">
                     <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
@@ -254,7 +258,7 @@ export default function AboutUsPage() {
       {/* CTA */}
       <CTABanner
         title="Let&apos;s Build Something Amazing Together"
-        subtitle="Ready to start your kitchen remodel Escondido CA, bathroom remodeling San Diego project, ADUs San Diego build, or exterior remodeling transformation? BNC Builders is here to make it happen."
+        subtitle="Ready to start your remodeling project? BNC Builders is here to make it happen."
       />
     </>
   );

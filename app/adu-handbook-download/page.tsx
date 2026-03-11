@@ -9,8 +9,8 @@ import { generatePageMetadata } from '@/lib/utils/metadata';
 import { ADUHandbookForm } from './ADUHandbookForm';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Free ADU Planning Guide | ADUs San Diego & ADUs Los Angeles | BNC Builders',
-  description: 'Download our comprehensive guide to building ADUs San Diego and ADUs Los Angeles. Learn about permits, costs, design options, and ROI potential from BNC Builders - the same team trusted for kitchen remodel Escondido CA and bathroom remodeling San Diego.',
+  title: 'ADU Handbook Download | BNC Builders',
+  description: 'Your complete guide to building an ADU in San Diego or Los Angeles. Download the free handbook from BNC Builders.',
 });
 
 export default function ADUHandbookDownloadPage() {
@@ -18,8 +18,8 @@ export default function ADUHandbookDownloadPage() {
     <>
       {/* Hero */}
       <HeroSubpage
-        title="Your Complete Guide to Building ADUs San Diego and ADUs Los Angeles"
-        subtitle="Planning an accessory dwelling unit? This free handbook covers everything from regulations to ROI - created by the same BNC Builders team trusted for kitchen remodel Escondido CA, bathroom remodeling San Diego, and remodeling Escondido projects throughout San Diego County."
+        title="Your Complete Guide to Building an ADU in San Diego or Los Angeles"
+        subtitle="Planning an accessory dwelling unit? This free handbook covers everything from regulations to ROI - created by the BNC Builders team, trusted across San Diego County for quality construction."
         backgroundImage={bannerImages.adu}
       />
 
@@ -32,7 +32,7 @@ export default function ADUHandbookDownloadPage() {
                 Everything You Need to Know Before Building an ADU
               </h2>
               <p className="text-lg text-zinc-600 mb-6">
-                ADUs San Diego and ADUs Los Angeles represent significant investments with significant returns - when done right. This handbook distills our experience building dozens of accessory dwelling units into a practical guide that answers the questions homeowners actually ask. Whether you are considering rental income, housing for family, or simply adding value to your property, this resource from BNC Builders sets you up for success.
+                ADUs represent significant investments with significant returns - when done right. This handbook distills our experience building dozens of accessory dwelling units into a practical guide that answers the questions homeowners actually ask. Whether you are considering rental income, housing for family, or simply adding value to your property, this resource sets you up for success.
               </p>
 
               <h3 className="text-xl font-bold text-zinc-900 mb-4">What You Will Learn:</h3>
@@ -59,7 +59,7 @@ export default function ADUHandbookDownloadPage() {
                   <svg className="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-zinc-700">Realistic cost breakdowns and financing options for ADUs San Diego</span>
+                  <span className="text-zinc-700">Realistic cost breakdowns and financing options</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -73,7 +73,7 @@ export default function ADUHandbookDownloadPage() {
             <div className="text-center">
               <CloudinaryImage
                 publicId={specialImages.aduHandbookCover}
-                alt="BNC Builders ADU Handbook - Your Complete Guide to ADUs San Diego and ADUs Los Angeles"
+                alt="BNC Builders ADU Handbook cover"
                 width={400}
                 height={500}
                 className="rounded-lg shadow-xl mx-auto mb-6"

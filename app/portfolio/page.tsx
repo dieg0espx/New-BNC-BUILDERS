@@ -22,8 +22,8 @@ export default function PortfolioPage() {
     <>
       {/* Hero */}
       <HeroSubpage
-        title="Kitchen Remodel Escondido CA, Kitchen Remodel San Diego & Bathroom Remodeling San Diego Portfolio"
-        subtitle="Explore our collection of kitchen remodeling services, kitchen remodel Poway, kitchen renovation San Diego, Escondido kitchen remodeling, bathroom remodeling Escondido, bathroom remodel Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, deck repair, room addition San Diego, exterior remodeling, exterior remodelers, garage remodeling, landscape remodeling, outdoor kitchens, 3D landscape design near me, and remodeling Escondido transformations by BNC Builders"
+        title="Our Portfolio"
+        subtitle="Explore our collection of kitchen remodels, bathroom renovations, ADUs, exterior remodeling, and landscape transformations by BNC Builders."
         backgroundImage={bannerImages.faq}
       />
 
@@ -57,8 +57,8 @@ export default function PortfolioPage() {
 
       {/* CTA */}
       <CTABanner
-        title="Ready for Kitchen Remodel San Diego, Kitchen Remodel Escondido CA, or Bathroom Remodeling Escondido?"
-        subtitle="Contact BNC Builders for kitchen remodeling services, kitchen remodel Poway, kitchen renovation San Diego, Escondido kitchen remodeling, bathroom remodeling San Diego, bathroom remodel Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, deck repair, exterior remodeling, exterior remodelers, garage remodeling, landscape remodeling, outdoor kitchens, outdoor decking material, 3D landscape design near me, and remodeling Escondido."
+        title="Ready to Start Your Project?"
+        subtitle="Contact BNC Builders for your next remodeling project - kitchen, bathroom, ADU, outdoor, or anything in between."
         primaryAction={{ label: 'Get Free Quote', href: '/contact-us' }}
       />
     </>
@@ -77,10 +77,10 @@ function CategoriesSection() {
             Browse By Category
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-dark mt-2 mb-4">
-            Kitchen Remodel San Diego & Remodeling Escondido Project Categories
+            Browse By Category
           </h2>
           <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
-            Explore our kitchen remodeling Escondido CA, bathroom remodeling San Diego, ADUs Los Angeles, deck repair San Diego, and exterior remodelers work by category.
+            Browse our work by category below.
           </p>
         </AnimatedSection>
 
@@ -149,7 +149,7 @@ function FeaturedProjectsSection({ featuredProjects }: { featuredProjects: Proje
             Recent Work
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-dark mt-2 mb-4">
-            Latest Kitchen Remodel Escondido & Bathroom Remodeling Projects
+            Recent Work
           </h2>
         </AnimatedSection>
 

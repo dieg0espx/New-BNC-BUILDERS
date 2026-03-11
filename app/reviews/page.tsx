@@ -8,90 +8,89 @@ import { bannerImages } from '@/lib/constants/images';
 import { company } from '@/lib/constants/company';
 import { useInView } from '@/lib/hooks/useInView';
 
-// Reviews featuring SEO keywords
 const reviews = [
   {
     name: 'David & Maria T.',
     location: 'Escondido, CA',
     rating: 5,
-    text: 'We were nervous about our first major renovation, but BNC Builders made our kitchen remodel Escondido CA project feel effortless. They kept us informed daily and the final result looks like something from a magazine.',
+    text: 'We were nervous about our first major renovation, but BNC Builders made the whole process feel effortless. They kept us informed daily and the final result looks like something from a magazine.',
     project: 'Kitchen Remodel',
   },
   {
     name: 'Robert H.',
     location: 'Carlsbad, CA',
     rating: 5,
-    text: 'After interviewing five contractors for bathroom remodeling San Diego, BNC stood out for their communication style. They actually listened to what we wanted and delivered exactly that - no surprises, no excuses.',
+    text: 'After interviewing five contractors, BNC stood out for their communication style. They actually listened to what we wanted and delivered exactly that - no surprises, no excuses.',
     project: 'Bathroom Renovation',
   },
   {
     name: 'Patricia W.',
     location: 'Poway, CA',
     rating: 5,
-    text: 'Our ADUs San Diego project turned our unused backyard space into a beautiful rental unit. The permit process seemed daunting, but BNC handled everything. Now we have monthly income covering our mortgage.',
+    text: 'BNC turned our unused backyard space into a beautiful rental unit. The permit process seemed daunting, but they handled everything. Now we have monthly income covering our mortgage.',
     project: 'ADU Construction',
   },
   {
     name: 'James & Linda K.',
     location: 'Encinitas, CA',
     rating: 5,
-    text: 'The outdoor kitchens they built transformed how our family lives. We spend every weekend out there now. The quality of materials and craftsmanship from these exterior remodelers exceeded expectations.',
+    text: 'The outdoor kitchen they built transformed how our family lives. We spend every weekend out there now. The quality of materials and craftsmanship exceeded our expectations.',
     project: 'Outdoor Kitchen',
   },
   {
     name: 'Michael S.',
     location: 'La Mesa, CA',
     rating: 5,
-    text: 'Complete remodeling Escondido project - kitchen, two bathrooms, and new flooring throughout. BNC coordinated everything seamlessly. Their project manager became like a trusted family friend.',
+    text: 'Kitchen, two bathrooms, and new flooring throughout - BNC coordinated everything seamlessly. Their project manager became like a trusted family friend.',
     project: 'Whole Home Remodel',
   },
   {
     name: 'Angela R.',
     location: 'Oceanside, CA',
     rating: 5,
-    text: 'Our room addition San Diego gave our growing family the space we desperately needed without having to leave the neighborhood we love. The addition looks like it was always part of our home.',
+    text: 'Our room addition gave our growing family the space we desperately needed without having to leave the neighborhood we love. The addition looks like it was always part of our home.',
     project: 'Room Addition',
   },
   {
     name: 'Thomas & Susan B.',
     location: 'San Marcos, CA',
     rating: 5,
-    text: 'Years of neglect left our deck dangerous. The deck repair San Diego team diagnosed structural issues we had no idea existed. They rebuilt it with quality outdoor decking material that will last decades.',
+    text: 'Years of neglect left our deck dangerous. The BNC team diagnosed structural issues we had no idea existed and rebuilt it with quality materials that will last decades.',
     project: 'Deck Restoration',
   },
   {
     name: 'Jennifer M.',
     location: 'Vista, CA',
     rating: 5,
-    text: 'We chose BNC for our kitchen remodel Poway project based on neighbor recommendations. Now I understand why - the attention to detail is remarkable. Every cabinet aligns perfectly.',
+    text: 'We chose BNC based on neighbor recommendations. Now I understand why - the attention to detail is remarkable. Every cabinet aligns perfectly.',
     project: 'Kitchen Remodel',
   },
   {
     name: 'Richard & Carol P.',
     location: 'Escondido, CA',
     rating: 5,
-    text: 'Our master bathroom remodeling Escondido project transformed a cramped space into a spa-like retreat. The heated floors and walk-in shower make every morning feel luxurious.',
+    text: 'Our master bathroom remodel transformed a cramped space into a spa-like retreat. The heated floors and walk-in shower make every morning feel luxurious.',
     project: 'Master Bath Remodel',
   },
   {
     name: 'Margaret L.',
     location: 'Rancho Santa Fe, CA',
     rating: 5,
-    text: 'The 3D landscape design near me service showed us exactly what our backyard would become. The landscape remodeling exceeded those renderings - our exterior remodelers created paradise.',
+    text: 'The 3D design service showed us exactly what our backyard would become. The finished landscape exceeded those renderings - BNC truly created paradise.',
     project: 'Landscape Transformation',
   },
   {
     name: 'William & Nancy D.',
     location: 'Poway, CA',
     rating: 5,
-    text: 'Our garage remodeling converted unused space into a beautiful home office. Working from home no longer means working from the kitchen table. The remodeling Escondido team was professional throughout.',
+    text: 'Our garage conversion created a beautiful home office. Working from home no longer means working from the kitchen table. The team was professional throughout.',
     project: 'Garage Conversion',
   },
   {
     name: 'Elizabeth C.',
     location: 'La Jolla, CA',
     rating: 5,
-    text: 'After disappointing experiences with other contractors, BNC restored my faith. Our kitchen remodel San Diego came in on budget and finished ahead of schedule. That rarely happens in construction.',
+    text: 'After disappointing experiences with other contractors, BNC restored my faith. Our kitchen remodel came in on budget and finished ahead of schedule. That rarely happens in construction.',
     project: 'Kitchen Renovation',
   },
 ];
@@ -102,7 +101,7 @@ export default function ReviewsPage() {
       {/* Hero */}
       <HeroSubpage
         title="What Our Clients Say About BNC Builders"
-        subtitle="Real stories from homeowners who trusted us with their kitchen remodel Escondido CA, bathroom remodeling San Diego, ADUs San Diego, and remodeling Escondido projects. Their experiences speak louder than our promises."
+        subtitle="Real stories from homeowners who trusted us with their remodeling projects. Their experiences speak louder than our promises."
         backgroundImage={bannerImages.reviews}
       />
 
@@ -115,7 +114,7 @@ export default function ReviewsPage() {
       {/* CTA */}
       <CTABanner
         title="Ready to Become Our Next Success Story?"
-        subtitle="Join hundreds of satisfied homeowners who trusted BNC Builders for kitchen remodeling services, bathroom remodeling Escondido, ADUs Los Angeles, deck repair San Diego, and complete exterior remodeling transformations."
+        subtitle="Join hundreds of satisfied homeowners who trusted BNC Builders to transform their homes."
       />
     </>
   );

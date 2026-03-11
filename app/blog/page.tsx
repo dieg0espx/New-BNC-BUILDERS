@@ -90,6 +90,9 @@ export default function BlogPage() {
       {/* Categories */}
       <Section background="gray" padding="sm">
         <Container>
+          <div className="text-center text-sm text-zinc-600 mb-4">
+            Filter Categories: All Posts | Kitchen | Bathroom | Home Remodeling | Exterior Remodeling | ADUs
+          </div>
           <div className="flex flex-wrap gap-2 justify-center">
             <span className="px-4 py-2 rounded-full text-sm font-medium bg-gold text-white">
               All Posts

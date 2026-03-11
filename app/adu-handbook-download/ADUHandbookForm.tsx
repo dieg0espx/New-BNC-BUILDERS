@@ -200,7 +200,7 @@ export function ADUHandbookForm() {
           )}
         </Button>
         <p className="text-xs text-zinc-500 text-center">
-          By downloading, you agree to receive occasional updates from BNC Builders about ADUs San Diego, kitchen remodel Escondido CA, bathroom remodeling San Diego, and other remodeling Escondido news.
+          By downloading, you agree to receive occasional updates from BNC Builders about ADUs and home remodeling.
         </p>
       </form>
     </div>

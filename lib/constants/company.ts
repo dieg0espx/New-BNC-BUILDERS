@@ -33,27 +33,27 @@ export const coreValues: CoreValue[] = [
 export const keySellingPoints = [
   {
     title: 'Licensed & Insured',
-    description: 'Fully licensed and insured contractor trusted for kitchen remodel Escondido CA, bathroom remodeling San Diego, and projects throughout the region',
+    description: 'Fully licensed and insured, BNC Builders is the trusted local contractor for high-quality home renovations across Escondido, Poway, and San Diego.',
   },
   {
     title: 'Financing Available',
-    description: 'Flexible financing options make your ADUs San Diego, ADUs Los Angeles, room addition San Diego, or garage remodeling project affordable',
+    description: 'Flexible financing helps make your ADU, room addition, or remodel more affordable - so you can start sooner and stay on budget.',
   },
   {
     title: 'Hablamos Español',
-    description: 'Bilingual team ready to discuss your kitchen remodeling services, deck repair San Diego, or remodeling Escondido needs',
+    description: 'Bilingual support makes it easy to discuss your remodeling project in detail, so you get clear answers and move forward with confidence.',
   },
   {
     title: 'Free Estimates',
-    description: 'Free detailed estimates for kitchen remodel San Diego, exterior remodeling, outdoor kitchens, and landscape remodeling projects',
+    description: 'Get a free, detailed estimate for your remodeling project so you know the full cost before work begins.',
   },
   {
     title: 'BBB Accredited',
-    description: 'BBB accredited business known for exceptional bathroom remodeling Escondido, bathroom remodel Escondido, and kitchen renovation San Diego results',
+    description: 'BBB-accredited and known for exceptional craftsmanship, BNC Builders delivers standout results you can count on.',
   },
   {
     title: 'Top-Rated Craftsmanship',
-    description: 'Top-rated craftsmanship for kitchen remodel Poway, Escondido kitchen remodeling, deck repair contractor work, and 3D landscape design near me consultations',
+    description: 'Top-rated craftsmanship for kitchens, bathrooms, decks, and outdoor spaces across Escondido, Poway, and San Diego - built to look great and last.',
   },
 ];
 

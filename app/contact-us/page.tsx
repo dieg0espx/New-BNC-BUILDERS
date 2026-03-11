@@ -84,8 +84,8 @@ export default function ContactUsPage() {
     <>
       {/* Hero */}
       <HeroSubpage
-        title="Contact BNC Builders - Kitchen Remodel Escondido CA & Bathroom Remodeling San Diego"
-        subtitle="Contact us today for a free consultation and estimate on kitchen remodeling services, kitchen remodel San Diego, kitchen remodel Poway, kitchen renovation San Diego, bathroom remodeling Escondido, bathroom remodeling San Diego, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, room addition San Diego, exterior remodeling, and remodeling Escondido. Our team is ready to bring your vision to life."
+        title="Contact BNC Builders"
+        subtitle="Contact us today for a free consultation and estimate. Whatever your project, our team is ready to bring your vision to life."
         backgroundImage={bannerImages.faq}
       />
 

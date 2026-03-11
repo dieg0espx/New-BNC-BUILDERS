@@ -17,17 +17,17 @@ const processSteps = [
   {
     number: 1,
     title: 'Schedule Your Free Consultation',
-    description: 'Connect with our team to discuss your kitchen remodel Escondido CA, bathroom remodeling San Diego, ADUs San Diego, or any remodeling Escondido project. We visit your home, take measurements, and listen to your vision for the perfect transformation.',
+    description: 'Connect with our team to discuss your remodeling project. We visit your home, take measurements, and listen to your vision for the perfect transformation.',
   },
   {
     number: 2,
     title: 'Custom Design & Detailed Planning',
-    description: 'Our designers craft a personalized plan using 3D landscape design near me technology for exterior projects. See your kitchen remodel San Diego, bathroom remodeling Escondido, or landscape remodeling vision come to life before construction begins.',
+    description: 'Our designers craft a personalized plan - including 3D previews for exterior projects - so you can see your vision come to life before construction begins.',
   },
   {
     number: 3,
     title: 'Expert Construction & Final Walkthrough',
-    description: 'Watch your dream become reality as our master craftsmen execute your kitchen remodeling services, exterior remodeling, deck repair San Diego, or garage remodeling project with precision. We use premium outdoor decking material and finish on time.',
+    description: 'Watch your dream become reality as our craftsmen complete your project with precision, premium materials, and on-time delivery.',
   },
 ];
 
@@ -36,19 +36,19 @@ const testimonials = [
     name: 'David & Maria T.',
     location: 'Escondido, CA',
     rating: 5,
-    text: 'After searching for the best kitchen remodel Escondido CA contractor, we chose BNC Builders and never looked back. Their Escondido kitchen remodeling team transformed our dated 1990s kitchen into a stunning modern space. The kitchen remodeling services exceeded every expectation.',
+    text: 'We chose BNC Builders for our kitchen remodel and never looked back. They transformed our dated 1990s kitchen into a stunning modern space that exceeded every expectation.',
   },
   {
     name: 'Robert H.',
     location: 'San Diego, CA',
     rating: 5,
-    text: 'BNC Builders handled our ADUs San Diego project from permit to completion. They also mentioned they do ADUs Los Angeles for clients there. The attention to detail, communication, and craftsmanship made this complex project feel effortless.',
+    text: 'BNC Builders handled our ADU project in San Diego from permit to completion. The attention to detail, communication, and craftsmanship made this complex project feel effortless.',
   },
   {
     name: 'Patricia W.',
     location: 'Poway, CA',
     rating: 5,
-    text: 'We needed both bathroom remodeling San Diego and bathroom remodeling Escondido at our two properties. BNC Builders delivered exceptional bathroom remodel Escondido results at both locations. Their deck repair contractor team also fixed our aging deck.',
+    text: 'We needed bathroom remodeling at two properties, and BNC delivered exceptional results at both locations. Their team also repaired our aging deck beautifully.',
   },
 ];
 
@@ -56,28 +56,28 @@ const coreValues = [
   {
     icon: Shield,
     title: 'Complete Transparency',
-    description: 'Every remodeling Escondido and Escondido remodeling project comes with detailed quotes, clear timelines, and honest communication from start to finish.',
+    description: 'Every remodeling project comes with detailed quotes, clear timelines, and honest communication from start to finish.',
     highlight: 'Trust',
     points: ['Itemized estimates', 'Weekly progress updates', 'No surprise charges'],
   },
   {
     icon: Award,
     title: 'Master Craftsmanship',
-    description: 'Three decades of expertise powers every kitchen remodel San Diego, kitchen remodel Poway, bathroom remodeling San Diego, and exterior remodeling project we undertake.',
+    description: 'Three decades of expertise powers every project we undertake, from interior renovations to full exterior transformations.',
     highlight: '30+ Years',
     points: ['Licensed professionals', 'Premium materials only', 'Built to last'],
   },
   {
     icon: Users,
     title: 'Your Vision First',
-    description: 'From kitchen remodeling Escondido CA consultations to kitchen renovation San Diego completion, your dream home guides every decision we make.',
+    description: 'From initial consultation to final walkthrough, your dream home guides every decision we make.',
     highlight: 'Priority',
     points: ['Dedicated project manager', 'Design collaboration', 'Flexible solutions'],
   },
   {
     icon: Clock,
     title: 'Guaranteed Timelines',
-    description: 'Whether deck repair San Diego, deck repair contractor work, room addition San Diego, or garage remodeling - we deliver on schedule, every time.',
+    description: 'Whether it\'s a deck repair, room addition, or garage conversion, we deliver on schedule, every time.',
     highlight: 'Reliable',
     points: ['Realistic scheduling', 'Milestone tracking', 'On-time completion'],
   },
@@ -94,14 +94,14 @@ export default function HomePage() {
 
       {/* About/Intro Section */}
       <ContentSection
-        title="San Diego County's Premier Remodeling Escondido Contractor"
+        title="San Diego County's Premier Design-Build Contractor"
         content={[
-          'BNC Builders Inc. stands as the most trusted name in remodeling Escondido and Escondido remodeling. Since 2019, we have transformed over 900 homes across San Diego County, bringing 30+ years of combined construction expertise to every project we touch.',
-          'Homeowners choose us for kitchen remodel Escondido CA, kitchen remodel Escondido, kitchen remodel San Diego, and kitchen remodel Poway because we deliver magazine-worthy results. Our bathroom remodeling San Diego, bathroom remodeling Escondido, and bathroom remodel Escondido services create spa-like retreats. For outdoor living, trust our ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, and deck repair specialists.',
-          'What sets BNC Builders apart? We treat your home like our own. Every Escondido kitchen remodeling project, every kitchen remodeling Escondido CA transformation, every landscape remodeling design, every outdoor kitchen installation - we approach with meticulous care. Our exterior remodeling, exterior remodelers, garage remodeling, room addition San Diego, kitchen renovation San Diego, and kitchen remodeling services come with clear communication and quality outdoor decking material. Experience 3D landscape design near me technology to visualize your project before we begin.',
+          'Since 2019, BNC Builders has transformed over 900 homes across San Diego County, bringing 30+ years of combined construction expertise to every project. Our design-build approach means one team handles your project from concept to completion - no miscommunication between architects, designers, and builders.',
+          'We\'ve helped homeowners across Escondido, Poway, and the greater San Diego area transform kitchens, bathrooms, and outdoor spaces. Whether it\'s a spa-like bathroom retreat, a custom ADU, or expert deck repair, our team delivers magazine-worthy results.',
+          'What sets us apart? Every project starts with a detailed design phase - including 3D previews for exterior and landscape work - so you see exactly what you\'re getting before construction begins. Paired with a dedicated project manager, clear communication, and premium materials, your renovation stays on track and on budget.',
         ]}
         image={contentImages.contentImg}
-        imageAlt="BNC Builders expert team completing kitchen remodel Escondido CA and bathroom remodeling San Diego renovation"
+        imageAlt="BNC Builders expert team completing a home renovation project in San Diego County"
         imagePosition="right"
       />
 
@@ -111,7 +111,7 @@ export default function HomePage() {
       {/* Interior Services */}
       <ServiceGrid
         title="Complete Interior Remodeling Solutions"
-        subtitle="From kitchen remodel San Diego transformations to bathroom remodeling Escondido makeovers, kitchen remodel Escondido CA renovations to kitchen remodeling services upgrades, bathroom remodeling San Diego retreats to bathroom remodel Escondido projects, garage remodeling conversions to room addition San Diego expansions - BNC Builders creates stunning interiors throughout San Diego County."
+        subtitle="BNC Builders delivers stunning interior renovations across San Diego County. Whether you're planning a kitchen overhaul, bathroom refresh, garage conversion, or room addition, we bring expert craftsmanship to every space."
         services={interiorServices}
         columns={3}
       />
@@ -119,7 +119,7 @@ export default function HomePage() {
       {/* Process Steps */}
       <ProcessSteps
         title="Your Remodeling Journey in Three Simple Steps"
-        subtitle="BNC Builders streamlines every kitchen remodeling services project, kitchen remodel Escondido CA renovation, bathroom remodeling San Diego transformation, bathroom remodeling Escondido makeover, ADUs Los Angeles build, ADUs San Diego construction, and remodeling Escondido project into an enjoyable experience."
+        subtitle="BNC Builders streamlines your project from start to finish so the experience feels easy and enjoyable."
         steps={processSteps}
         background="gray"
       />
@@ -127,7 +127,7 @@ export default function HomePage() {
       {/* Exterior Services */}
       <ServiceGrid
         title="Professional Exterior Remodeling & Outdoor Living"
-        subtitle="Elevate your outdoor spaces with expert landscape remodeling, custom outdoor kitchens, professional deck repair San Diego, reliable deck repair contractor services, comprehensive deck repair solutions, ADUs San Diego construction, ADUs Los Angeles builds, stunning hardscaping, complete exterior remodeling, trusted exterior remodelers, quality outdoor decking material installations, and innovative 3D landscape design near me visualization from BNC Builders."
+        subtitle="Elevate your outdoor space with BNC Builders. We handle landscape remodeling, custom outdoor kitchens, deck repair, hardscaping, exterior renovations, and ADU construction - and our 3D landscape design lets you visualize everything before we break ground."
         services={exteriorServices}
         columns={3}
       />
@@ -140,10 +140,10 @@ export default function HomePage() {
               Featured Transformations
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-dark mt-2 mb-4">
-              Kitchen Remodel Escondido CA & Bathroom Remodeling San Diego Showcase
+              Kitchen, Bathroom, ADU & Exterior Project Showcase
             </h2>
             <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
-              Explore our portfolio featuring kitchen remodeling Escondido CA masterpieces, kitchen remodel San Diego transformations, kitchen renovation San Diego projects, bathroom remodeling San Diego retreats, bathroom remodeling Escondido makeovers, ADUs San Diego builds, ADUs Los Angeles constructions, deck repair San Diego restorations, and exterior remodelers excellence.
+              Explore our portfolio featuring projects across San Diego, Escondido, San Marcos, Encinitas, and Rancho Santa Fe.
             </p>
           </AnimatedSection>
 
@@ -210,8 +210,8 @@ export default function HomePage() {
 
       {/* CTA */}
       <CTABanner
-        title="Start Your Kitchen Remodel Escondido CA, Bathroom Remodeling San Diego, or ADUs San Diego Project Today"
-        subtitle="Request your free estimate from BNC Builders for kitchen remodeling services, kitchen remodel San Diego, kitchen renovation San Diego, bathroom remodeling Escondido, bathroom remodel Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, room addition San Diego, exterior remodelers, landscape remodeling, outdoor kitchens, garage remodeling, exterior remodeling, and remodeling Escondido. Financing available with comprehensive warranties."
+        title="Start Your Remodeling Project Today"
+        subtitle="Request your free estimate from BNC Builders. We offer kitchen and bathroom remodeling, ADU construction, deck repair, room additions, garage conversions, exterior renovations, and outdoor kitchens across San Diego County. Financing available, and every project is backed by comprehensive warranties."
         primaryAction={{ label: 'Get Free Estimate', href: '/contact-us' }}
         secondaryAction={{ label: 'View Our Portfolio', href: '/portfolio' }}
       />
@@ -274,10 +274,10 @@ function CoreValuesSection({ coreValues }: { coreValues: CoreValue[] }) {
             The BNC Builders Advantage
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-white mt-2 mb-4">
-            Why San Diego Homeowners Choose BNC Builders
+            Why Local Homeowners Choose BNC Builders
           </h2>
           <p className="text-lg text-white/90 max-w-2xl mx-auto">
-            More than contractors - we are your partners for kitchen remodel Poway, kitchen remodel Escondido, kitchen remodel San Diego, bathroom remodeling Escondido, bathroom remodeling San Diego, ADUs Los Angeles, ADUs San Diego, deck repair contractor services, and every remodeling Escondido dream you envision.
+            More than contractors, we're your remodeling partners - bringing every home renovation vision to life with our design-build expertise.
           </p>
         </AnimatedSection>
 
@@ -334,7 +334,7 @@ function TestimonialsSection({ testimonials }: { testimonials: Testimonial[] }) 
             Real Results from Real BNC Builders Clients
           </h2>
           <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
-            Discover why homeowners trust BNC Builders for kitchen remodel Escondido CA, kitchen remodel San Diego, kitchen remodeling services, bathroom remodeling San Diego, bathroom remodeling Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, exterior remodeling, and remodeling Escondido projects.
+            Discover why homeowners across Escondido, San Diego, and the surrounding area trust BNC Builders for their home renovations.
           </p>
         </AnimatedSection>
 

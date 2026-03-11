@@ -103,7 +103,7 @@ export default function CareersPage() {
               Why Talented People Choose BNC Builders
             </h2>
             <p className="text-lg text-zinc-600">
-              We are not just another construction company. BNC Builders has built its reputation on quality kitchen remodel Escondido CA projects, bathroom remodeling San Diego transformations, ADUs San Diego builds, and complete remodeling Escondido solutions. Our team members take pride in craftsmanship that makes real differences in people's lives. We offer competitive pay, consistent work, growth opportunities, and a culture that values collaboration over competition.
+              We are not just another construction company. BNC Builders has built its reputation on quality craftsmanship - from kitchen remodels and bathroom renovations to ADUs and full home transformations. Our team members take pride in work that makes real differences in people&apos;s lives. We offer competitive pay, consistent work, growth opportunities, and a culture that values collaboration over competition.
             </p>
           </div>
         </Container>

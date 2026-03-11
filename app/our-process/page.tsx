@@ -12,25 +12,25 @@ const steps = [
   {
     number: '01',
     title: 'Discovery Conversation',
-    description: 'Every successful kitchen remodel Escondido CA or bathroom remodeling San Diego project starts with understanding your goals. We visit your home, ask questions about how you live, and listen carefully to what you want to change. No sales pressure - just genuine curiosity about your vision.',
+    description: 'Every successful project starts with understanding your goals. We visit your home, ask questions about how you live, and listen carefully to what you want to change. No sales pressure - just genuine curiosity about your vision.',
     icon: Phone,
   },
   {
     number: '02',
     title: 'Custom Design & Pricing',
-    description: `Our team creates detailed plans with material options that match your budget. For kitchen remodeling services and remodeling Escondido projects, you see 3D renderings before we begin. Transparent pricing means no surprises - you know exactly what you're getting and what it costs.`,
+    description: "Our team creates detailed plans with material options that match your budget. For larger projects, you see 3D renderings before we begin. Transparent pricing means no surprises - you know exactly what you're getting and what it costs.",
     icon: ClipboardList,
   },
   {
     number: '03',
     title: 'Expert Construction',
-    description: `Our skilled craftsmen bring your vision to life, whether it's ADUs San Diego, deck repair San Diego, or a complete kitchen renovation San Diego. Your dedicated project manager provides daily updates. We protect your home, respect your schedule, and maintain clean work areas throughout.`,
+    description: 'Our skilled craftsmen bring your vision to life. Your dedicated project manager provides daily updates. We protect your home, respect your schedule, and deliver the quality you expect.',
     icon: Hammer,
   },
   {
     number: '04',
     title: 'Quality Walkthrough',
-    description: `Your bathroom remodeling Escondido, exterior remodeling, or landscape remodeling project isn't complete until you're genuinely delighted. We walk through every detail together, address any concerns, and ensure your finished space exceeds expectations before we call it done.`,
+    description: 'Your project is not complete until you are genuinely delighted. We walk through every detail together, address any concerns, and ensure your finished space exceeds expectations before we call it done.',
     icon: Key,
   },
 ];
@@ -41,7 +41,7 @@ export default function OurProcessPage() {
       {/* Hero */}
       <HeroSubpage
         title="How BNC Builders Turns Your Vision Into Reality"
-        subtitle="No confusion. No surprises. No stress. Whether you need kitchen remodel San Diego, bathroom remodeling Escondido, ADUs Los Angeles, or complete exterior remodelers services, our refined process makes transformation enjoyable."
+        subtitle="No confusion. No surprises. No stress. Our refined process makes every renovation - from kitchen remodels to ADU builds - an enjoyable experience."
         backgroundImage={bannerImages.faq}
       />
 
@@ -74,7 +74,7 @@ export default function OurProcessPage() {
       {/* CTA */}
       <CTABanner
         title="Ready to Experience the BNC Builders Difference?"
-        subtitle="Schedule your free consultation for kitchen remodel Escondido CA, kitchen remodel Poway, bathroom remodeling San Diego, ADUs San Diego, deck repair contractor services, room addition San Diego, garage remodeling, outdoor kitchens, or any remodeling Escondido project."
+        subtitle="Schedule your free consultation - whatever the project, we are ready to help."
         primaryAction={{ label: 'Schedule Consultation', href: '/contact-us' }}
       />
     </>
@@ -100,7 +100,7 @@ function ProcessSection({ steps }: { steps: Step[] }) {
             Four Steps to Your Transformed Home
           </h2>
           <p className="text-lg text-zinc-600">
-            After 30+ years of combined experience and 900+ projects, we have refined our process to eliminate stress and maximize results for every kitchen remodeling Escondido CA, bathroom remodel Escondido, and 3D landscape design near me project.
+            After 30+ years of combined experience and 900+ projects, we have refined our process to eliminate stress and deliver outstanding results on every project.
           </p>
         </AnimatedSection>
 
@@ -142,10 +142,10 @@ function WhatToExpectSection() {
   const [ref, inView] = useInView<HTMLDivElement>({ threshold: 0.1 });
 
   const items = [
-    { q: 'How long will my project take?', a: 'Timelines depend on scope. A bathroom remodeling Escondido typically runs 3-4 weeks. A kitchen remodel San Diego averages 6-10 weeks. ADUs San Diego take 8-14 months including permits. We provide detailed schedules during consultation so you can plan accordingly.' },
-    { q: 'Who handles permits and inspections?', a: `We do. Our team manages all permitting for your kitchen remodeling services, ADUs Los Angeles, deck repair San Diego, or room addition San Diego project. You shouldn't have to navigate bureaucracy - that's our job.` },
-    { q: 'Can my family stay home during construction?', a: 'Usually yes. We phase work to minimize disruption, contain dust and debris, and maintain safe pathways. For major kitchen remodel Escondido CA projects, we can set up temporary cooking areas. We discuss logistics during planning.' },
-    { q: 'What happens if something unexpected comes up?', a: 'Older homes have surprises. When our remodeling Escondido team discovers something unexpected, we stop, explain the situation, present options with pricing, and let you decide how to proceed. No work happens without your approval.' },
+    { q: 'How long will my project take?', a: 'Timelines depend on scope. Bathroom remodels typically run 3-4 weeks, kitchen remodels average 6-10 weeks, and ADUs take 8-14 months including permits. We provide detailed schedules during consultation.' },
+    { q: 'Who handles permits and inspections?', a: 'We do. Our team manages all permitting - ADUs, deck repairs, room additions, you name it. You should not have to navigate bureaucracy - that is our job.' },
+    { q: 'Can my family stay home during construction?', a: 'Usually yes. We phase work to minimize disruption, contain dust and debris, and maintain safe pathways. For major kitchen projects, we can set up temporary cooking areas. We discuss logistics during planning.' },
+    { q: 'What happens if something unexpected comes up?', a: 'Older homes have surprises. When our team discovers something unexpected, we stop, explain the situation, present options with pricing, and let you decide how to proceed. No work happens without your approval.' },
   ];
 
   return (
