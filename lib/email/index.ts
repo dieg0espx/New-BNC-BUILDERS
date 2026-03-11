@@ -1,17 +1,6 @@
-// BNC Builders - Email Service using Nodemailer
+// BNC Builders - Email Service using Resend
 
-import nodemailer from 'nodemailer';
-
-// Create transporter using SMTP settings from environment variables
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: parseInt(process.env.SMTP_PORT || '587'),
-  secure: process.env.SMTP_SECURE === 'true',
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  },
-});
+import { sendEmail } from '@/lib/resend';
 
 // Email templates
 interface ContactFormData {
@@ -132,8 +121,7 @@ This email was sent from the BNC Builders website contact form.
 BNC Builders Inc. | 101 State Pl Suite N, Escondido, CA 92029
   `;
 
-  await transporter.sendMail({
-    from: `"BNC Builders Website" <${process.env.EMAIL_FROM}>`,
+  await sendEmail({
     to: recipients,
     subject: `New Contact: ${data.firstName} ${data.lastName} - ${data.reason || 'General Inquiry'}`,
     text: textContent,
@@ -228,8 +216,7 @@ This email was sent from the BNC Builders careers page.
 BNC Builders Inc. | 101 State Pl Suite N, Escondido, CA 92029
   `;
 
-  await transporter.sendMail({
-    from: `"BNC Builders Careers" <${process.env.EMAIL_FROM}>`,
+  await sendEmail({
     to: recipients,
     subject: `Job Application: ${data.firstName} ${data.lastName} - ${data.position}`,
     text: textContent,
@@ -307,22 +294,10 @@ BNC Builders Inc.
 Mon - Sat: 8:00am - 5:00pm
   `;
 
-  await transporter.sendMail({
-    from: `"BNC Builders Inc." <${process.env.EMAIL_FROM}>`,
+  await sendEmail({
     to: email,
     subject: 'Thank you for contacting BNC Builders!',
     text: textContent,
     html: htmlContent,
   });
-}
-
-// Verify transporter connection
-export async function verifyConnection(): Promise<boolean> {
-  try {
-    await transporter.verify();
-    return true;
-  } catch (error) {
-    console.error('Email transporter verification failed:', error);
-    return false;
-  }
 }

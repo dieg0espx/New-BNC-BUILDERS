@@ -143,12 +143,9 @@ Create a `.env.local` file:
 # Site
 NEXT_PUBLIC_SITE_URL=https://bncbuilders.com
 
-# SMTP (email notifications)
-SMTP_HOST=
-SMTP_PORT=587
-SMTP_SECURE=false
-SMTP_USER=
-SMTP_PASS=
+# Resend (email notifications)
+RESEND_API_KEY=re_xxxxxxxxxxxx
+EMAIL_FROM=BNC Builders <noreply@bncbuilders.com>
 
 # GoHighLevel CRM
 GHL_WEBHOOK_URL=

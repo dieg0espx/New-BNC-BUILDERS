@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /c/Users/52999/Desktop/New-BNC-BUILDERS -type f \\\\\\( -name \".env*\" \\\\\\) 2>/dev/null | head -20)",
+      "Bash(grep -r \"from '@/lib/email'\" /c/Users/52999/Desktop/New-BNC-BUILDERS --include=\"*.ts\" --include=\"*.tsx\" --include=\"*.js\" --include=\"*.jsx\")",
+      "Bash(npm install:*)",
+      "Bash(cd \"C:/Users/52999/Desktop/New-BNC-BUILDERS\" && npx tsc --noEmit 2>&1)"
+    ]
+  }
+}
