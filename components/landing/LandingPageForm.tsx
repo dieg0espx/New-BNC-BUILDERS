@@ -320,7 +320,7 @@ export const LandingPageForm = forwardRef<HTMLDivElement, LandingPageFormProps>(
           </button>
 
           <p className="text-center text-zinc-600 text-sm">
-            Or call <a href="tel:7609933204" className="text-gold font-semibold hover:underline">(760) 993-3204</a>
+            Or call <a href="tel:+17609933204" className="text-gold font-semibold hover:underline">(760) 993-3204</a>
           </p>
 
           <p className="text-center text-sm text-zinc-500">

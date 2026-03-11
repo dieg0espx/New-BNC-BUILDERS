@@ -70,7 +70,7 @@ export function MobileMenu({ isOpen, onClose, items }: MobileMenuProps) {
           <div className="border-t border-gray-100 px-5 py-5 bg-gray-50 space-y-4">
             {/* Phone CTA */}
             <a
-              href={`tel:${company.phone.replace(/[^0-9]/g, '')}`}
+              href={`tel:${company.phoneLink}`}
               className="flex items-center justify-center gap-2 w-full bg-gold text-white px-6 py-3.5 rounded font-bold uppercase tracking-wide hover:bg-gold-light transition-colors"
             >
               <Phone className="w-5 h-5" />

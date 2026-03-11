@@ -140,7 +140,7 @@ export default function RemodelLandingPage() {
                   Get My Free Estimate
                 </button>
                 <a
-                  href={`tel:${company.phone.replace(/[^0-9]/g, '')}`}
+                  href={`tel:${company.phoneLink}`}
                   className="btn-animated hover-lift border-2 border-white text-white hover:bg-white hover:text-zinc-900 px-8 py-4 rounded-lg font-bold uppercase tracking-wide transition-all text-lg flex items-center gap-2"
                 >
                   <Phone className="w-5 h-5" />
@@ -151,7 +151,7 @@ export default function RemodelLandingPage() {
               {/* CTAs - Mobile */}
               <div className="flex md:hidden flex-col gap-3 animate-[fadeInUp_0.6s_ease-out_0.8s_both]">
                 <a
-                  href={`tel:${company.phone.replace(/[^0-9]/g, '')}`}
+                  href={`tel:${company.phoneLink}`}
                   className="btn-animated bg-gold hover:bg-[#B88A32] text-white px-6 py-4 rounded-lg font-bold uppercase tracking-wide transition-all text-center flex items-center justify-center gap-2"
                 >
                   <Phone className="w-5 h-5" />
@@ -477,7 +477,7 @@ export default function RemodelLandingPage() {
                 Schedule Free Consultation
               </button>
               <a
-                href={`tel:${company.phone.replace(/[^0-9]/g, '')}`}
+                href={`tel:${company.phoneLink}`}
                 className="btn-animated hover-lift border-2 border-white text-white hover:bg-white hover:text-zinc-900 px-8 py-4 rounded-lg font-bold uppercase tracking-wide transition-all text-lg flex items-center justify-center gap-2"
               >
                 <Phone className="w-5 h-5" />
@@ -492,7 +492,7 @@ export default function RemodelLandingPage() {
       {isMobile && (
         <div className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md p-4 z-40 shadow-[0_-4px_20px_rgba(0,0,0,0.1)] md:hidden animate-[slideInUp_0.5s_ease-out]">
           <a
-            href={`tel:${company.phone.replace(/[^0-9]/g, '')}`}
+            href={`tel:${company.phoneLink}`}
             className="btn-animated bg-gold hover:bg-[#B88A32] text-white px-6 py-4 rounded-lg font-bold uppercase tracking-wide transition-all w-full flex items-center justify-center gap-2"
           >
             <Phone className="w-5 h-5" />

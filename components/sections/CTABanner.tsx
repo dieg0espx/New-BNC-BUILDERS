@@ -56,7 +56,7 @@ export function CTABanner({
 
             {showPhone && (
               <a
-                href={`tel:${company.phone.replace(/[^0-9]/g, '')}`}
+                href={`tel:${company.phoneLink}`}
                 className="inline-flex items-center gap-2 bg-white text-gold hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition-all hover:scale-105"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

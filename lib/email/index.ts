@@ -258,7 +258,7 @@ export async function sendAutoReply(email: string, firstName: string): Promise<v
           </div>
 
           <p><strong>Contact us directly:</strong></p>
-          <p>Phone: <a href="tel:7602497207">(760) 249-7207</a></p>
+          <p>Phone: <a href="tel:+17602497207">(760) 249-7207</a></p>
           <p>Email: <a href="mailto:contact@bncbuilders.net">contact@bncbuilders.net</a></p>
 
           <p style="margin-top: 30px;">In the meantime, feel free to browse our portfolio to see examples of our work:</p>

@@ -273,7 +273,7 @@ export function ADUCalculator({ city = 'Escondido' }: { city?: string }) {
             a site visit for an accurate estimate.
           </p>
           <a
-            href="tel:7609933204"
+            href="tel:+17609933204"
             className="inline-block bg-gold hover:bg-gold-light text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-bold uppercase tracking-wide transition-all text-sm md:text-base"
           >
             Call Us Now: (760) 993-3204

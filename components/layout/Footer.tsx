@@ -48,7 +48,7 @@ export function Footer() {
                 <p>{company.address.full}</p>
                 <p>
                   <a
-                    href={`tel:${company.phone.replace(/[^0-9]/g, '')}`}
+                    href={`tel:${company.phoneLink}`}
                     className="hover:text-gold transition-colors"
                   >
                     {company.phone}

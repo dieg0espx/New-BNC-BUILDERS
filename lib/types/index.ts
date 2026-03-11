@@ -12,6 +12,7 @@ export interface CompanyInfo {
   name: string;
   tagline: string;
   phone: string;
+  phoneLink: string;
   address: Address;
   officeHours: string;
   founded: number;

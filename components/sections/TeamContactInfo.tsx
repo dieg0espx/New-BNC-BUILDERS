@@ -55,7 +55,7 @@ export function TeamContactInfo() {
               <div>
                 <h3 className="font-semibold text-secondary mb-1">Request A Free Estimate!</h3>
                 <a
-                  href="tel:760-249-7207"
+                  href="tel:+1760-249-7207"
                   className="text-xl sm:text-2xl md:text-3xl font-bold text-secondary hover:text-primary transition-colors"
                 >
                   760-249-7207

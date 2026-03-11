@@ -29,7 +29,7 @@ const contactMethods = [
     title: 'Call Us',
     description: 'Speak directly with our team',
     value: company.phone,
-    href: `tel:${company.phone.replace(/[^0-9]/g, '')}`,
+    href: `tel:${company.phoneLink}`,
     action: 'Call Now',
   },
   {
@@ -146,7 +146,7 @@ export default function ContactUsPage() {
                       Ready to get started? Call us now!
                     </p>
                     <a
-                      href={`tel:${company.phone.replace(/[^0-9]/g, '')}`}
+                      href={`tel:${company.phoneLink}`}
                       className="flex items-center justify-center gap-2 bg-gold hover:bg-gold/90 text-white font-bold py-3 px-6 rounded-xl transition-all w-full btn-animated hover-glow"
                     >
                       <Phone className="w-5 h-5" />
@@ -240,7 +240,7 @@ export default function ContactUsPage() {
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href={`tel:${company.phone.replace(/[^0-9]/g, '')}`}
+                  href={`tel:${company.phoneLink}`}
                   className="inline-flex items-center justify-center gap-2 bg-white text-gold font-bold py-3 px-8 rounded-xl hover:bg-zinc-100 transition-all btn-animated"
                 >
                   <Phone className="w-5 h-5" />

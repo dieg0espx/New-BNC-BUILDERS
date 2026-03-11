@@ -236,7 +236,7 @@ export default function ADUCalculatorPage() {
             Get your instant cost estimate above, or call us now to discuss your ADU project with our experts.
           </p>
           <a
-            href={`tel:${company.phone.replace(/[^0-9]/g, '')}`}
+            href={`tel:${company.phoneLink}`}
             className="inline-flex items-center gap-2 bg-white text-gold hover:bg-zinc-50 px-6 md:px-8 py-3 md:py-4 rounded-lg font-bold uppercase tracking-wide transition-all text-sm md:text-base lg:text-lg"
           >
             <Phone className="w-4 h-4 md:w-5 md:h-5" />
@@ -250,7 +250,7 @@ export default function ADUCalculatorPage() {
       {isMobile && (
         <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-zinc-200 p-3 z-40 shadow-lg md:hidden">
           <a
-            href={`tel:${company.phone.replace(/[^0-9]/g, '')}`}
+            href={`tel:${company.phoneLink}`}
             className="bg-gold hover:bg-[#B88A32] text-white px-6 py-3 rounded-lg font-bold uppercase tracking-wide transition-all w-full flex items-center justify-center gap-2 text-sm"
           >
             <Phone className="w-4 h-4" />

@@ -64,7 +64,7 @@ export function FAQAccordion({
           </p>
           <p className={`text-xs sm:text-sm mt-1 ${isDark ? 'text-zinc-400' : 'text-zinc-500'}`}>
             Contact us at{' '}
-            <a href="tel:7609933204" className="text-gold hover:underline font-semibold link-underline">
+            <a href="tel:+17609933204" className="text-gold hover:underline font-semibold link-underline">
               (760) 993-3204
             </a>
           </p>

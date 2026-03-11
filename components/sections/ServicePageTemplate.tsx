@@ -28,7 +28,7 @@ export function ServicePageTemplate({ service }: ServicePageTemplateProps) {
             <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 text-zinc-800">
               <div className="flex items-center gap-2 sm:gap-3 hover:scale-105 transition-transform">
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-800 flex-shrink-0" />
-                <span className="text-xs sm:text-sm">Call Us: <a href="tel:7609937204" className="font-semibold hover:text-white">(760) 993-3204</a></span>
+                <span className="text-xs sm:text-sm">Call Us: <a href="tel:+17609933204" className="font-semibold hover:text-white">(760) 993-3204</a></span>
               </div>
               <div className="flex items-center gap-2 sm:gap-3 hover:scale-105 transition-transform">
                 <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-800 flex-shrink-0" />
