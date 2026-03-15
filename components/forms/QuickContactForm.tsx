@@ -88,7 +88,7 @@ export function QuickContactForm() {
         // Push generate_lead event to dataLayer for GTM tracking
         if (typeof window !== 'undefined') {
           (window as any).dataLayer = (window as any).dataLayer || [];
-          (window as any).dataLayer.push({ event: 'generate_lead' });
+          (window as any).dataLayer.push({ event: 'generate_lead', form_name: 'quick_contact' });
         }
       } else {
         setError(data.message || 'Failed to send. Please try again.');

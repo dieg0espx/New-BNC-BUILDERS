@@ -170,13 +170,10 @@ export function ADUCalculator({ city = 'Escondido' }: { city?: string }) {
       if (response.ok && data.success) {
         setStep('result');
 
-        // Track conversion in Google Ads
-        if (typeof window !== 'undefined' && (window as any).gtag) {
-          (window as any).gtag('event', 'conversion', {
-            send_to: 'AW-16672110303/calculator_complete',
-            value: 1.0,
-            currency: 'USD',
-          });
+        // Push calculator_complete event to dataLayer for GTM tracking (GA4 + Google Ads conversion)
+        if (typeof window !== 'undefined') {
+          (window as any).dataLayer = (window as any).dataLayer || [];
+          (window as any).dataLayer.push({ event: 'calculator_complete', form_name: 'adu_calculator' });
         }
       } else {
         setError(data.message || 'Failed to send request. Please try again.');

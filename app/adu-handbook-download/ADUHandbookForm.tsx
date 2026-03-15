@@ -69,7 +69,7 @@ export function ADUHandbookForm() {
         // Push ADU handbook download event to dataLayer for GTM tracking
         if (typeof window !== 'undefined') {
           (window as any).dataLayer = (window as any).dataLayer || [];
-          (window as any).dataLayer.push({ event: 'adu_handbook_download' });
+          (window as any).dataLayer.push({ event: 'adu_handbook_download', form_name: 'adu_handbook' });
         }
       } else {
         setError(data.message || 'Failed to submit. Please try again.');

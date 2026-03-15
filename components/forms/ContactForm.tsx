@@ -80,7 +80,7 @@ export function ContactForm() {
         // Push generate_lead event to dataLayer for GTM tracking
         if (typeof window !== 'undefined') {
           (window as any).dataLayer = (window as any).dataLayer || [];
-          (window as any).dataLayer.push({ event: 'generate_lead' });
+          (window as any).dataLayer.push({ event: 'generate_lead', form_name: 'contact_form' });
         }
       } else {
         setError(data.message || 'Failed to send message. Please try again.');

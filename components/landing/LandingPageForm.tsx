@@ -82,7 +82,7 @@ export const LandingPageForm = forwardRef<HTMLDivElement, LandingPageFormProps>(
           // Push generate_lead event to dataLayer for GTM tracking (GA4 + Google Ads conversion)
           if (typeof window !== 'undefined') {
             (window as any).dataLayer = (window as any).dataLayer || [];
-            (window as any).dataLayer.push({ event: 'generate_lead' });
+            (window as any).dataLayer.push({ event: 'generate_lead', form_name: 'landing_page_form' });
           }
         } else {
           setError(data.message || 'Failed to send request. Please try again.');
