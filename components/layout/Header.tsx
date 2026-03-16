@@ -36,10 +36,15 @@ export function Header() {
         <Container>
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center gap-8">
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-white" />
-                <span className="text-white">{company.address.full}</span>
-              </div>
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(company.address.full)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-white hover:text-zinc-800 transition-colors"
+              >
+                <MapPin className="w-4 h-4" />
+                <span>{company.address.full}</span>
+              </a>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-white" />
                 <span className="text-white">{company.officeHours}</span>

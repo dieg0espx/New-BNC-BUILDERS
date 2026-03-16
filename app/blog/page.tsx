@@ -9,6 +9,7 @@ import { bannerImages } from '@/lib/constants/images';
 import { blogPosts, blogCategories, formatBlogDate } from '@/lib/constants/blog';
 import { generatePageMetadata } from '@/lib/utils/metadata';
 import { Clock, ArrowRight } from 'lucide-react';
+import { BlogFilter } from '@/components/blog/BlogFilter';
 
 export const metadata: Metadata = generatePageMetadata({
   title: 'Blog',
@@ -87,32 +88,10 @@ export default function BlogPage() {
         </Container>
       </Section>
 
-      {/* Categories */}
-      <Section background="gray" padding="sm">
+      {/* Categories + Blog Grid */}
+      <Section background="gray">
         <Container>
-          <div className="text-center text-sm text-zinc-600 mb-4">
-            Filter Categories: All Posts | Kitchen | Bathroom | Home Remodeling | Exterior Remodeling | ADUs
-          </div>
-          <div className="flex flex-wrap gap-2 justify-center">
-            <span className="px-4 py-2 rounded-full text-sm font-medium bg-gold text-white">
-              All Posts
-            </span>
-            {blogCategories.map((category) => (
-              <span
-                key={category.id}
-                className="px-4 py-2 rounded-full text-sm font-medium bg-white text-zinc-700 hover:bg-zinc-100 transition-colors cursor-pointer"
-              >
-                {category.name}
-              </span>
-            ))}
-          </div>
-        </Container>
-      </Section>
-
-      {/* Blog Grid */}
-      <Section background="white">
-        <Container>
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-bold text-dark">
               All Articles
             </h2>
@@ -121,48 +100,7 @@ export default function BlogPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {remainingPosts.map((post) => (
-              <Link
-                key={post.id}
-                href={`/blog/${post.slug}`}
-                className="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all"
-              >
-                <div className="relative h-48 overflow-hidden">
-                  <CloudinaryImage
-                    publicId={post.featuredImage}
-                    alt={post.title}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <span className="text-xs font-medium text-white bg-gold px-3 py-1 rounded-full">
-                      {post.category}
-                    </span>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-3 mb-3 text-sm text-zinc-500">
-                    <span>{formatBlogDate(post.date)}</span>
-                    <span>•</span>
-                    <span className="flex items-center gap-1">
-                      <Clock className="w-3 h-3" />
-                      {post.readTime} min
-                    </span>
-                  </div>
-                  <h3 className="text-lg font-bold text-dark mb-2 line-clamp-2 group-hover:text-gold transition-colors">
-                    {post.title}
-                  </h3>
-                  <p className="text-zinc-600 text-sm mb-4 line-clamp-2">
-                    {post.excerpt}
-                  </p>
-                  <span className="inline-flex items-center gap-1 text-gold font-medium text-sm group-hover:gap-2 transition-all">
-                    Read More <ArrowRight className="w-4 h-4" />
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <BlogFilter posts={remainingPosts} categories={blogCategories} />
         </Container>
       </Section>
 
