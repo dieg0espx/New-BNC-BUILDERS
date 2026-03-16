@@ -28,6 +28,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <meta name="theme-color" content="#CF9C39" />
+        <link rel="help" type="text/plain" href="/llms.txt" />
         {/* Enhanced OpenGraph and Social Media Compatibility */}
         <meta property="og:image" content={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.bncbuildersinc.com'}/opengraph-image`} />
         <meta property="og:image:secure_url" content={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.bncbuildersinc.com'}/opengraph-image`} />
