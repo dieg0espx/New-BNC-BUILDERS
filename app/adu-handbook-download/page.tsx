@@ -9,7 +9,7 @@ import { generatePageMetadata } from '@/lib/utils/metadata';
 import { ADUHandbookForm } from './ADUHandbookForm';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'ADU Handbook Download | BNC Builders',
+  title: 'ADU Handbook Download',
   description: 'Your complete guide to building an ADU in San Diego or Los Angeles. Download the free handbook from BNC Builders.',
 });
 

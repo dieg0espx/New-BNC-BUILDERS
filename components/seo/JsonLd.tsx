@@ -2,7 +2,7 @@
 
 import { company } from '@/lib/constants/company';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuildersinc.com';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.bncbuildersinc.com';
 
 // Organization Schema
 export function OrganizationJsonLd() {

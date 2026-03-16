@@ -9,7 +9,7 @@ import { generatePageMetadata } from '@/lib/utils/metadata';
 import { ReferralForm } from './ReferralForm';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Refer a Friend, Earn Rewards | BNC Builders Customer Referral Program',
+  title: 'Refer a Friend, Earn Rewards | Customer Referral Program',
   description: 'Know someone who needs a kitchen remodel Escondido CA, bathroom remodeling San Diego, ADU construction, or home renovation? Refer them to BNC Builders and earn rewards through our Refer and Dine program.',
 });
 

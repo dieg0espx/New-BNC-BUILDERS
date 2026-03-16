@@ -3,7 +3,7 @@
 import { Metadata } from 'next';
 import { company } from '../constants/company';
 import { CLOUDINARY_BASE_URL } from '../constants/images';
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuildersinc.com';
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.bncbuildersinc.com';
 
 interface PageMetadataOptions {
   title: string;
@@ -29,23 +29,23 @@ export function generatePageMetadata({
   noIndex = false,
   article,
 }: PageMetadataOptions): Metadata {
-  const fullTitle = title === 'Home'
-    ? `Escondido Home Remodeling | ${company.name}`
-    : `${title} | ${company.name}`;
-
   const canonicalUrl = `${SITE_URL}${path}`;
 
   // Ensure absolute URL for OpenGraph image for better compatibility
   const absoluteOgImage = ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage}`;
 
+  // Use raw title for <title> tag - the layout template will append "| BNC Builders Inc."
+  // For OG/Twitter, use the full title since they don't inherit templates
+  const ogTitle = `${title} | ${company.name}`;
+
   const metadata: Metadata = {
-    title: fullTitle,
+    title,
     description,
     alternates: {
       canonical: canonicalUrl,
     },
     openGraph: {
-      title: fullTitle,
+      title: ogTitle,
       description,
       type: article ? 'article' : 'website',
       url: canonicalUrl,
@@ -64,7 +64,7 @@ export function generatePageMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: fullTitle,
+      title: ogTitle,
       description,
       images: [absoluteOgImage],
       creator: '@bncbuilders',
@@ -106,7 +106,7 @@ export const defaultMetadata: Metadata = {
     default: `Escondido Home Remodeling | ${company.name}`,
     template: `%s | ${company.name}`,
   },
-  description: 'Professional home remodeling services in Escondido & San Diego County. Kitchen, bathroom, ADU construction & more. 30+ years experience. Free estimates. Call (760) 993-3204.',
+  description: 'Professional home remodeling services in Escondido & San Diego County. Kitchen, bathroom, ADU construction & more. 30+ years experience. Free estimates. Call (760) 658-6238.',
   keywords: [
     'home remodeling Escondido',
     'kitchen remodeling San Diego',
@@ -139,7 +139,6 @@ export const defaultMetadata: Metadata = {
     canonical: SITE_URL,
     languages: {
       'en-US': SITE_URL,
-      'es-US': `${SITE_URL}/es`,
     },
   },
   openGraph: {

@@ -151,7 +151,7 @@ export default async function OGImage() {
               fontWeight: 600,
             }}
           >
-            (760) 993-3204
+            (760) 658-6238
           </div>
           <div
             style={{

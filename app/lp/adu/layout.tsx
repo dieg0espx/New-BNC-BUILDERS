@@ -43,7 +43,7 @@ export default function ADULandingLayout({
             '@type': 'LocalBusiness',
             name: company.name,
             description: 'Expert ADU construction contractor in North County San Diego',
-            url: 'https://bncbuildersinc.com',
+            url: 'https://www.bncbuildersinc.com',
             telephone: company.phone,
             address: {
               '@type': 'PostalAddress',

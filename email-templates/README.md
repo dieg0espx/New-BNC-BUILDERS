@@ -125,7 +125,7 @@ Before sending to customers, test your emails:
 ## Company Information
 
 - **Name**: BNC Builders Inc.
-- **Phone**: (760) 993-3204
+- **Phone**: (760) 658-6238
 - **Address**: 101 State Pl Suite N, Escondido, CA 92029
 - **Hours**: Monday - Saturday, 8:00am - 5:00pm
 - **License**: #1050284
