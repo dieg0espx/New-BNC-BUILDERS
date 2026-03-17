@@ -9,7 +9,7 @@ export const services: Service[] = [
     slug: 'home-remodeling',
     title: 'Transform Your Entire Home With Confidence',
     shortTitle: 'Home Remodeling',
-    description: 'Full-service home transformations that breathe new life into every room',
+    description: 'Full-service home remodeling in Escondido & San Diego County. From single rooms to whole-home renovations, BNC Builders transforms your space with expert craftsmanship.',
     heroHeading: 'Transform Your Entire Home With Confidence',
     heroContent: [
       'Your home should fit your life today, not the way it looked a decade ago. BNC Builders specializes in complete home remodeling, helping homeowners across San Diego County modernize, improve functionality, and beautify their living spaces from top to bottom.',
@@ -65,7 +65,7 @@ export const services: Service[] = [
     slug: 'kitchen-remodeling',
     title: 'Your Dream Kitchen Awaits',
     shortTitle: 'Kitchen Remodeling',
-    description: 'Create the heart of your home with stunning kitchen transformations',
+    description: 'Expert kitchen remodeling in Escondido & San Diego. Custom cabinetry, countertops, layouts & more. 30+ years experience. Free design consultation.',
     heroHeading: 'Your Dream Kitchen Awaits',
     heroContent: [
       'The kitchen is where morning coffee happens, where homework gets done at the counter, where friends gather during parties. At BNC Builders, we know a kitchen remodel is about more than cabinets and countertops-it\'s about creating the heart of your home.',
@@ -125,7 +125,7 @@ export const services: Service[] = [
     slug: 'bathroom-remodeling',
     title: 'Bathrooms That Start Your Day Right',
     shortTitle: 'Bathroom Remodeling',
-    description: 'Spa-worthy retreats and functional updates for every bathroom',
+    description: 'Professional bathroom remodeling in Escondido & San Diego. Spa-worthy retreats, walk-in showers, double vanities & complete renovations. Free estimates.',
     heroHeading: 'Bathrooms That Start Your Day Right',
     heroContent: [
       'Your bathroom should feel like a sanctuary, not a source of frustration. BNC Builders creates bathrooms that families love - from simple updates for busy mornings to spa-inspired renovations that make every day feel like a retreat.',
@@ -185,7 +185,7 @@ export const services: Service[] = [
     slug: 'garage-remodeling',
     title: 'Garage Remodeling | Conversions & Upgrades | BNC Builders',
     shortTitle: 'Garage Remodeling',
-    description: 'Unlock hidden living space with professional garage conversions',
+    description: 'Professional garage remodeling & conversions in Escondido & San Diego. Transform your garage into a living space, home office, or ADU. Licensed contractor.',
     heroHeading: 'Your Garage Can Be So Much More',
     heroContent: [
       'Most garages collect junk. Yours could become a home gym, a professional office, a guest suite, or even a rental unit.',
@@ -241,7 +241,7 @@ export const services: Service[] = [
     slug: 'new-room-additions',
     title: 'Add Space Without Leaving Home',
     shortTitle: 'New Room Additions',
-    description: 'Expand your living space without the hassle of moving',
+    description: 'New room additions in Escondido & San Diego County. Expand your living space with seamless additions that match your home. Permits to completion.',
     heroHeading: 'Add Space Without Leaving Home',
     heroContent: [
       'Your family has grown, your needs have changed, but you love your neighborhood. Our room addition services let you stay in the home you love while adding the space you need - no moving trucks required.',
@@ -301,7 +301,7 @@ export const services: Service[] = [
     slug: 'pre-construction',
     title: 'Pre-Construction Services | Planning & Permits | BNC Builders',
     shortTitle: 'Pre-Construction',
-    description: 'Expert planning and permitting for stress-free project starts',
+    description: 'Pre-construction planning & permitting services in Escondido & San Diego. Site evaluation, architectural plans, engineering & permit management.',
     heroHeading: 'Start Your Project On Solid Ground',
     heroContent: [
       'The difference between a smooth construction project and a nightmare often comes down to planning. Our pre-construction services ensure your renovation, ADUs or addition starts on the strongest possible foundation.',
@@ -359,7 +359,7 @@ export const services: Service[] = [
     slug: 'exterior-remodeling',
     title: 'Reinvent Your Outdoor Living',
     shortTitle: 'Exterior Remodeling',
-    description: 'Complete outdoor living spaces and curb appeal upgrades',
+    description: 'Exterior remodeling in Escondido & San Diego. Outdoor living spaces, curb appeal upgrades, siding, patios & complete exterior transformations.',
     heroHeading: 'Reinvent Your Outdoor Living',
     heroContent: [
       'Your property extends beyond your walls. BNC Builders transforms patios, decks, landscaping, and outdoor living areas into spaces you actually want to use - not just look at from the window.',
@@ -415,7 +415,7 @@ export const services: Service[] = [
     slug: 'adus',
     title: 'ADUs San Diego & Los Angeles | Accessory Dwelling Units',
     shortTitle: 'ADUs',
-    description: 'Complete ADU construction from permits to move-in ready',
+    description: 'ADU construction in Escondido & San Diego. Complete accessory dwelling units from permits to move-in ready. Maximize property value & rental income.',
     heroHeading: 'Add Value With A Quality ADU',
     heroContent: [
       'ADUs have become one of the smartest investments homeowners in San Diego and Los Angeles can make. Whether you envision rental income, a space for aging parents, a home office, or a guest retreat, BNC Builders delivers complete ADU solutions from permits to move-in ready.',
@@ -475,7 +475,7 @@ export const services: Service[] = [
     slug: 'deck-repair',
     title: 'Restore Your Deck To Its Full Glory',
     shortTitle: 'Deck Repair',
-    description: 'Expert repairs that restore safety and beauty to your deck',
+    description: 'Deck repair & restoration in Escondido & San Diego County. Fix structural issues, replace boards, refinish surfaces & restore your outdoor living space.',
     heroHeading: 'Restore Your Deck To Its Full Glory',
     heroContent: [
       'A neglected deck is not just an eyesore - it is a safety hazard. Rotting boards, wobbly railings, and failing structures put your family at risk.',
@@ -535,7 +535,7 @@ export const services: Service[] = [
     slug: 'hardscaping',
     title: 'Hardscaping Services | Patios, Walkways & More | BNC Builders',
     shortTitle: 'Hardscaping',
-    description: 'Durable, beautiful hardscape features that define outdoor spaces',
+    description: 'Hardscaping services in Escondido & San Diego. Patios, walkways, retaining walls, fire pits & outdoor features built with quality materials.',
     heroHeading: 'Structure Your Outdoor Paradise',
     heroContent: [
       'Great landscaping starts with great structure. We build the patios, walkways, retaining walls, and features that give your outdoor space its shape and durability.',
@@ -591,7 +591,7 @@ export const services: Service[] = [
     slug: 'outdoor-kitchens',
     title: 'Cook, Gather, And Celebrate Outside',
     shortTitle: 'Outdoor Kitchens',
-    description: 'Entertain in style with a fully equipped outdoor cooking space',
+    description: 'Custom outdoor kitchens in Escondido & San Diego. Built-in grills, countertops, refrigeration & bar seating. Design, build & install by BNC Builders.',
     heroHeading: 'Cook, Gather, And Celebrate Outside',
     heroContent: [
       'San Diego weather begs for outdoor living. BNC Builders transforms your backyard into the ultimate entertainment destination - a fully equipped outdoor kitchen where you can prepare entire meals without missing a moment with guests.',
@@ -651,7 +651,7 @@ export const services: Service[] = [
     slug: 'landscape-remodeling',
     title: 'Landscape Remodeling | Complete Outdoor Transformations',
     shortTitle: 'Landscape Remodeling',
-    description: 'Comprehensive landscape makeovers that reinvent outdoor spaces',
+    description: 'Landscape remodeling in Escondido & San Diego County. Complete outdoor makeovers including plantings, hardscaping, lighting & irrigation systems.',
     heroHeading: 'Reimagine Your Entire Landscape',
     heroContent: [
       `Your outdoor space has potential you might not see yet. BNC Builders' landscape remodeling services envision and execute complete outdoor transformations - from tired, neglected yards to stunning environments you actually want to spend time in.`,
@@ -707,7 +707,7 @@ export const services: Service[] = [
     slug: '3d-landscape-design',
     title: 'Walk Through Your New Landscape Before We Build',
     shortTitle: '3D Landscape Design',
-    description: 'See your project before we build with advanced 3D visualization',
+    description: '3D landscape design & visualization in Escondido & San Diego. See your outdoor project before construction begins. Accurate renderings & detailed plans.',
     heroHeading: 'Walk Through Your New Landscape Before We Build',
     heroContent: [
       'Imagine seeing your completed project before a single shovel breaks ground. BNC Builders\' 3D landscape design services use advanced visualization technology to create photorealistic renderings of your landscape.',

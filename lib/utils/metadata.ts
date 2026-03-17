@@ -93,7 +93,7 @@ export function generatePageMetadata({
   if (noIndex) {
     metadata.robots = {
       index: false,
-      follow: false,
+      follow: true,
     };
   }
 

@@ -33,13 +33,13 @@ export const blogCategories: BlogCategory[] = [
 export const blogPosts: BlogPost[] = [
   {
     id: 'adu-smartest-property-move-2026',
-    title: 'The 2026 Case for Building an ADU in San Diego or Los Angeles',
+    title: 'Why Build an ADU in San Diego or Los Angeles in 2026',
     slug: 'why-an-adu-is-your-smartest-property-move-in-2026',
     date: '2025-12-17',
     author: 'BNC Builders Inc.',
     category: 'Exterior Remodeling',
     categorySlug: 'exterior',
-    excerpt: 'Housing costs keep climbing while property values fluctuate. Here is why',
+    excerpt: 'Housing costs keep climbing while property values fluctuate. Here is why building an ADU in San Diego or Los Angeles is the smartest property move in 2026.',
     content: [
       'California housing has never been more complicated. Rents climb monthly, home prices swing wildly, and families struggle to stay close to aging parents or adult children. ADUs San Diego and ADUs Los Angeles offer a practical solution that addresses multiple challenges simultaneously.',
       'The math works differently than most investments. While stocks and bonds deliver abstract returns, ADUs San Diego generate tangible monthly income. A well-designed two-bedroom unit in the San Diego market can bring in $2,000-$3,000 monthly - real money that pays mortgages, funds retirements, or covers college tuition.',
@@ -58,7 +58,7 @@ export const blogPosts: BlogPost[] = [
     author: 'BNC Builders Inc.',
     category: 'Home Remodeling',
     categorySlug: 'home-remodeling',
-    excerpt: 'Most remodeling disasters trace back to one root cause',
+    excerpt: 'Most remodeling disasters trace back to one root cause: poor communication. Learn how BNC Builders prevents costly misunderstandings on every project.',
     content: [
       'We hear the same story repeatedly from homeowners who hired other contractors before finding BNC Builders. The project started fine. Then the calls stopped. Updates disappeared. Questions went unanswered. By the time communication resumed, the kitchen remodel Escondido CA project had gone sideways - over budget, behind schedule, or simply wrong.',
       'Construction is complicated enough without adding confusion. Every kitchen remodel San Diego or bathroom remodeling San Diego project involves dozens of decisions, unexpected discoveries, and timing dependencies. When homeowners and contractors stop talking, small problems become expensive disasters.',
@@ -72,13 +72,13 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 'accessible-luxury-kitchens',
-    title: 'Making Your Kitchen Remodel Dreams Fit a Real Budget',
+    title: 'Kitchen Remodel on a Real Budget',
     slug: 'creating-accessible-luxury-kitchens',
     date: '2025-08-15',
     author: 'BNC Builders Inc.',
     category: 'Kitchen',
     categorySlug: 'kitchen',
-    excerpt: 'High-end kitchen features do not require unlimited budgets',
+    excerpt: 'High-end kitchen features do not require unlimited budgets. Learn where to splurge, where to save, and how to get luxury results at every price point.',
     content: [
       'Scroll through any home design platform and you will see kitchens that cost more than most cars. Marble islands, professional ranges, custom cabinetry stretching to twelve-foot ceilings. Beautiful? Absolutely. Realistic for most kitchen remodel Escondido CA budgets? Not exactly.',
       'The good news: luxury in kitchen design comes from thoughtful decisions rather than unlimited spending. BNC Builders has helped hundreds of families achieve kitchen remodel San Diego results that look expensive without breaking the bank. Here is how we approach kitchen remodeling Escondido CA projects with modest budgets and high expectations.',
@@ -92,13 +92,13 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 'choosing-bathroom-contractor',
-    title: 'Finding the Right Bathroom Remodeling Contractor in Escondido',
+    title: 'How to Choose a Bathroom Remodeling Contractor',
     slug: 'how-to-choose-the-right-bathroom-remodeling-contractor',
     date: '2025-04-18',
     author: 'BNC Builders Inc.',
     category: 'Bathroom',
     categorySlug: 'bathroom',
-    excerpt: 'Every contractor claims to be the best. Here is how to evaluate',
+    excerpt: 'Every contractor claims to be the best. Here is how to evaluate bathroom remodeling contractors in Escondido and find the right fit for your project.',
     content: [
       'Finding a bathroom remodeling Escondido contractor should not feel like gambling. Yet homeowners consistently report anxiety about hiring decisions, unclear about what questions to ask or what answers to trust. This guide provides practical evaluation criteria for bathroom remodeling San Diego contractors.',
       'Licensing verification takes five minutes online. California requires contractors to hold active licenses for work exceeding $500. Check the Contractors State License Board website - enter the license number and confirm it matches the company name, remains active, and shows no disciplinary actions. Any bathroom remodel Escondido contractor reluctant to provide license information raises immediate red flags.',
@@ -113,13 +113,13 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 'spring-home-remodeling',
-    title: 'Spring Construction: The Sweet Spot for a Kitchen Remodel',
+    title: 'Why Spring Is the Best Time for a Kitchen Remodel',
     slug: 'why-spring-is-the-perfect-time-for-home-remodeling',
     date: '2025-04-03',
     author: 'BNC Builders Inc.',
     category: 'Home Remodeling',
     categorySlug: 'home-remodeling',
-    excerpt: 'Timing affects everything in construction',
+    excerpt: 'Timing affects everything in construction. Discover why spring is the sweet spot for starting a kitchen remodel in San Diego and how to plan ahead.',
     content: [
       'San Diego enjoys mild weather year-round, but spring remains the optimal window for major remodeling Escondido projects. Temperature, humidity, daylight, and contractor availability all favor construction during March through May.',
       'Weather cooperates differently in spring. Summer heat makes outdoor work miserable and affects material performance - paint dries too fast, concrete cures unpredictably. Winter rains delay exterior projects and complicate deck repair San Diego or landscape remodeling. Spring offers moderate temperatures and minimal precipitation, ideal conditions for kitchen remodel Escondido CA interiors and exterior remodeling alike.',
@@ -134,13 +134,13 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 'signs-remodel-bathroom',
-    title: 'When to Stop Fixing and Start Remodeling: Bathroom Edition',
+    title: '7 Signs It Is Time to Remodel Your Bathroom',
     slug: '7-signs-its-time-to-remodel-your-bathroom',
     date: '2025-03-21',
     author: 'BNC Builders Inc.',
     category: 'Bathroom',
     categorySlug: 'bathroom',
-    excerpt: 'Repairs eventually cost more than renovation',
+    excerpt: 'Repairs eventually cost more than renovation. Here are 7 signs your bathroom needs a full remodel, not another quick fix.',
     content: [
       'Every bathroom reaches a tipping point. Early repairs make sense - replacing a faucet, recaulking the tub, fixing a running toilet. But accumulating repairs eventually cost more than comprehensive bathroom remodeling Escondido renovation. Recognizing that inflection point saves money and frustration.',
       'Mold that keeps returning signals systemic problems. Surface treatment kills visible growth, but moisture sources remain. When bathroom remodeling San Diego mold reappears despite repeated cleaning, underlying ventilation or waterproofing failures need addressing. Comprehensive bathroom remodel Escondido renovation solves root causes rather than treating symptoms.',
@@ -155,13 +155,13 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 'choosing-kitchen-cabinets',
-    title: 'Cabinet Selection Simplified: A Kitchen Remodel Decision Framework',
+    title: 'How to Choose the Best Kitchen Cabinets',
     slug: 'choosing-the-best-kitchen-cabinets-10-factors-to-consider',
     date: '2025-03-05',
     author: 'BNC Builders Inc.',
     category: 'Kitchen',
     categorySlug: 'kitchen',
-    excerpt: 'Cabinets dominate kitchen budgets and visual impact',
+    excerpt: 'Cabinets dominate kitchen budgets and visual impact. Use this 10-factor framework to choose the best cabinets for your kitchen remodel.',
     content: [
       'Cabinet selection paralyzes many kitchen remodel Escondido CA homeowners. Too many options, conflicting advice, and significant budget implications create decision fatigue. This framework breaks down the process into manageable steps.',
       'Start with layout before aesthetics. How you cook determines what storage you need. Frequent bakers need wide drawers for sheets and pans. Spice enthusiasts benefit from dedicated organizers. Entertainers require glass-front displays. Map your cooking workflow before browsing Escondido kitchen remodeling cabinet styles.',
@@ -183,7 +183,7 @@ export const blogPosts: BlogPost[] = [
     author: 'BNC Builders Inc.',
     category: 'Bathroom',
     categorySlug: 'bathroom',
-    excerpt: 'After hundreds of bathroom remodeling projects, patterns emerge',
+    excerpt: 'After hundreds of bathroom remodeling projects, patterns emerge. Avoid these common mistakes that homeowners make during bathroom renovations.',
     content: [
       'BNC Builders has completed enough bathroom remodeling San Diego projects to recognize recurring patterns. Some mistakes happen frequently enough that addressing them proactively saves clients significant headaches. Here are the most common bathroom remodel Escondido errors we encounter.',
       'Underestimating moisture management tops the list. Bathrooms generate tremendous humidity and water exposure. Bathroom remodeling Escondido without proper waterproofing behind tiles, appropriate ventilation capacity, and moisture-resistant materials leads to premature failure. We have remediated countless bathrooms where corners were cut on moisture protection.',
@@ -204,7 +204,7 @@ export const blogPosts: BlogPost[] = [
     author: 'BNC Builders Inc.',
     category: 'Kitchen',
     categorySlug: 'kitchen',
-    excerpt: 'Online cost estimates rarely reflect San Diego reality',
+    excerpt: 'Online cost estimates rarely reflect San Diego reality. Get realistic kitchen remodel pricing based on actual local projects and material costs.',
     content: [
       'Search "kitchen remodel cost" online and you will find wildly varying estimates. National averages mean little in San Diego where labor costs, material availability, and permit requirements differ significantly from other markets. Here is what kitchen remodel Escondido CA projects actually cost locally.',
       'Small kitchen renovation San Diego (under 100 square feet) typically runs $15,000-$35,000 for comprehensive updates. This range assumes cabinet refacing rather than replacement, mid-grade countertops, standard appliances, and modest layout modifications. Full gut renovations with custom kitchen remodeling Escondido CA elements exceed this range significantly.',
