@@ -70,7 +70,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'Kitchens',
     categorySlug: 'kitchens',
     location: 'San Diego, CA',
-    description: 'This kitchen remodel San Diego project opened up a cramped galley layout into an airy entertainment space. Shaker-style cabinets in dove gray complement quartz waterfall countertops, while pendant lighting creates warm ambiance over the new island.',
+    description: 'San Diego kitchen remodel that opened a cramped galley into an airy entertainment space. Shaker cabinets, quartz waterfall countertops & pendant lighting.',
     featuredImage: 'BNC-BUILDERS/projects/kitchens/47thStreet/A7402402',
     images: [
       'BNC-BUILDERS/projects/kitchens/47thStreet/A7402402',
@@ -87,7 +87,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'Kitchens',
     categorySlug: 'kitchens',
     location: 'Encinitas, CA',
-    description: 'Coastal vibes meet modern functionality in this Encinitas kitchen remodeling services project. The oversized island anchors the space while floor-to-ceiling windows flood the room with natural light. Professional-grade appliances satisfy the homeowner who loves to cook.',
+    description: 'Coastal Encinitas kitchen remodel with an oversized island, floor-to-ceiling windows & professional-grade appliances. Modern functionality meets style.',
     featuredImage: 'BNC-BUILDERS/projects/kitchens/EzzeStreet/KITCHEN_EZZE_ST_',
     images: [
       'BNC-BUILDERS/projects/kitchens/EzzeStreet/KITCHEN_EZZE_ST_',
@@ -104,7 +104,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'Kitchens',
     categorySlug: 'kitchens',
     location: 'San Marcos, CA',
-    description: 'A dated 1990s kitchen became this contemporary showpiece through our kitchen renovation San Diego expertise. Clean lines, integrated appliances, and clever storage solutions maximize every inch of this modest-sized space.',
+    description: 'A dated 1990s kitchen transformed into a contemporary showpiece. Clean lines, integrated appliances & clever storage maximize every inch of space.',
     featuredImage: 'BNC-BUILDERS/projects/kitchens/Granite/KITCHEN_GRANITE_RD',
     images: [
       'BNC-BUILDERS/projects/kitchens/Granite/KITCHEN_GRANITE_RD',
@@ -121,7 +121,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'Kitchens',
     categorySlug: 'kitchens',
     location: 'Escondido, CA',
-    description: 'This kitchen remodel Escondido CA project honors the home\'s original craftsman character while adding modern conveniences. Custom millwork, marble surfaces, and brass fixtures create timeless elegance the homeowners will enjoy for decades.',
+    description: 'Escondido kitchen remodel honoring the home\'s craftsman character with modern conveniences. Custom millwork, marble surfaces & brass fixtures.',
     featuredImage: 'BNC-BUILDERS/projects/kitchens/SouthElm/_DSC0013',
     images: [
       'BNC-BUILDERS/projects/kitchens/SouthElm/_DSC0013',
@@ -140,7 +140,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'Kitchens',
     categorySlug: 'kitchens',
     location: 'Encinitas, CA',
-    description: 'Magazine-worthy results from this Escondido kitchen remodeling collaboration with the homeowner\'s interior designer. The dramatic range hood, custom backsplash, and statement lighting create a kitchen that functions as beautifully as it photographs.',
+    description: 'Designer kitchen remodel in Encinitas featuring a dramatic range hood, custom backsplash & statement lighting. A kitchen as beautiful as it is functional.',
     featuredImage: 'BNC-BUILDERS/projects/kitchens/StewartWay/A7402402',
     images: [
       'BNC-BUILDERS/projects/kitchens/StewartWay/A7402402',
@@ -157,7 +157,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'Kitchens',
     categorySlug: 'kitchens',
     location: 'San Diego, CA',
-    description: 'Built for a family that hosts constantly, this kitchen remodel Poway showcases double islands, a walk-in pantry, and commercial-grade ventilation. Guests naturally gather here, exactly as the homeowners intended.',
+    description: 'San Diego kitchen remodel built for entertaining. Double islands, walk-in pantry & commercial-grade ventilation for a family that loves to host.',
     featuredImage: 'BNC-BUILDERS/projects/kitchens/Caminitos/KITCHEN',
     images: [
       'BNC-BUILDERS/projects/kitchens/Caminitos/KITCHEN',
@@ -190,7 +190,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'Bathrooms',
     categorySlug: 'bathrooms',
     location: 'San Diego, CA',
-    description: 'This bathroom remodeling San Diego project transformed a cramped master bath into a true spa experience. The freestanding tub, rainfall shower, and heated floors make every morning feel like vacation.',
+    description: 'San Diego bathroom remodel transforming a cramped master bath into a spa retreat. Freestanding tub, rainfall shower & heated floors.',
     featuredImage: 'BNC-BUILDERS/projects/bathrooms/47thStreet/A7402606',
     images: [
       'BNC-BUILDERS/projects/bathrooms/47thStreet/A7402606',
@@ -229,7 +229,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'Bathrooms',
     categorySlug: 'bathrooms',
     location: 'Escondido, CA',
-    description: 'Clean lines and warm materials define this bathroom remodeling Escondido transformation. The double vanity solves morning traffic jams while the frameless glass shower creates an open, airy feel in a previously dark space.',
+    description: 'Escondido bathroom remodel with clean lines and warm materials. Double vanity and frameless glass shower create an open, airy feel.',
     featuredImage: 'BNC-BUILDERS/projects/bathrooms/Dexter/ESCONDIDO_BATHROOM',
     images: [
       'BNC-BUILDERS/projects/bathrooms/Dexter/ESCONDIDO_BATHROOM',
@@ -255,7 +255,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'ADUs',
     categorySlug: 'adus',
     location: 'San Marcos, CA',
-    description: 'This ADUs San Diego project added a complete 600 square foot living space to the backyard. The two-bedroom unit features a full kitchen, modern bathroom, and private patio - perfect for generating rental income while maintaining property aesthetics.',
+    description: 'San Marcos detached ADU adding 600 sq ft of living space. Two bedrooms, full kitchen, modern bathroom & private patio for rental income.',
     featuredImage: 'BNC-BUILDERS/projects/ADU/Granite/ADU_-_1235_GRANITE_RD._SAN_MARCOS',
     images: [
       'BNC-BUILDERS/projects/ADU/Granite/ADU_-_1235_GRANITE_RD._SAN_MARCOS',
@@ -289,7 +289,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'ADUs',
     categorySlug: 'adus',
     location: 'Encinitas, CA',
-    description: 'Designed to complement the main residence, this ADUs Los Angeles style unit features high ceilings, abundant windows, and a private entrance. The open floor plan maximizes livability while the outdoor space provides separation from the primary home.',
+    description: 'Coastal ADU in Encinitas with high ceilings, abundant windows & a private entrance. Open floor plan maximizes livability with outdoor separation.',
     featuredImage: 'BNC-BUILDERS/projects/ADU/Ezze/ADU_EZZE_ST_',
     images: [
       'BNC-BUILDERS/projects/ADU/Ezze/ADU_EZZE_ST_',
@@ -316,7 +316,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'Exterior Remodeling',
     categorySlug: 'exterior',
     location: 'Encinitas, CA',
-    description: 'This outdoor kitchens project created the ultimate entertaining destination. The built-in grill, refrigeration, and bar seating surround a spa and fire pit - all connected by premium hardscaping that flows naturally from the home interior.',
+    description: 'Encinitas outdoor living project with built-in grill, bar seating, spa & fire pit connected by premium hardscaping. The ultimate entertaining space.',
     featuredImage: 'BNC-BUILDERS/projects/exterior/paxton/PAXTON_WAY_SPA',
     images: [
       'BNC-BUILDERS/projects/exterior/paxton/PAXTON_WAY_SPA',
@@ -340,7 +340,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'Exterior Remodeling',
     categorySlug: 'exterior',
     location: 'Rancho Santa Fe, CA',
-    description: 'Comprehensive landscape remodeling transformed neglected grounds into this resort-caliber outdoor environment. The pool area, multiple seating zones, and mature plantings create distinct spaces for relaxation and entertaining.',
+    description: 'Rancho Santa Fe landscape remodel transforming neglected grounds into a resort-caliber outdoor space with pool, seating zones & mature plantings.',
     featuredImage: 'BNC-BUILDERS/projects/exterior/santaFe/RANCHO_SANTA_FE_POOL',
     images: [
       'BNC-BUILDERS/projects/exterior/santaFe/RANCHO_SANTA_FE_POOL',
@@ -359,7 +359,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'Exterior Remodeling',
     categorySlug: 'exterior',
     location: 'Encinitas, CA',
-    description: 'Our exterior remodelers turned a barren backyard into this lush outdoor retreat. Drought-tolerant plantings, artful hardscaping, and strategic lighting create year-round beauty while minimizing water usage - perfect for the San Diego climate.',
+    description: 'Encinitas landscape transformation with drought-tolerant plantings, artful hardscaping & strategic lighting. Year-round beauty, minimal water usage.',
     featuredImage: 'BNC-BUILDERS/projects/exterior/ezze/EZZE_ST_LANDSCAPE_',
     images: [
       'BNC-BUILDERS/projects/exterior/ezze/EZZE_ST_LANDSCAPE_',
@@ -383,7 +383,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'Common Areas',
     categorySlug: 'common-areas',
     location: 'San Diego County',
-    description: 'This collection showcases our remodeling Escondido expertise in living rooms, dining areas, and transitional spaces. Each room addition San Diego and garage remodeling project demonstrates how thoughtful design transforms daily living.',
+    description: 'Living room, dining area & transitional space transformations across San Diego County. Thoughtful design that improves how you live every day.',
     featuredImage: 'BNC-BUILDERS/projects/LivingSpaceTransformation/Copy_of_A7402492',
     images: [
       'BNC-BUILDERS/projects/LivingSpaceTransformation/Copy_of_A7402492',

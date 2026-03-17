@@ -28,7 +28,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
-  const { project: projectSlug } = await params;
+  const { category: categorySlug, project: projectSlug } = await params;
   const project = getProjectBySlug(projectSlug);
 
   if (!project) {
@@ -38,6 +38,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   return generatePageMetadata({
     title: `${project.title} | ${project.category}`,
     description: project.description || `View our ${project.category.toLowerCase()} project in ${project.location}`,
+    path: `/portfolio/${categorySlug}/${projectSlug}`,
   });
 }
 

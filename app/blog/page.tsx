@@ -14,6 +14,7 @@ import { BlogFilter } from '@/components/blog/BlogFilter';
 export const metadata: Metadata = generatePageMetadata({
   title: 'Blog',
   description: 'Read the latest home remodeling tips, ideas, and inspiration from BNC Builders Inc.',
+  path: '/blog',
 });
 
 export default function BlogPage() {

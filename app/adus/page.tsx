@@ -12,6 +12,7 @@ export const metadata: Metadata = service
   ? generatePageMetadata({
       title: 'Accessory Dwelling Units (ADUs)',
       description: service.description,
+      path: '/adus',
     })
   : {};
 

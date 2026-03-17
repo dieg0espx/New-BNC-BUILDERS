@@ -10,6 +10,7 @@ import { generatePageMetadata } from '@/lib/utils/metadata';
 export const metadata: Metadata = generatePageMetadata({
   title: 'Site Map',
   description: 'Navigate the BNC Builders Inc. website with our comprehensive site map.',
+  path: '/site-map',
 });
 
 const siteLinks = {

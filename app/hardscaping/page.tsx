@@ -12,6 +12,7 @@ export const metadata: Metadata = service
   ? generatePageMetadata({
       title: service.shortTitle,
       description: service.description,
+      path: '/hardscaping',
     })
   : {};
 

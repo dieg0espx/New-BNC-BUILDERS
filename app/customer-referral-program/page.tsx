@@ -9,8 +9,9 @@ import { generatePageMetadata } from '@/lib/utils/metadata';
 import { ReferralForm } from './ReferralForm';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Refer a Friend, Earn Rewards | Customer Referral Program',
-  description: 'Know someone who needs a kitchen remodel Escondido CA, bathroom remodeling San Diego, ADU construction, or home renovation? Refer them to BNC Builders and earn rewards through our Refer and Dine program.',
+  title: 'Customer Referral Program',
+  description: 'Refer a friend to BNC Builders and earn rewards through our Refer and Dine program. Kitchen, bathroom, ADU & home remodeling in San Diego County.',
+  path: '/customer-referral-program',
 });
 
 export default function CustomerReferralProgramPage() {

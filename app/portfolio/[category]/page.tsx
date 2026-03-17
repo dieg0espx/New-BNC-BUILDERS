@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   return generatePageMetadata({
     title: `${category.name} Portfolio`,
     description: category.description,
+    path: `/portfolio/${categorySlug}`,
   });
 }
 

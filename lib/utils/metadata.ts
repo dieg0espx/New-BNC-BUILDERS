@@ -106,7 +106,7 @@ export const defaultMetadata: Metadata = {
     default: `Escondido Home Remodeling | ${company.name}`,
     template: `%s | ${company.name}`,
   },
-  description: 'Professional home remodeling services in Escondido & San Diego County. Kitchen, bathroom, ADU construction & more. 30+ years experience. Free estimates. Call (760) 658-6238.',
+  description: 'Professional home remodeling in Escondido & San Diego County. Kitchen, bathroom, ADU construction & more. 30+ years experience. Free estimates.',
   keywords: [
     'home remodeling Escondido',
     'kitchen remodeling San Diego',
@@ -139,6 +139,7 @@ export const defaultMetadata: Metadata = {
     canonical: SITE_URL,
     languages: {
       'en-US': SITE_URL,
+      'x-default': SITE_URL,
     },
   },
   openGraph: {

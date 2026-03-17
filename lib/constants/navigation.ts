@@ -71,5 +71,6 @@ export const footerNavigation = {
     { label: 'Areas We Serve', href: '/areas-we-serve' },
     { label: 'Referral Program', href: '/customer-referral-program' },
     { label: 'ADU Handbook', href: '/adu-handbook-download' },
+    { label: 'Site Map', href: '/site-map' },
   ],
 };

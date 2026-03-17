@@ -39,6 +39,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   return generatePageMetadata({
     title: post.title,
     description: post.excerpt,
+    path: `/blog/${slug}`,
   });
 }
 
