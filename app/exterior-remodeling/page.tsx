@@ -10,9 +10,15 @@ const service = getServiceBySlug('exterior-remodeling');
 
 export const metadata: Metadata = service
   ? generatePageMetadata({
-      title: service.shortTitle,
-      description: service.description,
+      title: 'Exterior Remodeling San Diego & Escondido',
+      description: 'Exterior remodeling in San Diego & Escondido. Outdoor living spaces, curb appeal upgrades, patios, decks & complete exterior transformations. Free estimates.',
       path: '/exterior-remodeling',
+      keywords: [
+        'exterior remodeling san diego',
+        'exterior remodeling escondido',
+        'outdoor remodeling san diego',
+        'curb appeal san diego',
+      ],
     })
   : {};
 

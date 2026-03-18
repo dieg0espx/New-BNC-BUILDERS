@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { HeroMain, ServiceGrid, TrustBadges, CTABanner, ContentSection, ServiceAreaContact, TeamContactInfo, ProcessSteps } from '@/components/sections';
 import { QuickContactForm } from '@/components/forms';
 import { Container, Section, Carousel, AnimatedSection } from '@/components/ui';
+import { ReviewTicker } from '@/components/ui/ReviewTicker';
 import { CloudinaryImage } from '@/components/ui/CloudinaryImage';
 import { interiorServices, exteriorServices } from '@/lib/constants/services';
 import { contentImages } from '@/lib/constants/images';
@@ -201,6 +202,17 @@ export default function HomePage() {
 
       {/* Testimonials */}
       <TestimonialsSection testimonials={testimonials} />
+
+      {/* Review Ticker */}
+      <ReviewTicker reviews={[
+        { name: 'David & Maria T.', text: 'They transformed our dated kitchen into a stunning modern space that exceeded every expectation.', rating: 5, project: 'Kitchen Remodel' },
+        { name: 'Robert H.', text: 'BNC handled our ADU project from permit to completion. The craftsmanship made this complex project feel effortless.', rating: 5, project: 'ADU Construction' },
+        { name: 'Patricia W.', text: 'Exceptional results at both locations. Their team also repaired our aging deck beautifully.', rating: 5, project: 'Bathroom Renovation' },
+        { name: 'James & Linda K.', text: 'The outdoor kitchen transformed how our family lives. We spend every weekend out there now.', rating: 5, project: 'Outdoor Kitchen' },
+        { name: 'Michael S.', text: 'Kitchen, two bathrooms, and new flooring - BNC coordinated everything seamlessly.', rating: 5, project: 'Whole Home Remodel' },
+        { name: 'Jennifer M.', text: 'The attention to detail is remarkable. Every cabinet aligns perfectly.', rating: 5, project: 'Kitchen Remodel' },
+        { name: 'Elizabeth C.', text: 'Our kitchen remodel came in on budget and finished ahead of schedule. That rarely happens.', rating: 5, project: 'Kitchen Renovation' },
+      ]} />
 
       {/* Trust Section with Badges */}
       <TrustBadges showBadges={true} showSellingPoints={false} />

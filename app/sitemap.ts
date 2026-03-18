@@ -30,6 +30,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/new-room-additions',
     '/adus',
     '/pre-construction',
+    // ADU Hub Pages
+    '/adus/cost-guide',
+    '/adus/regulations',
+    '/adus/types',
+    '/adus/process',
     // Exterior Services
     '/exterior-remodeling',
     '/deck-repair',
@@ -37,13 +42,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/outdoor-kitchens',
     '/landscape-remodeling',
     '/3d-landscape-design',
+    // Location Pages
+    '/areas/san-diego',
+    '/areas/carlsbad',
+    '/areas/la-jolla',
+    '/areas/poway',
+    '/areas/oceanside',
+    '/areas/encinitas',
+    '/areas/vista',
+    '/areas/chula-vista',
   ];
 
   const staticSitemap: MetadataRoute.Sitemap = staticPages.map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: currentDate,
     changeFrequency: path === '' ? 'daily' : 'weekly',
-    priority: path === '' ? 1 : path.includes('remodeling') || path.includes('adus') ? 0.9 : 0.8,
+    priority: path === ''
+      ? 1
+      : ['/kitchen-remodeling', '/bathroom-remodeling', '/home-remodeling', '/garage-remodeling',
+         '/new-room-additions', '/adus', '/pre-construction', '/exterior-remodeling', '/deck-repair',
+         '/hardscaping', '/outdoor-kitchens', '/landscape-remodeling', '/3d-landscape-design'].includes(path)
+        ? 0.9
+        : path.startsWith('/adus/') || path.startsWith('/areas/')
+          ? 0.8
+          : 0.7,
   }));
 
   // Portfolio category pages

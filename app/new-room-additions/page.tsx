@@ -10,9 +10,15 @@ const service = getServiceBySlug('new-room-additions');
 
 export const metadata: Metadata = service
   ? generatePageMetadata({
-      title: service.shortTitle,
-      description: service.description,
+      title: 'Room Additions San Diego & Escondido',
+      description: 'New room additions in San Diego & Escondido. Expand your living space with seamless additions that match your home. Permits to completion. Free estimates.',
       path: '/new-room-additions',
+      keywords: [
+        'room addition san diego',
+        'room addition escondido',
+        'home addition san diego',
+        'room addition contractor san diego',
+      ],
     })
   : {};
 

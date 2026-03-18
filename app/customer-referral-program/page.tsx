@@ -9,7 +9,7 @@ import { generatePageMetadata } from '@/lib/utils/metadata';
 import { ReferralForm } from './ReferralForm';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Customer Referral Program',
+  title: 'Customer Referral Program - Refer & Dine',
   description: 'Refer a friend to BNC Builders and earn rewards through our Refer and Dine program. Kitchen, bathroom, ADU & home remodeling in San Diego County.',
   path: '/customer-referral-program',
 });

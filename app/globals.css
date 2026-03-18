@@ -282,6 +282,20 @@ select:focus {
   }
 }
 
+/* Review Ticker */
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.review-ticker-track {
+  animation: ticker-scroll 40s linear infinite;
+}
+
+.review-ticker-track:hover {
+  animation-play-state: paused;
+}
+
 @keyframes shimmer {
   0% {
     background-position: -200% 0;

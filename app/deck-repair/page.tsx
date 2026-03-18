@@ -10,9 +10,15 @@ const service = getServiceBySlug('deck-repair');
 
 export const metadata: Metadata = service
   ? generatePageMetadata({
-      title: service.shortTitle,
-      description: service.description,
+      title: 'Deck Repair San Diego & Escondido',
+      description: 'Professional deck repair & restoration in San Diego & Escondido. Fix structural issues, replace boards, refinish surfaces. Free deck inspection.',
       path: '/deck-repair',
+      keywords: [
+        'deck repair san diego',
+        'deck repair escondido',
+        'deck restoration san diego',
+        'deck contractor san diego',
+      ],
     })
   : {};
 

@@ -9,10 +9,16 @@ import { generatePageMetadata } from '@/lib/utils/metadata';
 import { ADUHandbookForm } from './ADUHandbookForm';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'ADU Handbook Download',
-  description: 'Your complete guide to building an ADU in San Diego or Los Angeles. Download the free handbook from BNC Builders.',
+  title: 'Free ADU Handbook Download',
+  description: 'Download your free guide to building an ADU in San Diego. Covers costs, regulations, permits, timelines & everything you need to know. By BNC Builders.',
   path: '/adu-handbook-download',
   noIndex: true,
+  keywords: [
+    'adu handbook san diego',
+    'adu guide download',
+    'adu building guide',
+    'accessory dwelling unit guide',
+  ],
 });
 
 export default function ADUHandbookDownloadPage() {
@@ -67,7 +73,7 @@ export default function ADUHandbookDownloadPage() {
                   <svg className="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-zinc-700">ROI calculations and rental income potential in today's market</span>
+                  <span className="text-zinc-700">ROI calculations and rental income potential in today&apos;s market</span>
                 </li>
               </ul>
             </div>

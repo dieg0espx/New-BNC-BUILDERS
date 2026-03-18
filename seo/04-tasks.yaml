@@ -1,0 +1,993 @@
+##############################################
+# BNC Builders - SEO Boost Task List
+# Date: 2026-03-18
+# Goal: 106 -> 1,000+ organic visits/mo
+##############################################
+
+project: BNC Builders SEO Boost
+timeline: 12 weeks
+current_state:
+  domain_rating: 28
+  organic_keywords: 14
+  organic_traffic: 106
+  traffic_value_usd: 682
+  keywords_top_3: 2
+
+# ============================================
+# PHASE 1: Fix Critical Technical Issues
+# Timeline: Week 1-2
+# Impact: Stop bleeding rankings to wrong pages
+# ============================================
+
+phase_1:
+  name: Fix Critical Technical Issues
+  timeline: Week 1-2
+  priority: IMMEDIATE
+  goal: Fix cannibalization, old URLs, and canonical issues
+
+  tasks:
+
+    # --- 1.1 Keyword Cannibalization Fix ---
+    - id: 1.1.1
+      task: Audit /about-us page for bathroom-related content
+      type: code_review
+      file: app/about-us/page.tsx
+      detail: >
+        Find all mentions of "bathroom", "remodeling", "renovation" on the
+        about-us page that are causing Google to rank it for
+        "bathroom remodeling escondido" instead of /bathroom-remodeling.
+      status: todo
+
+    - id: 1.1.2
+      task: Remove or reduce bathroom service content from /about-us
+      type: code_change
+      file: app/about-us/page.tsx
+      detail: >
+        Remove or significantly reduce bathroom remodeling mentions on
+        about-us page so Google stops associating it with bathroom keywords.
+        Keep only a brief general mention if needed.
+      depends_on: [1.1.1]
+      status: todo
+
+    - id: 1.1.3
+      task: Optimize /bathroom-remodeling page for target keywords
+      type: code_change
+      file: app/bathroom-remodeling/page.tsx
+      detail: >
+        Ensure the page has:
+        - Title tag: "Bathroom Remodeling Escondido | BNC Builders Inc."
+        - H1 includes "bathroom remodeling" + "Escondido"
+        - Meta description (150-160 chars) with primary keyword
+        - Strong opening paragraph with "bathroom remodeling escondido"
+        - ServiceJsonLd schema for bathroom remodeling
+      status: todo
+
+    - id: 1.1.4
+      task: Add internal links to /bathroom-remodeling from key pages
+      type: code_change
+      files:
+        - app/page.tsx
+        - app/home-remodeling/page.tsx
+        - app/kitchen-remodeling/page.tsx
+        - components that render service links
+      detail: >
+        Add 3-5 internal links from high-authority pages pointing to
+        /bathroom-remodeling with anchor text variations:
+        - "bathroom remodeling"
+        - "Escondido bathroom remodeling"
+        - "bathroom renovation services"
+      depends_on: [1.1.3]
+      status: todo
+
+    # --- 1.2 Old URL Indexing Cleanup ---
+    - id: 1.2.1
+      task: Verify 301 redirects are working for old URLs
+      type: verification
+      detail: >
+        Test these old URLs return proper 301 -> new URL:
+        - /home-remodeling/kitchen-remodeling/ -> /kitchen-remodeling
+        - /exterior-remodeling/3d-landscape-design/ -> /3d-landscape-design
+        Use curl -I to verify status codes and redirect targets.
+      status: todo
+
+    - id: 1.2.2
+      task: Scan codebase for internal links to old URL paths
+      type: code_review
+      detail: >
+        Search all components, pages, and data files for any links still
+        pointing to old URL structure:
+        - /home-remodeling/kitchen-remodeling
+        - /home-remodeling/bathroom-remodeling
+        - /exterior-remodeling/3d-landscape-design
+        - /exterior-remodeling/* (any old nested paths)
+        Update any found to use new flat URL structure.
+      status: todo
+
+    - id: 1.2.3
+      task: Request URL removal in Google Search Console
+      type: manual
+      detail: >
+        In GSC -> Removals -> New Request:
+        - Remove: www.bncbuildersinc.com/home-remodeling/kitchen-remodeling/
+        - Remove: www.bncbuildersinc.com/exterior-remodeling/3d-landscape-design/
+        Also submit updated sitemap.xml.
+      depends_on: [1.2.1]
+      status: todo
+
+    # --- 1.3 Kitchen Page Consolidation ---
+    - id: 1.3.1
+      task: Verify /home-remodeling/kitchen-remodeling/ 301 passes link equity
+      type: verification
+      file: next.config.ts
+      detail: >
+        Confirm redirect rule uses permanent: true (301, not 302).
+        Check that the redirect target matches the canonical URL exactly.
+      status: todo
+
+    - id: 1.3.2
+      task: Request re-crawl of /kitchen-remodeling in GSC
+      type: manual
+      detail: >
+        In GSC -> URL Inspection -> enter www.bncbuildersinc.com/kitchen-remodeling
+        -> Request Indexing. This prompts Google to re-evaluate and consolidate.
+      depends_on: [1.3.1]
+      status: todo
+
+    # --- 1.4 www vs non-www Fix ---
+    - id: 1.4.1
+      task: Decide canonical domain (www vs non-www)
+      type: decision
+      detail: >
+        Current state: some pages indexed as bncbuildersinc.com, others as
+        www.bncbuildersinc.com. Need to pick ONE and enforce it.
+        Recommendation: Use www.bncbuildersinc.com (already used by most pages).
+      status: todo
+
+    - id: 1.4.2
+      task: Ensure NEXT_PUBLIC_SITE_URL uses canonical domain
+      type: code_change
+      file: .env / .env.production
+      detail: >
+        Set NEXT_PUBLIC_SITE_URL=https://www.bncbuildersinc.com
+        (with www). This drives canonical URLs, sitemap, and OG tags.
+      depends_on: [1.4.1]
+      status: todo
+
+    - id: 1.4.3
+      task: Add non-www to www redirect in next.config.ts or hosting
+      type: code_change
+      file: next.config.ts (or Vercel config)
+      detail: >
+        Ensure all requests to bncbuildersinc.com (no www) 301 redirect
+        to www.bncbuildersinc.com. Check if Vercel handles this or if
+        we need a middleware redirect.
+      depends_on: [1.4.1]
+      status: todo
+
+    - id: 1.4.4
+      task: Verify all canonical tags output www version
+      type: verification
+      file: lib/utils/metadata.ts
+      detail: >
+        Check generatePageMetadata() outputs canonical URLs with www prefix.
+        Spot-check 5 pages to confirm <link rel="canonical"> is correct.
+      status: todo
+
+
+# ============================================
+# PHASE 2: On-Page Optimization
+# Timeline: Week 2-4
+# Impact: Improve rankings for existing pages
+# ============================================
+
+phase_2:
+  name: On-Page Optimization
+  timeline: Week 2-4
+  priority: HIGH
+  goal: Optimize 8 service pages to rank for target keywords
+
+  tasks:
+
+    # --- 2.1 Kitchen Remodeling Page ---
+    - id: 2.1.1
+      task: Optimize /kitchen-remodeling metadata
+      type: code_change
+      file: app/kitchen-remodeling/page.tsx
+      target_keyword: "kitchen remodel escondido"
+      current_position: 6
+      target_position: top 3
+      volume: 100
+      detail: >
+        Update metadata:
+        - Title: "Kitchen Remodeling Escondido CA | Expert Kitchen Remodel | BNC Builders"
+        - Description: 150-160 chars with "kitchen remodel escondido" + CTA
+        - H1: "Kitchen Remodeling in Escondido"
+      status: todo
+
+    - id: 2.1.2
+      task: Expand /kitchen-remodeling content to 1,500+ words
+      type: content
+      file: app/kitchen-remodeling/page.tsx
+      detail: >
+        Add sections:
+        - Detailed service description (what's included)
+        - Kitchen remodel process/timeline (design -> demo -> install)
+        - Types of kitchen remodels (full, partial, cabinet refacing)
+        - Cost ranges and factors
+        - Before/after portfolio gallery (inline)
+        - "Why choose BNC for your Escondido kitchen remodel"
+        - Service area paragraph mentioning San Diego cities
+      status: todo
+
+    - id: 2.1.3
+      task: Add FAQ section with schema to /kitchen-remodeling
+      type: code_change
+      file: app/kitchen-remodeling/page.tsx
+      detail: >
+        Add 5-7 FAQs with FAQJsonLd schema:
+        - How much does a kitchen remodel cost in Escondido?
+        - How long does a kitchen remodel take?
+        - Do I need permits for a kitchen remodel in Escondido?
+        - What's included in a full kitchen remodel?
+        - Can I live in my house during a kitchen remodel?
+      status: todo
+
+    # --- 2.2 Bathroom Remodeling Page ---
+    - id: 2.2.1
+      task: Optimize /bathroom-remodeling metadata
+      type: code_change
+      file: app/bathroom-remodeling/page.tsx
+      target_keyword: "bathroom remodeling escondido"
+      current_position: not ranking (wrong page ranks)
+      target_position: top 5
+      volume: 80
+      detail: >
+        Update metadata:
+        - Title: "Bathroom Remodeling Escondido | San Diego Bathroom Remodel | BNC Builders"
+        - Description: 150-160 chars emphasizing Escondido bathroom remodeling
+        - H1: "Bathroom Remodeling in Escondido, CA"
+      status: todo
+
+    - id: 2.2.2
+      task: Expand /bathroom-remodeling content to 1,500+ words
+      type: content
+      file: app/bathroom-remodeling/page.tsx
+      detail: >
+        Add sections covering:
+        - Full bathroom remodel services
+        - Master bath vs guest bath remodeling
+        - Walk-in shower conversions
+        - Bathroom remodel cost ranges for Escondido
+        - Process and timeline
+        - Before/after gallery
+        - Service areas (Escondido, Poway, San Diego, etc.)
+      status: todo
+
+    - id: 2.2.3
+      task: Add FAQ section with schema to /bathroom-remodeling
+      type: code_change
+      file: app/bathroom-remodeling/page.tsx
+      detail: >
+        Add 5-7 FAQs with FAQJsonLd schema:
+        - How much does a bathroom remodel cost in Escondido?
+        - How long does a bathroom renovation take?
+        - Should I remodel my master bathroom or guest bathroom first?
+        - Do I need a permit for bathroom remodeling in San Diego County?
+        - What's the ROI on a bathroom remodel?
+      status: todo
+
+    # --- 2.3 Home Remodeling Page ---
+    - id: 2.3.1
+      task: Optimize /home-remodeling metadata and content
+      type: code_change
+      file: app/home-remodeling/page.tsx
+      target_keyword: "home remodeling escondido"
+      volume: 100
+      detail: >
+        - Title: "Home Remodeling Escondido | Whole Home Renovation | BNC Builders"
+        - H1: "Home Remodeling in Escondido, CA"
+        - Expand content to 1,500+ words
+        - Add FAQ section with FAQJsonLd
+        - Cross-link to kitchen, bathroom, and other service pages
+      status: todo
+
+    # --- 2.4 Deck Repair Page ---
+    - id: 2.4.1
+      task: Optimize /deck-repair metadata and content
+      type: code_change
+      file: app/deck-repair/page.tsx
+      target_keyword: "deck repair san diego"
+      current_position: 8
+      target_position: top 5
+      volume: 90
+      detail: >
+        - Title: "Deck Repair San Diego | Expert Deck Restoration | BNC Builders"
+        - Expand content covering: repair vs replace, materials, cost, timeline
+        - Add FAQ section with schema
+        - Mention specific San Diego areas served
+      status: todo
+
+    # --- 2.5 ADU Page (initial optimization) ---
+    - id: 2.5.1
+      task: Optimize /adus metadata for "adu contractor san diego"
+      type: code_change
+      file: app/adus/page.tsx
+      target_keyword: "adu contractor san diego"
+      volume: 200
+      detail: >
+        - Title: "ADU Contractor San Diego | Custom ADU Builder | BNC Builders"
+        - H1: "San Diego ADU Contractor & Builder"
+        - Description targeting "adu contractor san diego" + "adu builders san diego"
+        - Note: Full content expansion happens in Phase 3
+      status: todo
+
+    # --- 2.6 Outdoor Kitchens Page ---
+    - id: 2.6.1
+      task: Optimize /outdoor-kitchens metadata and content
+      type: code_change
+      file: app/outdoor-kitchens/page.tsx
+      target_keyword: "outdoor kitchen san diego"
+      volume: 200
+      detail: >
+        - Title: "Outdoor Kitchen San Diego | Custom Outdoor Kitchens | BNC Builders"
+        - Expand content to 1,500+ words
+        - Add FAQ section with schema
+        - Include before/after examples
+      status: todo
+
+    # --- 2.7 Room Additions Page ---
+    - id: 2.7.1
+      task: Optimize /new-room-additions metadata and content
+      type: code_change
+      file: app/new-room-additions/page.tsx
+      target_keyword: "room addition san diego"
+      volume: 200
+      detail: >
+        - Title: "Room Additions San Diego | New Room Addition Contractor | BNC Builders"
+        - Expand content covering: types of additions, costs, permits, timeline
+        - Add FAQ section with schema
+      status: todo
+
+    # --- 2.8 Hardscaping Page ---
+    - id: 2.8.1
+      task: Optimize /hardscaping metadata and content
+      type: code_change
+      file: app/hardscaping/page.tsx
+      target_keyword: "hardscaping san diego"
+      volume: 70
+      detail: >
+        - Title: "Hardscaping San Diego | Pavers, Patios & Retaining Walls | BNC Builders"
+        - Expand content to 1,500+ words
+        - Add FAQ section with schema
+      status: todo
+
+    # --- 2.9 Internal Linking Overhaul ---
+    - id: 2.9.1
+      task: Create internal linking map between all service pages
+      type: planning
+      detail: >
+        Map out which service pages should link to each other:
+        - Kitchen -> Bathroom, Home Remodeling, Outdoor Kitchen
+        - Bathroom -> Kitchen, Home Remodeling
+        - ADU -> New Room Additions, Pre-Construction
+        - Deck Repair -> Outdoor Kitchen, Hardscaping, Exterior Remodeling
+        - Landscape -> Hardscaping, 3D Design, Outdoor Kitchen
+        - etc.
+      status: todo
+
+    - id: 2.9.2
+      task: Implement internal links across all service pages
+      type: code_change
+      files: all app/[service]/page.tsx files
+      detail: >
+        Add "Related Services" section to each page with 3-4 contextual
+        links to related services. Use keyword-rich anchor text.
+      depends_on: [2.9.1]
+      status: todo
+
+
+# ============================================
+# PHASE 3: ADU Content Hub
+# Timeline: Week 3-6
+# Impact: Capture 20,000+ monthly ADU searches
+# ============================================
+
+phase_3:
+  name: ADU Content Hub
+  timeline: Week 3-6
+  priority: HIGH
+  goal: Build comprehensive ADU content ecosystem
+
+  tasks:
+
+    # --- 3.1 ADU Pillar Page ---
+    - id: 3.1.1
+      task: Expand /adus into comprehensive pillar page (2,500+ words)
+      type: content
+      file: app/adus/page.tsx
+      target_keywords:
+        - "adu contractor san diego" (200/mo, KD 5)
+        - "adu builders san diego" (600/mo, KD 17)
+      detail: >
+        Transform into pillar page covering:
+        - What is an ADU (types: detached, attached, garage conversion, JADU)
+        - BNC's ADU build process (design -> permit -> build -> inspect)
+        - ADU costs overview (link to cost guide subpage)
+        - San Diego ADU regulations summary (link to regulations subpage)
+        - ADU portfolio gallery with before/after
+        - ADU calculator CTA + handbook download CTA
+        - Testimonials from ADU clients
+        - Service areas for ADU construction
+        - FAQ section (8-10 questions) with FAQJsonLd
+      status: todo
+
+    - id: 3.1.2
+      task: Add ServiceJsonLd schema for ADU page
+      type: code_change
+      file: app/adus/page.tsx
+      detail: >
+        Add structured data:
+        - ServiceJsonLd for "ADU Construction" service
+        - FAQJsonLd for FAQ section
+        - BreadcrumbJsonLd
+      status: todo
+
+    # --- 3.2 ADU Cost Guide Page ---
+    - id: 3.2.1
+      task: Create /adus/cost-guide page
+      type: new_page
+      file: app/adus/cost-guide/page.tsx
+      target_keywords:
+        - "adu san diego cost" (100/mo, KD 0)
+        - "cost of building an adu in san diego" (300/mo, KD 0)
+      detail: >
+        New page covering:
+        - Average ADU costs in San Diego by type (detached, garage, JADU)
+        - Cost breakdown: permits, design, construction, utilities
+        - Factors that affect ADU cost
+        - Cost comparison table by size (400sf, 600sf, 800sf, 1000sf, 1200sf)
+        - Financing options
+        - ROI and rental income potential
+        - CTA: "Get your free ADU cost estimate"
+        - FAQ section with cost-related questions
+      status: todo
+
+    # --- 3.3 ADU Regulations Page ---
+    - id: 3.3.1
+      task: Create /adus/regulations page
+      type: new_page
+      file: app/adus/regulations/page.tsx
+      target_keywords:
+        - "san diego adu regulations"
+        - "adu permit san diego"
+        - "adu requirements san diego"
+      detail: >
+        New page covering:
+        - Current San Diego ADU regulations (SB 9, AB 68, etc.)
+        - Lot size requirements
+        - Setback requirements
+        - Height restrictions
+        - Parking requirements (or exemptions)
+        - Permit process and timeline
+        - Owner-occupancy rules
+        - City-specific rules for Escondido vs San Diego
+        - "BNC handles all permits for you" CTA
+      status: todo
+
+    # --- 3.4 ADU Types Page ---
+    - id: 3.4.1
+      task: Create /adus/types page
+      type: new_page
+      file: app/adus/types/page.tsx
+      target_keywords:
+        - "prefab adu san diego" (300/mo, KD 0)
+        - "custom adu builders" (700/mo, KD 11)
+        - "accessory dwelling unit builder" (600/mo, KD 9)
+      detail: >
+        New page covering:
+        - Detached ADUs (new construction)
+        - Attached ADUs (additions)
+        - Garage conversions
+        - JADUs (Junior ADUs)
+        - Prefab vs custom-built ADUs (pros/cons comparison)
+        - Photo gallery of each type BNC has built
+        - Which type is right for your property
+      status: todo
+
+    # --- 3.5 ADU Process Page ---
+    - id: 3.5.1
+      task: Create /adus/process page
+      type: new_page
+      file: app/adus/process/page.tsx
+      target_keywords:
+        - "adu construction process"
+        - "how to build an adu"
+        - "adu timeline san diego"
+      detail: >
+        New page covering BNC's ADU build process:
+        - Step 1: Free consultation & site assessment
+        - Step 2: Design & architecture
+        - Step 3: Permit submission
+        - Step 4: Construction
+        - Step 5: Inspection & handover
+        - Typical timeline (4-8 months)
+        - What to expect at each stage
+        - CTA: "Start your ADU project"
+      status: todo
+
+    # --- 3.6 ADU Blog Posts ---
+    - id: 3.6.1
+      task: Write blog post "How Much Does an ADU Cost in San Diego? (2026 Guide)"
+      type: blog_content
+      target_keyword: "adu cost san diego"
+      volume: 400+
+      word_count: 2000+
+      detail: >
+        Long-form guide with cost tables, real project examples,
+        financing options. Link to /adus and /adus/cost-guide.
+      status: todo
+
+    - id: 3.6.2
+      task: Write blog post "San Diego ADU Regulations: Complete Homeowner's Guide"
+      type: blog_content
+      target_keyword: "san diego adu regulations"
+      volume: 200+
+      word_count: 2000+
+      detail: >
+        Comprehensive regulations guide. Link to /adus and /adus/regulations.
+      status: todo
+
+    - id: 3.6.3
+      task: Write blog post "Prefab vs Custom ADU: Which Is Right for Your Property?"
+      type: blog_content
+      target_keyword: "prefab vs custom adu"
+      volume: 300+
+      word_count: 1500+
+      detail: >
+        Comparison guide with pros/cons table. Link to /adus/types.
+      status: todo
+
+    - id: 3.6.4
+      task: Write blog post "ADU ROI: How an ADU Increases Your San Diego Home Value"
+      type: blog_content
+      target_keyword: "adu roi san diego"
+      volume: 200+
+      word_count: 1500+
+      detail: >
+        ROI analysis with rental income calculations, property value data.
+      status: todo
+
+    - id: 3.6.5
+      task: Write blog post "ADU Financing Options for San Diego Homeowners"
+      type: blog_content
+      target_keyword: "adu financing san diego"
+      volume: 150+
+      word_count: 1500+
+      detail: >
+        Cover: home equity, construction loans, HELOC, cash-out refi.
+      status: todo
+
+    # --- 3.7 Sitemap & Navigation ---
+    - id: 3.7.1
+      task: Add new ADU subpages to sitemap.ts
+      type: code_change
+      file: app/sitemap.ts
+      detail: >
+        Add all new ADU pages with priority 0.8 and weekly changeFrequency:
+        - /adus/cost-guide
+        - /adus/regulations
+        - /adus/types
+        - /adus/process
+      depends_on: [3.2.1, 3.3.1, 3.4.1, 3.5.1]
+      status: todo
+
+    - id: 3.7.2
+      task: Add ADU subpage navigation/links to /adus pillar page
+      type: code_change
+      file: app/adus/page.tsx
+      detail: >
+        Add prominent links/cards to each subpage from the main ADU page.
+        This creates the hub-and-spoke internal link structure.
+      depends_on: [3.2.1, 3.3.1, 3.4.1, 3.5.1]
+      status: todo
+
+
+# ============================================
+# PHASE 4: Location Pages
+# Timeline: Week 4-8
+# Impact: Capture city-specific search traffic
+# ============================================
+
+phase_4:
+  name: Location Pages
+  timeline: Week 4-8
+  priority: MEDIUM
+  goal: Create 8 city-specific landing pages
+
+  tasks:
+
+    # --- 4.1 San Diego (highest volume) ---
+    - id: 4.1.1
+      task: Create /areas/san-diego location page
+      type: new_page
+      file: app/areas/san-diego/page.tsx
+      target_keywords:
+        - "home remodeling san diego" (800/mo, KD 45)
+        - "kitchen remodel san diego" (800/mo, KD 25)
+        - "bathroom remodel san diego" (900/mo, KD 17)
+      detail: >
+        Comprehensive San Diego remodeling page:
+        - Overview of BNC's San Diego services
+        - List all services available in SD
+        - San Diego-specific portfolio projects
+        - San Diego neighborhoods served (list specific areas)
+        - San Diego permit info
+        - Client testimonials from SD projects
+        - LocalBusiness schema for San Diego
+        - 1,500+ words of unique content
+      status: todo
+
+    # --- 4.2 Carlsbad ---
+    - id: 4.2.1
+      task: Create /areas/carlsbad location page
+      type: new_page
+      file: app/areas/carlsbad/page.tsx
+      target_keywords:
+        - "kitchen remodel carlsbad"
+        - "home remodeling carlsbad"
+        - "contractor carlsbad"
+      detail: >
+        Unique Carlsbad content: coastal home remodeling expertise,
+        Carlsbad neighborhoods, Carlsbad-specific projects, local permits.
+        1,000+ words. LocalBusiness schema.
+      status: todo
+
+    # --- 4.3 La Jolla ---
+    - id: 4.3.1
+      task: Create /areas/la-jolla location page
+      type: new_page
+      file: app/areas/la-jolla/page.tsx
+      target_keywords:
+        - "kitchen remodel la jolla"
+        - "home remodeling la jolla"
+        - "luxury remodeling la jolla"
+      detail: >
+        La Jolla content: luxury/high-end remodeling focus, coastal homes,
+        La Jolla neighborhoods, premium projects. 1,000+ words.
+      status: todo
+
+    # --- 4.4 Poway ---
+    - id: 4.4.1
+      task: Create /areas/poway location page
+      type: new_page
+      file: app/areas/poway/page.tsx
+      target_keywords:
+        - "home remodeling poway"
+        - "contractor poway"
+        - "kitchen remodel poway"
+      detail: >
+        Poway content: suburban home remodeling, larger lot projects,
+        outdoor living spaces. 1,000+ words.
+      status: todo
+
+    # --- 4.5 Oceanside ---
+    - id: 4.5.1
+      task: Create /areas/oceanside location page
+      type: new_page
+      file: app/areas/oceanside/page.tsx
+      target_keywords:
+        - "remodeling oceanside"
+        - "contractor oceanside"
+      detail: Oceanside-specific content, 1,000+ words. LocalBusiness schema.
+      status: todo
+
+    # --- 4.6 Encinitas ---
+    - id: 4.6.1
+      task: Create /areas/encinitas location page
+      type: new_page
+      file: app/areas/encinitas/page.tsx
+      target_keywords:
+        - "remodeling encinitas"
+        - "contractor encinitas"
+      detail: Encinitas-specific content, 1,000+ words. LocalBusiness schema.
+      status: todo
+
+    # --- 4.7 Vista ---
+    - id: 4.7.1
+      task: Create /areas/vista location page
+      type: new_page
+      file: app/areas/vista/page.tsx
+      target_keywords:
+        - "home remodeling vista"
+        - "contractor vista"
+      detail: Vista-specific content, 1,000+ words. LocalBusiness schema.
+      status: todo
+
+    # --- 4.8 Chula Vista ---
+    - id: 4.8.1
+      task: Create /areas/chula-vista location page
+      type: new_page
+      file: app/areas/chula-vista/page.tsx
+      target_keywords:
+        - "remodeling chula vista"
+        - "contractor chula vista"
+      detail: Chula Vista-specific content, 1,000+ words. LocalBusiness schema.
+      status: todo
+
+    # --- 4.9 Sitemap & Navigation ---
+    - id: 4.9.1
+      task: Add all location pages to sitemap.ts
+      type: code_change
+      file: app/sitemap.ts
+      detail: >
+        Add 8 new location pages with priority 0.8 and monthly changeFrequency.
+      depends_on: [4.1.1, 4.2.1, 4.3.1, 4.4.1, 4.5.1, 4.6.1, 4.7.1, 4.8.1]
+      status: todo
+
+    - id: 4.9.2
+      task: Update /areas-we-serve to link to all city pages
+      type: code_change
+      file: app/areas-we-serve/page.tsx
+      detail: >
+        Add prominent links to each city-specific page from the main
+        areas-we-serve hub page. Use city name + "remodeling" as anchor text.
+      depends_on: [4.9.1]
+      status: todo
+
+    - id: 4.9.3
+      task: Add location pages to footer navigation
+      type: code_change
+      file: components with footer
+      detail: >
+        Add a "Service Areas" section in footer with links to top
+        city pages (at minimum San Diego, Carlsbad, La Jolla, Escondido).
+      status: todo
+
+
+# ============================================
+# PHASE 5: Blog Content Strategy
+# Timeline: Week 4-12
+# Impact: Capture informational/MOFU traffic
+# ============================================
+
+phase_5:
+  name: Blog Content Strategy
+  timeline: Week 4-12
+  priority: MEDIUM
+  goal: Publish 8 high-value blog posts + update 1 existing
+
+  tasks:
+
+    # --- 5.1 Update Existing Post ---
+    - id: 5.1.1
+      task: Update "5 Best Outdoor Decking Material Options in 2022" to 2026
+      type: content_update
+      current_url: /blog/2022/april/5-best-outdoor-decking-material-options-in-2022/
+      current_position: 6 for "best decking material 2022" (150 vol)
+      detail: >
+        - Update title to "Best Outdoor Decking Materials in 2026"
+        - Refresh all content with current materials, prices, and trends
+        - Update publication date
+        - Add new sections (composite decking advances, sustainability)
+        - Maintain same URL or set up redirect from old URL
+        - This is a quick win - already ranking #6
+      status: todo
+
+    # --- 5.2 New Blog Posts ---
+    - id: 5.2.1
+      task: Write "Kitchen Remodel Cost San Diego 2026"
+      type: blog_content
+      target_keyword: "kitchen remodel cost san diego"
+      volume: 300+
+      funnel_stage: BOFU
+      word_count: 2000+
+      detail: >
+        Cover: average costs by scope (minor/major/luxury), cost breakdown,
+        factors affecting price, real BNC project examples, financing.
+        Internal link to /kitchen-remodeling and /areas/san-diego.
+      status: todo
+
+    - id: 5.2.2
+      task: Write "Bathroom Remodel Cost San Diego 2026"
+      type: blog_content
+      target_keyword: "bathroom remodel cost san diego"
+      volume: 200+
+      funnel_stage: BOFU
+      word_count: 2000+
+      detail: >
+        Cover: costs by bathroom type (master/guest/half), cost breakdown,
+        real examples, ROI data. Link to /bathroom-remodeling.
+      status: todo
+
+    - id: 5.2.3
+      task: Write "Hardscaping Ideas for San Diego Homes"
+      type: blog_content
+      target_keyword: "hardscaping ideas san diego"
+      volume: 100+
+      funnel_stage: TOFU
+      word_count: 1500+
+      detail: >
+        Cover: pavers, retaining walls, fire pits, outdoor kitchens,
+        drought-resistant landscaping. Link to /hardscaping.
+      status: todo
+
+    - id: 5.2.4
+      task: Write "How Long Does a Kitchen Remodel Take?"
+      type: blog_content
+      target_keyword: "how long does kitchen remodel take"
+      volume: 200+
+      funnel_stage: MOFU
+      word_count: 1500+
+      detail: >
+        Timeline by remodel scope, phases of construction, what causes
+        delays, BNC's average timelines. Link to /kitchen-remodeling.
+      status: todo
+
+    - id: 5.2.5
+      task: Write "Best Home Improvements for Resale Value in 2026"
+      type: blog_content
+      target_keyword: "best home improvements for resale"
+      volume: 500+
+      funnel_stage: TOFU
+      word_count: 2000+
+      detail: >
+        ROI data for kitchen, bathroom, ADU, outdoor living, curb appeal.
+        Links to multiple service pages. High-volume TOFU magnet.
+      status: todo
+
+    # --- 5.3 Blog Infrastructure ---
+    - id: 5.3.1
+      task: Add BlogPostJsonLd schema to all new blog posts
+      type: code_change
+      detail: >
+        Ensure each new post has proper structured data:
+        - BlogPostJsonLd with author, date, image
+        - BreadcrumbJsonLd
+        - FAQJsonLd if post includes FAQ section
+      status: todo
+
+    - id: 5.3.2
+      task: Add "Related Posts" section to blog post template
+      type: code_change
+      file: app/blog/[slug]/page.tsx
+      detail: >
+        If not already present, add a "Related Posts" component at
+        bottom of each blog post to improve internal linking and
+        reduce bounce rate.
+      status: todo
+
+
+# ============================================
+# PHASE 6: Link Building & Off-Page
+# Timeline: Ongoing
+# Impact: Increase DR from 28 -> 35
+# ============================================
+
+phase_6:
+  name: Link Building & Off-Page
+  timeline: Ongoing (start Week 4)
+  priority: MEDIUM
+  goal: Grow DR from 28 to 35, build local authority
+
+  tasks:
+
+    # --- 6.1 Local Citations ---
+    - id: 6.1.1
+      task: Audit NAP consistency across all directories
+      type: manual
+      detail: >
+        Check name, address, phone consistency on:
+        - Google Business Profile
+        - Yelp
+        - BBB
+        - Houzz
+        - HomeAdvisor / Angi
+        - Facebook
+        - Apple Maps
+        - Bing Places
+        Correct any inconsistencies.
+      status: todo
+
+    - id: 6.1.2
+      task: Claim/optimize unclaimed directory listings
+      type: manual
+      detail: >
+        Ensure BNC is listed and optimized on all major directories.
+        Add photos, services, business hours, description to each.
+      status: todo
+
+    - id: 6.1.3
+      task: Join Escondido Chamber of Commerce
+      type: manual
+      detail: >
+        Get a .org backlink from the chamber website.
+        Network for local referral partnerships.
+      status: todo
+
+    # --- 6.2 Link Building ---
+    - id: 6.2.1
+      task: Identify 20 local/home improvement blogs for guest posting
+      type: research
+      detail: >
+        Find blogs that cover:
+        - San Diego home improvement
+        - Southern California real estate
+        - ADU/granny flat topics
+        - Home renovation/DIY
+        Prioritize sites with DR 30+ that accept guest posts.
+      status: todo
+
+    - id: 6.2.2
+      task: Pitch 5 guest posts per month
+      type: manual
+      detail: >
+        Write and pitch guest articles with contextual links back
+        to BNC service pages. Focus on ADU and kitchen/bathroom
+        remodeling topics.
+      depends_on: [6.2.1]
+      status: todo
+
+    - id: 6.2.3
+      task: Set up HARO/Connectively account for PR responses
+      type: manual
+      detail: >
+        Monitor daily for queries related to:
+        - Home renovation/remodeling
+        - ADU construction
+        - Home improvement costs
+        - San Diego real estate
+        Respond as expert source for backlink opportunities.
+      status: todo
+
+    - id: 6.2.4
+      task: Identify partner link opportunities
+      type: research
+      detail: >
+        Reach out to:
+        - Suppliers/vendors (link from "our contractors" pages)
+        - Architects BNC works with
+        - Real estate agents who refer clients
+        - Complementary local businesses
+      status: todo
+
+    # --- 6.3 Review Strategy ---
+    - id: 6.3.1
+      task: Set up post-project review request email sequence
+      type: manual
+      detail: >
+        Create automated email sequence sent after project completion:
+        - Email 1 (day 3): Thank you + Google review request
+        - Email 2 (day 10): Reminder with direct review link
+        Focus on Google Business Profile first, then Yelp/Houzz.
+      status: todo
+
+    - id: 6.3.2
+      task: Verify review count in schema matches actual reviews
+      type: code_change
+      file: components/seo/JsonLd.tsx
+      detail: >
+        Schema currently claims 150 reviews with 5.0 rating.
+        Verify this matches actual Google/Yelp review count.
+        Misrepresenting review count violates Google guidelines.
+      status: todo
+
+
+# ============================================
+# SUMMARY
+# ============================================
+
+summary:
+  total_tasks: 58
+  breakdown:
+    phase_1_technical_fixes: 11 tasks
+    phase_2_on_page_optimization: 14 tasks
+    phase_3_adu_content_hub: 12 tasks
+    phase_4_location_pages: 11 tasks
+    phase_5_blog_content: 8 tasks
+    phase_6_link_building: 9 tasks
+  new_pages_to_create: 17
+    # 4 ADU subpages + 8 location pages + 5 blog posts
+  existing_pages_to_optimize: 8
+  code_changes: ~25 tasks
+  manual_tasks: ~10 tasks
+  content_creation: ~23 tasks
