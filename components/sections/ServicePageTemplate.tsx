@@ -3,9 +3,12 @@
 'use client';
 
 import { HeroSubpage, ContentSection, FeatureList, ProcessSteps, FAQAccordion, CTABanner } from '@/components/sections';
-import { Container, AnimatedSection } from '@/components/ui';
+import { Container, AnimatedSection, Section } from '@/components/ui';
+import { ServiceJsonLd, FAQJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
 import { Service } from '@/lib/types';
-import { Phone, Clock, Shield, CheckCircle } from 'lucide-react';
+import { services } from '@/lib/constants/services';
+import { Phone, Clock, Shield, CheckCircle, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 interface ServicePageTemplateProps {
   service: Service;
@@ -14,6 +17,22 @@ interface ServicePageTemplateProps {
 export function ServicePageTemplate({ service }: ServicePageTemplateProps) {
   return (
     <>
+      {/* Structured Data */}
+      <ServiceJsonLd
+        name={service.shortTitle}
+        description={service.description}
+        url={`/${service.slug}`}
+      />
+      {service.faqs && service.faqs.length > 0 && (
+        <FAQJsonLd faqs={service.faqs} />
+      )}
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', url: '/' },
+          { name: service.shortTitle, url: `/${service.slug}` },
+        ]}
+      />
+
       {/* Hero */}
       <HeroSubpage
         title={service.heroHeading}
@@ -88,6 +107,9 @@ export function ServicePageTemplate({ service }: ServicePageTemplateProps) {
         />
       )}
 
+      {/* Related Services */}
+      <RelatedServices currentService={service} />
+
       {/* CTA */}
       <CTABanner
         title={`Ready for Your ${service.shortTitle} Project?`}
@@ -96,5 +118,66 @@ export function ServicePageTemplate({ service }: ServicePageTemplateProps) {
         secondaryAction={{ label: 'View Portfolio', href: '/portfolio' }}
       />
     </>
+  );
+}
+
+// Related services mapping for strong internal linking
+const relatedServicesMap: Record<string, string[]> = {
+  'kitchen-remodeling': ['bathroom-remodeling', 'home-remodeling', 'outdoor-kitchens'],
+  'bathroom-remodeling': ['kitchen-remodeling', 'home-remodeling', 'adus'],
+  'home-remodeling': ['kitchen-remodeling', 'bathroom-remodeling', 'new-room-additions'],
+  'garage-remodeling': ['adus', 'home-remodeling', 'new-room-additions'],
+  'new-room-additions': ['home-remodeling', 'adus', 'pre-construction'],
+  'pre-construction': ['adus', 'new-room-additions', 'home-remodeling'],
+  'adus': ['pre-construction', 'garage-remodeling', 'new-room-additions'],
+  'exterior-remodeling': ['landscape-remodeling', 'hardscaping', 'outdoor-kitchens'],
+  'deck-repair': ['exterior-remodeling', 'hardscaping', 'outdoor-kitchens'],
+  'hardscaping': ['landscape-remodeling', 'outdoor-kitchens', 'deck-repair'],
+  'outdoor-kitchens': ['hardscaping', 'exterior-remodeling', 'landscape-remodeling'],
+  'landscape-remodeling': ['hardscaping', '3d-landscape-design', 'exterior-remodeling'],
+  '3d-landscape-design': ['landscape-remodeling', 'exterior-remodeling', 'hardscaping'],
+};
+
+function RelatedServices({ currentService }: { currentService: Service }) {
+  const relatedSlugs = relatedServicesMap[currentService.slug] || [];
+  const relatedServices = relatedSlugs
+    .map((slug) => services.find((s) => s.slug === slug))
+    .filter((s): s is Service => s !== undefined);
+
+  if (relatedServices.length === 0) return null;
+
+  return (
+    <Section background="white" padding="lg">
+      <Container>
+        <AnimatedSection animation="fade-in-up" className="text-center mb-12">
+          <span className="text-gold font-semibold uppercase tracking-wider text-sm">
+            Explore More Services
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-dark mt-2">
+            Related Services
+          </h2>
+        </AnimatedSection>
+        <div className="grid md:grid-cols-3 gap-6">
+          {relatedServices.map((related, index) => (
+            <AnimatedSection key={related.slug} animation="fade-in-up" delay={index * 100}>
+              <Link
+                href={`/${related.slug}`}
+                className="group block bg-gray-50 rounded-xl p-6 hover:bg-gold/5 hover:shadow-lg transition-all h-full border border-transparent hover:border-gold/20"
+              >
+                <h3 className="text-lg font-bold text-dark group-hover:text-gold transition-colors mb-3">
+                  {related.shortTitle}
+                </h3>
+                <p className="text-zinc-600 text-sm leading-relaxed mb-4">
+                  {related.description}
+                </p>
+                <span className="inline-flex items-center gap-1 text-gold text-sm font-semibold group-hover:gap-2 transition-all">
+                  Learn More <ArrowRight className="w-4 h-4" />
+                </span>
+              </Link>
+            </AnimatedSection>
+          ))}
+        </div>
+      </Container>
+    </Section>
   );
 }
