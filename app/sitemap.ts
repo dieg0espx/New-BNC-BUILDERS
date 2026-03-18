@@ -60,7 +60,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: path === '' ? 'daily' : 'weekly',
     priority: path === ''
       ? 1
-      : path.includes('remodeling') || path === '/adus'
+      : ['/kitchen-remodeling', '/bathroom-remodeling', '/home-remodeling', '/garage-remodeling',
+         '/new-room-additions', '/adus', '/pre-construction', '/exterior-remodeling', '/deck-repair',
+         '/hardscaping', '/outdoor-kitchens', '/landscape-remodeling', '/3d-landscape-design'].includes(path)
         ? 0.9
         : path.startsWith('/adus/') || path.startsWith('/areas/')
           ? 0.8

@@ -12,7 +12,7 @@ import { Scale, FileText, Ruler, Car, Clock, CheckCircle, AlertTriangle, ArrowRi
 export const metadata: Metadata = generatePageMetadata({
   title: 'San Diego ADU Regulations & Permit Guide',
   description:
-    'Complete guide to San Diego ADU regulations in 2026. Lot requirements, setbacks, height limits, parking rules & permit process. BNC Builders handles all permits.',
+    'San Diego ADU regulations guide for 2026. Lot requirements, setbacks, height limits, parking rules & permit process. BNC Builders handles permits.',
   path: '/adus/regulations',
   keywords: [
     'san diego adu regulations',

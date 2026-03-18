@@ -11,7 +11,7 @@ const service = getServiceBySlug('adus');
 export const metadata: Metadata = service
   ? generatePageMetadata({
       title: 'ADU Contractor San Diego & Escondido',
-      description: 'ADU construction in San Diego & Escondido. Complete accessory dwelling units from permits to move-in ready. Maximize property value & rental income. Free estimates.',
+      description: 'ADU construction in San Diego & Escondido. Complete accessory dwelling units from permits to move-in ready. Maximize property value. Free estimates.',
       path: '/adus',
       keywords: [
         'adu contractor san diego',

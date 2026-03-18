@@ -39,7 +39,7 @@ export const blogPosts: BlogPost[] = [
     author: 'BNC Builders Inc.',
     category: 'ADUs',
     categorySlug: 'adus',
-    excerpt: 'ADU costs in San Diego range from $150K to $400K+ depending on type, size, and finishes. Get a complete breakdown of what to expect when building an ADU in San Diego in 2026.',
+    excerpt: 'ADU costs in San Diego range from $150K to $400K+ depending on type, size, and finishes. Complete 2026 cost breakdown by ADU type.',
     content: [
       'If you have been researching the cost of building an ADU in San Diego, you have probably noticed that the numbers are all over the place. One website says $100,000, another says $500,000, and your neighbor swears they did it for $80,000. The truth is that ADU cost in San Diego varies dramatically based on the type of unit you build, the size, the level of finishes, and even the specific neighborhood you live in. Site conditions, permitting fees, and utility connections all play a role. In this guide, we break down exactly what you should expect to pay in 2026 so you can plan your budget with confidence.',
       'On average, homeowners in San Diego spend between $150,000 and $400,000 on a complete ADU project. That is a wide range, and where you land depends largely on the scope of the build. A small garage conversion with basic finishes sits at the lower end, while a fully detached two-bedroom unit with custom finishes pushes toward the top. The median ADU cost in San Diego County for 2025-2026 hovers around $250,000 to $300,000 for a standard detached unit between 500 and 800 square feet. These numbers include everything from permits and design through final inspection and landscaping.',

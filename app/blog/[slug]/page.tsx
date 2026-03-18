@@ -12,7 +12,9 @@ import {
   getRecentBlogPosts,
   formatBlogDate,
 } from '@/lib/constants/blog';
-import { generatePageMetadata } from '@/lib/utils/metadata';
+import { generatePageMetadata, SITE_URL } from '@/lib/utils/metadata';
+import { BlogPostJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
+import { CLOUDINARY_BASE_URL } from '@/lib/constants/images';
 import { Clock, Calendar, User, ArrowLeft, ArrowRight, Tag } from 'lucide-react';
 
 interface BlogPostPageProps {
@@ -65,6 +67,23 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <>
+      {/* Structured Data */}
+      <BlogPostJsonLd
+        title={post.title}
+        description={post.excerpt}
+        url={`/blog/${post.slug}`}
+        image={`${CLOUDINARY_BASE_URL}/${post.featuredImage}`}
+        datePublished={post.date}
+        author={post.author}
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'Blog', url: '/blog' },
+          { name: post.title, url: `/blog/${post.slug}` },
+        ]}
+      />
+
       {/* Hero */}
       <HeroSubpage
         title={post.title}

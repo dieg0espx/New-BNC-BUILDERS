@@ -11,7 +11,7 @@ import { CheckCircle, Home, Bath, ChefHat, Building, ArrowRight, Fence, Utensils
 
 export const metadata: Metadata = generatePageMetadata({
   title: 'Home Remodeling San Diego | Kitchen & Bathroom Remodel',
-  description: 'Expert home remodeling in San Diego. Kitchen remodel, bathroom renovation, ADU construction & outdoor living. 30+ years experience. Free estimates from BNC Builders.',
+  description: 'Expert home remodeling in San Diego. Kitchen remodel, bathroom renovation, ADU construction & outdoor living. 30+ years experience. Free estimates.',
   path: '/areas/san-diego',
   keywords: [
     'home remodeling san diego',
