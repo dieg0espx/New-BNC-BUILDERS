@@ -34,7 +34,7 @@ export default function AboutUsPage() {
       {/* Hero */}
       <HeroSubpage
         title="Meet the Team Behind Your Dream Home"
-        subtitle="BNC Builders has spent decades transforming homes across Escondido, San Diego, and the surrounding areas - from kitchens and bathrooms to complete ADU builds and exterior renovations."
+        subtitle="BNC Builders has spent decades transforming homes across Escondido, San Diego, and the surrounding areas - delivering expert craftsmanship on every project from concept to completion."
         backgroundImage={bannerImages.faq}
       />
 
@@ -78,7 +78,7 @@ export default function AboutUsPage() {
                   Our team brings over three decades of combined construction experience to every project. We&apos;ve learned that great remodeling isn&apos;t just about craftsmanship - it&apos;s about listening to what homeowners need and delivering it with care.
                 </p>
                 <p className="font-medium text-dark">
-                  Today, homeowners choose BNC Builders for everything from kitchen and bathroom remodeling to outdoor living spaces and garage conversions. We&apos;re not just contractors - we&apos;re your neighbors, building better homes across our community.
+                  Today, homeowners choose BNC Builders for everything from interior renovations to outdoor living spaces and complete home transformations. We&apos;re not just contractors - we&apos;re your neighbors, building better homes across our community.
                 </p>
               </div>
               <div className="flex flex-wrap gap-4 mt-8">
