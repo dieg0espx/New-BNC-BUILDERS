@@ -1,9 +1,9 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'BNC Builders Inc. - Home Remodeling in Escondido, CA';
+export const alt = 'BNC Builders Inc. - Home Remodeling in Escondido & San Diego';
 export const size = { width: 1200, height: 630 };
-export const contentType = 'image/jpeg';
+export const contentType = 'image/png';
 
 export default async function OGImage() {
   return new ImageResponse(
@@ -14,152 +14,101 @@ export default async function OGImage() {
           height: '100%',
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          backgroundColor: '#CF9C39',
           position: 'relative',
+          fontFamily: 'system-ui, sans-serif',
         }}
       >
-        {/* Subtle pattern overlay */}
+        {/* Background project photo */}
+        <img
+          src="https://res.cloudinary.com/dku1gnuat/image/upload/w_1200,h_630,c_fill,q_80/v1767035994/BNC-BUILDERS/images_kitchen-remodel.2505221027173.jpg"
+          alt=""
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          }}
+        />
+
+        {/* Dark gradient overlay */}
         <div
           style={{
             position: 'absolute',
             inset: 0,
-            background: 'radial-gradient(circle at 30% 50%, rgba(255,255,255,0.1) 0%, transparent 50%)',
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%)',
           }}
         />
 
-        {/* Logo */}
+        {/* Content */}
         <div
           style={{
+            position: 'relative',
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'center',
-            gap: 40,
+            justifyContent: 'flex-end',
+            height: '100%',
+            padding: '60px',
             zIndex: 1,
           }}
         >
-          {/* BNC Text Logo */}
+          {/* Gold accent line */}
           <div
             style={{
-              display: 'flex',
-              fontSize: 140,
-              fontWeight: 900,
-              color: '#191B1E',
-              letterSpacing: '-0.05em',
-              textShadow: '2px 2px 4px rgba(0,0,0,0.1)',
-            }}
-          >
-            BNC
-          </div>
-
-          {/* BUILDERS INC */}
-          <div
-            style={{
-              fontSize: 56,
-              fontWeight: 700,
-              color: '#191B1E',
-              letterSpacing: '0.15em',
-              marginTop: -20,
-            }}
-          >
-            BUILDERS INC.
-          </div>
-
-          {/* Divider */}
-          <div
-            style={{
-              width: 200,
+              width: 80,
               height: 4,
-              backgroundColor: '#191B1E',
-              marginTop: 10,
-              marginBottom: 10,
+              backgroundColor: '#CF9C39',
+              marginBottom: 20,
             }}
           />
+
+          {/* Company name */}
+          <div
+            style={{
+              fontSize: 64,
+              fontWeight: 900,
+              color: '#FFFFFF',
+              lineHeight: 1.1,
+              marginBottom: 8,
+            }}
+          >
+            BNC Builders Inc.
+          </div>
 
           {/* Tagline */}
           <div
             style={{
-              fontSize: 32,
-              fontWeight: 600,
-              color: '#191B1E',
-              textAlign: 'center',
-              maxWidth: 900,
+              fontSize: 28,
+              fontWeight: 500,
+              color: '#CF9C39',
+              marginBottom: 24,
             }}
           >
             Transforming San Diego Homes With Expert Craftsmanship
           </div>
 
-          {/* Stats */}
+          {/* Stats row */}
           <div
             style={{
               display: 'flex',
-              gap: 80,
-              marginTop: 30,
+              gap: 40,
+              alignItems: 'center',
             }}
           >
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-              }}
-            >
-              <div style={{ fontSize: 48, fontWeight: 800, color: '#191B1E' }}>
-                900+
-              </div>
-              <div style={{ fontSize: 20, color: '#191B1E', opacity: 0.8 }}>
-                Projects
-              </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <div style={{ fontSize: 24, fontWeight: 800, color: '#CF9C39' }}>900+</div>
+              <div style={{ fontSize: 16, color: '#FFFFFF', opacity: 0.9 }}>Projects</div>
             </div>
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-              }}
-            >
-              <div style={{ fontSize: 48, fontWeight: 800, color: '#191B1E' }}>
-                30+
-              </div>
-              <div style={{ fontSize: 20, color: '#191B1E', opacity: 0.8 }}>
-                Years Experience
-              </div>
+            <div style={{ width: 1, height: 24, backgroundColor: 'rgba(255,255,255,0.3)' }} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <div style={{ fontSize: 24, fontWeight: 800, color: '#CF9C39' }}>30+</div>
+              <div style={{ fontSize: 16, color: '#FFFFFF', opacity: 0.9 }}>Years Experience</div>
             </div>
-          </div>
-        </div>
-
-        {/* Bottom bar */}
-        <div
-          style={{
-            position: 'absolute',
-            bottom: 0,
-            left: 0,
-            right: 0,
-            height: 80,
-            backgroundColor: 'rgba(25, 27, 30, 0.9)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            padding: '0 60px',
-          }}
-        >
-          <div
-            style={{
-              fontSize: 26,
-              color: '#CF9C39',
-              fontWeight: 600,
-            }}
-          >
-            (760) 658-6238
-          </div>
-          <div
-            style={{
-              fontSize: 22,
-              color: '#FFFFFF',
-            }}
-          >
-            Escondido, CA • Licensed & Insured
+            <div style={{ width: 1, height: 24, backgroundColor: 'rgba(255,255,255,0.3)' }} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <div style={{ fontSize: 24, fontWeight: 800, color: '#CF9C39' }}>5.0</div>
+              <div style={{ fontSize: 16, color: '#FFFFFF', opacity: 0.9 }}>Star Rating</div>
+            </div>
           </div>
         </div>
       </div>
