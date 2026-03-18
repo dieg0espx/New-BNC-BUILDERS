@@ -36,6 +36,7 @@ export function ServicePageTemplate({ service }: ServicePageTemplateProps) {
       {/* Hero */}
       <HeroSubpage
         title={service.heroHeading}
+        geoTitle={`${service.shortTitle} in {city}, CA`}
         subtitle={service.description}
         backgroundImage={service.bannerImage}
       />
