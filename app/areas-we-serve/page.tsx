@@ -25,15 +25,38 @@ export const metadata: Metadata = generatePageMetadata({
 const regions = {
   coastal: {
     name: 'Coastal Communities',
-    areas: ['Carlsbad', 'Encinitas', 'Oceanside', 'Solana Beach', 'La Jolla'],
+    areas: [
+      { name: 'Carlsbad', href: '/areas/carlsbad' },
+      { name: 'Encinitas', href: '/areas/encinitas' },
+      { name: 'Oceanside', href: '/areas/oceanside' },
+      { name: 'Solana Beach', href: null },
+      { name: 'La Jolla', href: '/areas/la-jolla' },
+    ],
   },
   inland: {
     name: 'Inland Cities',
-    areas: ['Escondido', 'Poway', 'Vista', 'Valley Center', 'Rancho Santa Fe'],
+    areas: [
+      { name: 'Escondido', href: null },
+      { name: 'Poway', href: '/areas/poway' },
+      { name: 'Vista', href: '/areas/vista' },
+      { name: 'Valley Center', href: null },
+      { name: 'Rancho Santa Fe', href: null },
+    ],
   },
   south: {
     name: 'South County',
-    areas: ['Chula Vista', 'El Cajon', 'La Mesa', 'National City'],
+    areas: [
+      { name: 'Chula Vista', href: '/areas/chula-vista' },
+      { name: 'El Cajon', href: null },
+      { name: 'La Mesa', href: null },
+      { name: 'National City', href: null },
+    ],
+  },
+  metro: {
+    name: 'San Diego Metro',
+    areas: [
+      { name: 'San Diego', href: '/areas/san-diego' },
+    ],
   },
 };
 
@@ -144,11 +167,17 @@ export default function AreasWeServePage() {
                 </div>
                 <ul className="p-6 space-y-3">
                   {region.areas.map((area) => (
-                    <li key={area} className="flex items-center gap-3 group">
+                    <li key={area.name} className="flex items-center gap-3 group">
                       <span className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center group-hover:bg-gold transition-colors">
                         <MapPin className="w-4 h-4 text-gold group-hover:text-white transition-colors" />
                       </span>
-                      <span className="font-medium text-zinc-700">{area}, CA</span>
+                      {area.href ? (
+                        <Link href={area.href} className="font-medium text-zinc-700 hover:text-gold transition-colors">
+                          {area.name}, CA
+                        </Link>
+                      ) : (
+                        <span className="font-medium text-zinc-700">{area.name}, CA</span>
+                      )}
                     </li>
                   ))}
                 </ul>
