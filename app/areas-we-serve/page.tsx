@@ -9,9 +9,17 @@ import { generatePageMetadata } from '@/lib/utils/metadata';
 import { MapPin, Building2, Phone, ChefHat, Bath, Home, Building, Fence, UtensilsCrossed, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'San Diego Remodeling Service Areas',
-  description: 'BNC Builders serves Escondido, Poway, Carlsbad, Oceanside & communities throughout San Diego County. Kitchen, bathroom, ADU & home remodeling services.',
+  title: 'Areas We Serve in San Diego County',
+  description: 'BNC Builders serves Escondido, Poway, Carlsbad, Oceanside, La Jolla & communities throughout San Diego County. Kitchen, bathroom, ADU & home remodeling.',
   path: '/areas-we-serve',
+  keywords: [
+    'remodeling contractor san diego county',
+    'home remodeling escondido',
+    'contractor carlsbad',
+    'remodeling poway',
+    'contractor la jolla',
+    'home remodeling san diego county',
+  ],
 });
 
 const regions = {

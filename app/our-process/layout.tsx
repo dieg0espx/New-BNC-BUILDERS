@@ -2,9 +2,15 @@ import { Metadata } from 'next';
 import { generatePageMetadata } from '@/lib/utils/metadata';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Our Process',
-  description: 'Learn how BNC Builders manages your remodeling project from consultation to completion. Transparent process, clear communication & quality craftsmanship.',
+  title: 'Our Remodeling Process',
+  description: 'Learn how BNC Builders manages your remodeling project from consultation to completion. Transparent pricing, clear communication & quality craftsmanship in Escondido & San Diego.',
   path: '/our-process',
+  keywords: [
+    'remodeling process',
+    'home remodeling consultation escondido',
+    'how remodeling works',
+    'design build process san diego',
+  ],
 });
 
 export default function OurProcessLayout({ children }: { children: React.ReactNode }) {

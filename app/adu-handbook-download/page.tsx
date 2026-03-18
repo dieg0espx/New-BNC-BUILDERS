@@ -9,10 +9,15 @@ import { generatePageMetadata } from '@/lib/utils/metadata';
 import { ADUHandbookForm } from './ADUHandbookForm';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'ADU Handbook Download',
-  description: 'Your complete guide to building an ADU in San Diego or Los Angeles. Download the free handbook from BNC Builders.',
+  title: 'Free ADU Handbook Download',
+  description: 'Download your free guide to building an ADU in San Diego. Covers costs, regulations, permits, timelines & everything you need to know. By BNC Builders.',
   path: '/adu-handbook-download',
-  noIndex: true,
+  keywords: [
+    'adu handbook san diego',
+    'adu guide download',
+    'adu building guide',
+    'accessory dwelling unit guide',
+  ],
 });
 
 export default function ADUHandbookDownloadPage() {

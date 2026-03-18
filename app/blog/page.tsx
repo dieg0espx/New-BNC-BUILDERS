@@ -12,9 +12,16 @@ import { Clock, ArrowRight } from 'lucide-react';
 import { BlogFilter } from '@/components/blog/BlogFilter';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Blog',
-  description: 'Read the latest home remodeling tips, ideas, and inspiration from BNC Builders Inc.',
+  title: 'Home Remodeling Blog & Tips',
+  description: 'Home remodeling tips, cost guides, and inspiration from BNC Builders. Kitchen, bathroom, ADU & outdoor living advice for San Diego homeowners.',
   path: '/blog',
+  keywords: [
+    'home remodeling blog',
+    'kitchen remodel tips',
+    'bathroom remodel ideas',
+    'adu guide san diego',
+    'remodeling cost guide',
+  ],
 });
 
 export default function BlogPage() {
