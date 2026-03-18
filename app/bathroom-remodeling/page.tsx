@@ -10,9 +10,16 @@ const service = getServiceBySlug('bathroom-remodeling');
 
 export const metadata: Metadata = service
   ? generatePageMetadata({
-      title: service.shortTitle,
-      description: service.description,
+      title: 'Bathroom Remodeling Escondido & San Diego',
+      description: 'Expert bathroom remodeling in Escondido & San Diego County. Walk-in showers, double vanities, spa-worthy retreats & complete bathroom renovations. Free estimates.',
       path: '/bathroom-remodeling',
+      keywords: [
+        'bathroom remodeling escondido',
+        'bathroom remodel san diego',
+        'bathroom renovation escondido',
+        'bathroom contractor escondido',
+        'bathroom remodeling san diego county',
+      ],
     })
   : {};
 

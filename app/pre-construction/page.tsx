@@ -10,9 +10,15 @@ const service = getServiceBySlug('pre-construction');
 
 export const metadata: Metadata = service
   ? generatePageMetadata({
-      title: service.shortTitle,
-      description: service.description,
+      title: 'Pre-Construction Services San Diego & Escondido',
+      description: 'Pre-construction planning & permitting in San Diego & Escondido. Site evaluation, architectural plans, engineering, permits & 3D VR previews. Free consultation.',
       path: '/pre-construction',
+      keywords: [
+        'pre construction consultation san diego',
+        'construction planning escondido',
+        'permit management san diego',
+        'architectural plans san diego',
+      ],
     })
   : {};
 

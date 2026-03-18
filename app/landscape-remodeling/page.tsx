@@ -10,9 +10,15 @@ const service = getServiceBySlug('landscape-remodeling');
 
 export const metadata: Metadata = service
   ? generatePageMetadata({
-      title: service.shortTitle,
-      description: service.description,
+      title: 'Landscape Remodeling Escondido & San Diego',
+      description: 'Complete landscape remodeling in Escondido & San Diego County. Outdoor makeovers with hardscaping, plantings, lighting & irrigation. Free consultation.',
       path: '/landscape-remodeling',
+      keywords: [
+        'landscape remodeling escondido',
+        'landscaping san diego',
+        'landscape contractor escondido',
+        'yard remodel san diego',
+      ],
     })
   : {};
 

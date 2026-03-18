@@ -10,9 +10,16 @@ const service = getServiceBySlug('home-remodeling');
 
 export const metadata: Metadata = service
   ? generatePageMetadata({
-      title: service.shortTitle,
-      description: service.description,
+      title: 'Home Remodeling Escondido & San Diego',
+      description: 'Full-service home remodeling in Escondido & San Diego County. From single rooms to whole-home renovations. 30+ years experience. Free estimates.',
       path: '/home-remodeling',
+      keywords: [
+        'home remodeling escondido',
+        'home remodeling san diego',
+        'home renovation escondido',
+        'remodeling contractor escondido',
+        'general contractor escondido',
+      ],
     })
   : {};
 

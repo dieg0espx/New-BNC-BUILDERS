@@ -10,9 +10,15 @@ const service = getServiceBySlug('hardscaping');
 
 export const metadata: Metadata = service
   ? generatePageMetadata({
-      title: service.shortTitle,
-      description: service.description,
+      title: 'Hardscaping San Diego & Escondido',
+      description: 'Professional hardscaping in San Diego & Escondido. Patios, walkways, retaining walls, fire pits & outdoor features. Quality materials & expert installation.',
       path: '/hardscaping',
+      keywords: [
+        'hardscaping san diego',
+        'hardscaping escondido',
+        'patio installation san diego',
+        'retaining wall san diego',
+      ],
     })
   : {};
 
