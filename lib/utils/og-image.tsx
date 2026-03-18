@@ -1,17 +1,17 @@
 // BNC Builders - Reusable OG Image Generator
-// Used by route-level opengraph-image.tsx files
+// Logo-forward design with page title and branding
 
 import { ImageResponse } from 'next/og';
 
 const SIZE = { width: 1200, height: 630 };
+const LOGO_URL = 'https://res.cloudinary.com/dku1gnuat/image/upload/q_auto,f_png/v1767035998/BNC-BUILDERS/images_brand_logo-dark.2505220829365.png';
 
 interface OGImageOptions {
   title: string;
   subtitle?: string;
-  backgroundImage: string;
 }
 
-export function generateOGImage({ title, subtitle, backgroundImage }: OGImageOptions) {
+export function generateOGImage({ title, subtitle }: OGImageOptions) {
   return new ImageResponse(
     (
       <div
@@ -20,102 +20,90 @@ export function generateOGImage({ title, subtitle, backgroundImage }: OGImageOpt
           height: '100%',
           display: 'flex',
           flexDirection: 'column',
-          position: 'relative',
+          alignItems: 'center',
+          justifyContent: 'center',
+          backgroundColor: '#FFFFFF',
           fontFamily: 'system-ui, sans-serif',
+          position: 'relative',
         }}
       >
-        {/* Background photo */}
+        {/* Gold top accent bar */}
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            height: 6,
+            backgroundColor: '#CF9C39',
+          }}
+        />
+
+        {/* Logo image */}
         <img
-          src={backgroundImage}
-          alt=""
+          src={LOGO_URL}
+          width={380}
+          height={190}
           style={{
-            position: 'absolute',
-            inset: 0,
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
+            marginBottom: 32,
+            objectFit: 'contain',
           }}
         />
 
-        {/* Dark gradient overlay */}
+        {/* Page title */}
         <div
           style={{
-            position: 'absolute',
-            inset: 0,
-            background: 'linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.75) 100%)',
-          }}
-        />
-
-        {/* Content */}
-        <div
-          style={{
-            position: 'relative',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'flex-end',
-            height: '100%',
-            padding: '60px',
-            zIndex: 1,
+            fontSize: 36,
+            fontWeight: 700,
+            color: '#1a1a1a',
+            textAlign: 'center',
+            maxWidth: 900,
+            lineHeight: 1.2,
           }}
         >
-          {/* Gold accent line */}
-          <div
-            style={{
-              width: 80,
-              height: 4,
-              backgroundColor: '#CF9C39',
-              marginBottom: 20,
-            }}
-          />
+          {title}
+        </div>
 
-          {/* Page title */}
+        {subtitle && (
           <div
             style={{
-              fontSize: 52,
-              fontWeight: 900,
-              color: '#FFFFFF',
-              lineHeight: 1.15,
-              marginBottom: subtitle ? 12 : 20,
-              maxWidth: 900,
+              fontSize: 20,
+              fontWeight: 400,
+              color: '#6B7280',
+              textAlign: 'center',
+              maxWidth: 800,
+              marginTop: 10,
             }}
           >
-            {title}
+            {subtitle}
           </div>
+        )}
 
-          {subtitle && (
-            <div
-              style={{
-                fontSize: 22,
-                fontWeight: 400,
-                color: 'rgba(255,255,255,0.85)',
-                marginBottom: 20,
-                maxWidth: 800,
-              }}
-            >
-              {subtitle}
-            </div>
-          )}
-
-          {/* Bottom branding */}
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: 16,
-              marginTop: 8,
-            }}
-          >
-            <div style={{ fontSize: 22, fontWeight: 800, color: '#CF9C39' }}>
-              BNC Builders Inc.
-            </div>
-            <div style={{ width: 1, height: 20, backgroundColor: 'rgba(255,255,255,0.3)' }} />
-            <div style={{ fontSize: 16, color: 'rgba(255,255,255,0.7)' }}>
-              (760) 658-6238
-            </div>
-            <div style={{ width: 1, height: 20, backgroundColor: 'rgba(255,255,255,0.3)' }} />
-            <div style={{ fontSize: 16, color: 'rgba(255,255,255,0.7)' }}>
-              Escondido, CA
-            </div>
+        {/* Bottom bar */}
+        <div
+          style={{
+            position: 'absolute',
+            bottom: 0,
+            left: 0,
+            right: 0,
+            height: 56,
+            backgroundColor: '#1a1a1a',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: 32,
+          }}
+        >
+          <div style={{ fontSize: 18, fontWeight: 700, color: '#CF9C39' }}>
+            (760) 658-6238
+          </div>
+          <div style={{ width: 1, height: 20, backgroundColor: 'rgba(255,255,255,0.2)' }} />
+          <div style={{ fontSize: 16, color: 'rgba(255,255,255,0.8)' }}>
+            Escondido, CA
+          </div>
+          <div style={{ width: 1, height: 20, backgroundColor: 'rgba(255,255,255,0.2)' }} />
+          <div style={{ fontSize: 16, color: 'rgba(255,255,255,0.8)' }}>
+            Licensed &amp; Insured
           </div>
         </div>
       </div>
