@@ -240,10 +240,17 @@ export function ServiceJsonLd({ name, description, url, image }: ServiceJsonLdPr
     provider: {
       '@id': `${SITE_URL}/#organization`,
     },
-    areaServed: {
-      '@type': 'State',
-      name: 'California',
-    },
+    areaServed: [
+      { '@type': 'City', name: 'Escondido', containedInPlace: { '@type': 'State', name: 'California' } },
+      { '@type': 'City', name: 'San Diego' },
+      { '@type': 'City', name: 'Carlsbad' },
+      { '@type': 'City', name: 'Encinitas' },
+      { '@type': 'City', name: 'Oceanside' },
+      { '@type': 'City', name: 'Poway' },
+      { '@type': 'City', name: 'Vista' },
+      { '@type': 'City', name: 'La Jolla' },
+      { '@type': 'City', name: 'Chula Vista' },
+    ],
     ...(image && { image }),
   };
 
