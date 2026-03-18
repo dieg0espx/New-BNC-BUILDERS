@@ -1,4 +1,6 @@
 // BNC Builders - ADU Cost Guide San Diego
+// CONTENT FRESHNESS: Cost figures and regulatory references dated 2026.
+// Review and update annually (Q1) or when significant market changes occur.
 
 import { Metadata } from 'next';
 import Link from 'next/link';
@@ -7,7 +9,7 @@ import { Container, Section, AnimatedSection } from '@/components/ui';
 import { bannerImages } from '@/lib/constants/images';
 import { generatePageMetadata } from '@/lib/utils/metadata';
 import { BreadcrumbJsonLd, FAQJsonLd } from '@/components/seo/JsonLd';
-import { DollarSign, TrendingUp, Calculator, Home, Ruler, Paintbrush, HardHat, CheckCircle, ArrowRight } from 'lucide-react';
+import { DollarSign, TrendingUp, Calculator, Home, Ruler, HardHat, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
   title: 'ADU Cost Guide San Diego 2026',

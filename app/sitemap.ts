@@ -22,7 +22,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog',
     '/site-map',
     '/customer-referral-program',
-    '/adu-handbook-download',
     // Interior Services
     '/kitchen-remodeling',
     '/bathroom-remodeling',

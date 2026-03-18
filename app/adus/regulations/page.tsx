@@ -1,4 +1,6 @@
 // BNC Builders - San Diego ADU Regulations & Permit Guide
+// CONTENT FRESHNESS: Regulatory references (SB 9, AB 68, setbacks, etc.) dated 2026.
+// Review and update when new CA ADU legislation passes or local codes change.
 
 import { Metadata } from 'next';
 import Link from 'next/link';

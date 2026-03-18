@@ -3,10 +3,10 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { HeroSubpage, CTABanner } from '@/components/sections';
-import { Container, Section, AnimatedSection } from '@/components/ui';
+import { Container, Section } from '@/components/ui';
 import { bannerImages } from '@/lib/constants/images';
 import { generatePageMetadata } from '@/lib/utils/metadata';
-import { BreadcrumbJsonLd, LocalBusinessJsonLd } from '@/components/seo/JsonLd';
+import { BreadcrumbJsonLd, AreaServedJsonLd } from '@/components/seo/JsonLd';
 import { CheckCircle, Home, Bath, ChefHat, Building, ArrowRight, Fence, UtensilsCrossed } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
@@ -46,7 +46,7 @@ export default function OceansidePage() {
         { name: 'Areas We Serve', url: '/areas-we-serve' },
         { name: 'Oceanside', url: '/areas/oceanside' },
       ]} />
-      <LocalBusinessJsonLd />
+      <AreaServedJsonLd city="Oceanside" pageUrl="/areas/oceanside" />
 
       <HeroSubpage
         title="Home Remodeling in Oceanside, CA"

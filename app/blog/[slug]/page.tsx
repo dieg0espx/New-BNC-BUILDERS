@@ -12,7 +12,7 @@ import {
   getRecentBlogPosts,
   formatBlogDate,
 } from '@/lib/constants/blog';
-import { generatePageMetadata, SITE_URL } from '@/lib/utils/metadata';
+import { generatePageMetadata } from '@/lib/utils/metadata';
 import { BlogPostJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
 import { CLOUDINARY_BASE_URL } from '@/lib/constants/images';
 import { Clock, Calendar, User, ArrowLeft, ArrowRight, Tag } from 'lucide-react';

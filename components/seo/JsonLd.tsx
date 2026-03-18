@@ -154,7 +154,7 @@ export function WebsiteJsonLd() {
   );
 }
 
-// Local Business Schema (for contact page)
+// Local Business Schema (for contact page — uses HQ address)
 export function LocalBusinessJsonLd() {
   const schema = {
     '@context': 'https://schema.org',
@@ -185,6 +185,42 @@ export function LocalBusinessJsonLd() {
         closes: '17:00',
       },
     ],
+    priceRange: '$$',
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Area Served Schema (for city/location pages — references HQ, declares service area)
+export function AreaServedJsonLd({ city, pageUrl }: { city: string; pageUrl: string }) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'HomeAndConstructionBusiness',
+    '@id': `${SITE_URL}/#organization`,
+    name: company.name,
+    telephone: company.phone,
+    url: `${SITE_URL}${pageUrl}`,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: company.address.street,
+      addressLocality: company.address.city,
+      addressRegion: company.address.state,
+      postalCode: company.address.zip,
+      addressCountry: 'US',
+    },
+    areaServed: {
+      '@type': 'City',
+      name: city,
+      containedInPlace: {
+        '@type': 'State',
+        name: 'California',
+      },
+    },
     priceRange: '$$',
   };
 

@@ -12,6 +12,7 @@ export const metadata: Metadata = generatePageMetadata({
   title: 'Free ADU Handbook Download',
   description: 'Download your free guide to building an ADU in San Diego. Covers costs, regulations, permits, timelines & everything you need to know. By BNC Builders.',
   path: '/adu-handbook-download',
+  noIndex: true,
   keywords: [
     'adu handbook san diego',
     'adu guide download',

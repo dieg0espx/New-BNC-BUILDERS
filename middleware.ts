@@ -4,14 +4,19 @@ import type { NextRequest } from 'next/server';
 export function middleware(request: NextRequest) {
   const host = request.headers.get('host') || '';
 
-  // Redirect non-www to www (skip in development)
-  if (
-    host === 'bncbuildersinc.com' &&
-    !host.startsWith('localhost') &&
-    !host.startsWith('127.0.0.1')
-  ) {
+  // Strip port if present (e.g., "bncbuildersinc.com:443" -> "bncbuildersinc.com")
+  const hostname = host.split(':')[0].toLowerCase();
+
+  // Skip redirect in development
+  if (hostname === 'localhost' || hostname === '127.0.0.1') {
+    return NextResponse.next();
+  }
+
+  // Redirect non-www to www for any bncbuildersinc.com request without www
+  if (hostname === 'bncbuildersinc.com') {
     const url = request.nextUrl.clone();
-    url.host = 'www.bncbuildersinc.com';
+    url.host = `www.bncbuildersinc.com`;
+    url.port = '';
     return NextResponse.redirect(url, 301);
   }
 
