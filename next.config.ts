@@ -58,6 +58,10 @@ const nextConfig: NextConfig = {
 
       // Old blog posts (catch-all for old blog structure)
       { source: '/blog/:year/:month/:slug', destination: '/blog', permanent: true },
+
+      // Old Spanish site URLs
+      { source: '/es', destination: '/', permanent: true },
+      { source: '/es/:path*', destination: '/', permanent: true },
     ];
   },
 };
