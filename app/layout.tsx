@@ -63,6 +63,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-WPZSVJGL');`,
           }}
         />
+        {/* Ahrefs Analytics */}
+        <Script
+          id="ahrefs-analytics"
+          strategy="afterInteractive"
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="bhQvZ9K+D3aF1V9yxNAJ2w"
+        />
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
