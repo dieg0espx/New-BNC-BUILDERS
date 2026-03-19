@@ -111,6 +111,41 @@ export function ServicePageTemplate({ service }: ServicePageTemplateProps) {
       {/* Related Services */}
       <RelatedServices currentService={service} />
 
+      {/* Service Areas */}
+      <Section background="gray" padding="md">
+        <Container>
+          <div className="text-center">
+            <h2 className="text-xl font-bold text-dark mb-4">
+              {service.shortTitle} Across San Diego County
+            </h2>
+            <div className="flex flex-wrap justify-center gap-2">
+              {[
+                { name: 'Escondido', href: '/areas-we-serve' },
+                { name: 'San Diego', href: '/areas/san-diego' },
+                { name: 'Carlsbad', href: '/areas/carlsbad' },
+                { name: 'La Jolla', href: '/areas/la-jolla' },
+                { name: 'Poway', href: '/areas/poway' },
+                { name: 'Oceanside', href: '/areas/oceanside' },
+                { name: 'Encinitas', href: '/areas/encinitas' },
+                { name: 'Vista', href: '/areas/vista' },
+                { name: 'Chula Vista', href: '/areas/chula-vista' },
+                { name: 'Rancho Santa Fe', href: '/areas/rancho-santa-fe' },
+                { name: 'La Mesa', href: '/areas/la-mesa' },
+                { name: 'El Cajon', href: '/areas/el-cajon' },
+              ].map((area) => (
+                <Link
+                  key={area.name}
+                  href={area.href}
+                  className="text-sm text-zinc-600 hover:text-gold transition-colors px-3 py-1 bg-white rounded-full border border-zinc-200 hover:border-gold/30"
+                >
+                  {area.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </Section>
+
       {/* CTA */}
       <CTABanner
         title={`Ready for Your ${service.shortTitle} Project?`}

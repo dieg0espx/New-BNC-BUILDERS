@@ -3,7 +3,7 @@ import { generatePageMetadata } from '@/lib/utils/metadata';
 
 export const metadata: Metadata = generatePageMetadata({
   title: 'Our Remodeling Process',
-  description: 'Learn how BNC Builders manages your remodeling project from consultation to completion. Transparent pricing, clear communication & quality craftsmanship in Escondido & San Diego.',
+  description: 'See how BNC Builders manages your remodel from consultation to completion. Transparent pricing & clear communication in Escondido & San Diego.',
   path: '/our-process',
   keywords: [
     'remodeling process',

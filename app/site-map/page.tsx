@@ -9,7 +9,7 @@ import { generatePageMetadata } from '@/lib/utils/metadata';
 
 export const metadata: Metadata = generatePageMetadata({
   title: 'Site Map',
-  description: 'Navigate the BNC Builders Inc. website with our comprehensive site map.',
+  description: 'Browse all pages on the BNC Builders website. Find kitchen remodeling, bathroom renovation, ADU construction, and more services in Escondido & San Diego.',
   path: '/site-map',
 });
 

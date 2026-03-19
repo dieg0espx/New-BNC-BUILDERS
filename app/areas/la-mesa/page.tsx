@@ -1,4 +1,4 @@
-// BNC Builders - San Diego Location Page
+// BNC Builders - La Mesa Location Page
 
 import { Metadata } from 'next';
 import Link from 'next/link';
@@ -10,86 +10,85 @@ import { BreadcrumbJsonLd, AreaServedJsonLd } from '@/components/seo/JsonLd';
 import { CheckCircle, Home, Bath, ChefHat, Building, ArrowRight, Fence, UtensilsCrossed } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Home Remodeling San Diego CA',
-  description: 'Expert home remodeling in San Diego. Kitchen remodel, bathroom renovation, ADU construction & outdoor living. 30+ years experience. Free estimates.',
-  path: '/areas/san-diego',
+  title: 'Home Remodeling La Mesa CA | BNC Builders',
+  description: 'Expert home remodeling in La Mesa, CA. Kitchen, bathroom, ADU & outdoor living projects. Quality craftsmanship in the Jewel of the Hills. BNC Builders.',
+  path: '/areas/la-mesa',
   keywords: [
-    'home remodeling san diego',
-    'kitchen remodel san diego',
-    'bathroom remodel san diego',
-    'remodeling contractor san diego',
-    'san diego home renovation',
-    'general contractor san diego',
+    'home remodeling la mesa',
+    'contractor la mesa',
+    'remodeling la mesa ca',
+    'kitchen remodel la mesa',
+    'bathroom remodel la mesa',
+    'la mesa home renovation',
   ],
 });
 
 const services = [
-  { title: 'Kitchen Remodeling', href: '/kitchen-remodeling', icon: ChefHat, description: 'Complete kitchen transformations with custom cabinetry, countertops, and modern layouts designed for San Diego living.' },
-  { title: 'Bathroom Remodeling', href: '/bathroom-remodeling', icon: Bath, description: 'Spa-inspired bathroom renovations featuring premium tile, walk-in showers, and luxury fixtures.' },
-  { title: 'Home Remodeling', href: '/home-remodeling', icon: Home, description: 'Whole-home renovations that modernize your San Diego property while preserving its character.' },
-  { title: 'ADU Construction', href: '/adus', icon: Building, description: 'Accessory dwelling units built to San Diego regulations, perfect for rental income or multigenerational living.' },
-  { title: 'Outdoor Kitchens', href: '/outdoor-kitchens', icon: UtensilsCrossed, description: 'Custom outdoor kitchens that take full advantage of San Diego\'s year-round sunshine.' },
-  { title: 'Hardscaping', href: '/hardscaping', icon: Fence, description: 'Patios, walkways, retaining walls, and outdoor living spaces built to last.' },
+  { title: 'Kitchen Remodeling', href: '/kitchen-remodeling', icon: ChefHat, description: 'Charming yet modern kitchen renovations that complement La Mesa\'s mid-century homes and walkable village lifestyle.' },
+  { title: 'Bathroom Remodeling', href: '/bathroom-remodeling', icon: Bath, description: 'Updated bathrooms with contemporary tile, walk-in showers, and classic finishes suited to La Mesa\'s character homes.' },
+  { title: 'Home Remodeling', href: '/home-remodeling', icon: Home, description: 'Whole-home renovations that preserve La Mesa\'s mid-century charm while adding modern comfort and functionality.' },
+  { title: 'ADU Construction', href: '/adus', icon: Building, description: 'Well-designed ADUs that blend with La Mesa\'s established neighborhoods, perfect for rental income or family use.' },
+  { title: 'Outdoor Kitchens', href: '/outdoor-kitchens', icon: UtensilsCrossed, description: 'Outdoor cooking and entertaining spaces that take advantage of La Mesa\'s hilltop views and pleasant climate.' },
+  { title: 'Hardscaping', href: '/hardscaping', icon: Fence, description: 'Terraced patios, stone walkways, and retaining walls designed for La Mesa\'s hilly terrain and drought-conscious landscaping.' },
 ];
 
 const neighborhoods = [
-  'Mission Hills', 'Hillcrest', 'North Park', 'Kensington',
-  'Normal Heights', 'University Heights', 'Bankers Hill', 'South Park',
-  'Pacific Beach', 'Point Loma', 'Ocean Beach', 'Clairemont',
-  'Tierrasanta', 'Scripps Ranch', 'Rancho Bernardo', 'Mira Mesa',
+  'La Mesa Village', 'Mount Helix', 'Grossmont', 'Rolando',
+  'Windsor Hills', 'Northmont', 'Collwood', 'La Mesa Highlands',
+  'Casa de Oro', 'Spring Valley (adjacent)', 'Severin Drive area', 'University Avenue corridor',
 ];
 
-export default function SanDiegoPage() {
+export default function LaMesaPage() {
   return (
     <>
       <BreadcrumbJsonLd items={[
         { name: 'Home', url: '/' },
         { name: 'Areas We Serve', url: '/areas-we-serve' },
-        { name: 'San Diego', url: '/areas/san-diego' },
+        { name: 'La Mesa', url: '/areas/la-mesa' },
       ]} />
-      <AreaServedJsonLd city="San Diego" pageUrl="/areas/san-diego" />
+      <AreaServedJsonLd city="La Mesa" pageUrl="/areas/la-mesa" />
 
       <HeroSubpage
-        title="Home Remodeling in San Diego, CA"
-        subtitle="From historic Mission Hills bungalows to modern Scripps Ranch estates, BNC Builders delivers expert craftsmanship to homeowners across San Diego. Over 30 years of combined experience transforming kitchens, bathrooms, and entire homes."
+        title="Home Remodeling in La Mesa, CA"
+        subtitle="From the charming streets of La Mesa Village to the panoramic views of Mount Helix, BNC Builders brings expert remodeling craftsmanship to the Jewel of the Hills."
         backgroundImage={bannerImages.faq}
       />
 
-      {/* Why San Diego Homeowners Choose BNC */}
+      {/* Why La Mesa */}
       <Section background="white">
         <Container>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="text-gold font-semibold uppercase tracking-wider text-sm">
-                San Diego&apos;s Trusted Remodeler
+                La Mesa Remodeling Experts
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-dark mt-2 mb-6">
-                Why San Diego Homeowners Choose BNC Builders
+                Remodeling That Honors La Mesa&apos;s Unique Character
               </h2>
               <div className="space-y-4 text-zinc-600 leading-relaxed">
                 <p>
-                  San Diego is one of the most architecturally diverse cities in California. From the Spanish Revival homes in Mission Hills to the mid-century ranches of Clairemont and the contemporary builds in Scripps Ranch, every neighborhood has its own personality. At BNC Builders, we understand these distinctions and bring tailored remodeling solutions to each project.
+                  Known as the &quot;Jewel of the Hills,&quot; La Mesa is a city with genuine character. Its walkable downtown village, tree-lined streets, and diverse mix of mid-century homes give it a charm that larger cities envy. Whether you own a 1950s ranch in Grossmont, a hillside retreat near Mount Helix, or a bungalow steps from La Mesa Village, BNC Builders creates renovations that honor your home&apos;s character while bringing it into the modern era.
                 </p>
                 <p>
-                  Living in San Diego means embracing indoor-outdoor living, maximizing natural light, and building spaces that complement the coastal climate. Our team specializes in renovations that honor these lifestyle elements, whether that is opening up a kitchen to connect with a backyard entertaining area or designing a bathroom retreat that captures the relaxed coastal vibe.
+                  La Mesa&apos;s housing stock presents exciting remodeling opportunities. Many mid-century homes feature original kitchens and bathrooms ready for thoughtful updates. The hilly terrain means some properties benefit from hillside-specific construction techniques for decks, patios, and ADUs. And La Mesa&apos;s strong community identity means homeowners care about preserving the neighborhood feel while improving their living spaces.
                 </p>
                 <p>
-                  As a locally owned company based in nearby Escondido, we navigate San Diego&apos;s permitting process with ease, maintain relationships with trusted local suppliers, and respond quickly to project needs. When you hire BNC Builders, you are partnering with neighbors who take pride in elevating San Diego homes.
+                  BNC Builders serves La Mesa from our nearby Escondido office, providing responsive service and deep familiarity with the area. From La Mesa Village to Mount Helix, we have built a reputation for quality craftsmanship, clear communication, and renovations that make La Mesa homes shine.
                 </p>
               </div>
             </div>
 
             <div className="bg-zinc-50 rounded-2xl p-8">
-              <h3 className="text-xl font-bold text-dark mb-6">What Sets Us Apart</h3>
+              <h3 className="text-xl font-bold text-dark mb-6">Why La Mesa Trusts BNC</h3>
               <div className="space-y-4">
                 {[
-                  'Over 30 years of combined remodeling experience',
-                  'Deep knowledge of San Diego architectural styles',
-                  'San Diego permit and code expertise',
-                  'Transparent pricing with no hidden fees',
-                  'Dedicated project manager for every job',
-                  '5-star rated on Google and HomeAdvisor',
-                  'BBB A+ accredited business',
+                  'Expertise with mid-century home renovations',
+                  'Knowledge of La Mesa building codes and permits',
+                  'Hillside construction experience for sloped lots',
+                  'Designs that preserve neighborhood character',
+                  'ADU expertise for established neighborhoods',
+                  'Transparent pricing and detailed project timelines',
+                  '5-star rated with BBB A+ accreditation',
                   'Free in-home design consultations',
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
@@ -111,10 +110,10 @@ export default function SanDiegoPage() {
               Our Services
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-dark mt-2 mb-4">
-              Remodeling Services Available in San Diego
+              Remodeling Services in La Mesa
             </h2>
             <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
-              Whether you need a single-room update or a complete home transformation, BNC Builders offers a full range of remodeling services throughout San Diego.
+              From kitchen updates to complete home renovations, we deliver full-service remodeling crafted for La Mesa&apos;s charming homes and hilly terrain.
             </p>
           </div>
 
@@ -144,7 +143,7 @@ export default function SanDiegoPage() {
         </Container>
       </Section>
 
-      {/* San Diego Neighborhoods */}
+      {/* Neighborhoods */}
       <Section background="white">
         <Container>
           <div className="text-center mb-12">
@@ -152,10 +151,10 @@ export default function SanDiegoPage() {
               Local Expertise
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-dark mt-2 mb-4">
-              San Diego Neighborhoods We Serve
+              La Mesa Neighborhoods We Serve
             </h2>
             <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
-              BNC Builders works in communities across San Diego, understanding the unique architectural character and homeowner needs in each area.
+              From the walkable streets of La Mesa Village to the stunning views from Mount Helix, we bring expert craftsmanship to every neighborhood in the Jewel of the Hills.
             </p>
           </div>
 
@@ -170,33 +169,25 @@ export default function SanDiegoPage() {
               </div>
             ))}
           </div>
-
-          <p className="text-center text-zinc-500 mt-8">
-            Don&apos;t see your neighborhood? We serve all of San Diego.{' '}
-            <Link href="/contact-us" className="text-gold hover:underline font-medium">
-              Contact us
-            </Link>{' '}
-            to discuss your project.
-          </p>
         </Container>
       </Section>
 
-      {/* San Diego Remodeling Insights */}
+      {/* Insights */}
       <Section background="dark" padding="md">
         <Container>
           <div className="grid md:grid-cols-3 gap-8 text-center">
             {[
               {
-                title: 'Coastal Climate Design',
-                description: 'We select materials and finishes that stand up to San Diego\'s marine air while maintaining beauty for years to come.',
+                title: 'Mid-Century Modernization',
+                description: 'La Mesa\'s abundant mid-century homes offer incredible potential. We specialize in opening floor plans, updating kitchens, and adding modern amenities.',
               },
               {
-                title: 'Indoor-Outdoor Flow',
-                description: 'San Diego\'s mild weather calls for seamless transitions between indoor living areas and outdoor entertaining spaces.',
+                title: 'Hillside Living',
+                description: 'Many La Mesa homes sit on sloped lots with views. Our hillside construction expertise ensures decks, patios, and ADUs are built safely and beautifully.',
               },
               {
-                title: 'ADU Opportunities',
-                description: 'San Diego\'s progressive ADU policies make it an ideal market for adding a guest house, rental unit, or home office.',
+                title: 'Village Community Value',
+                description: 'La Mesa\'s walkable village and strong community drive property demand. Smart renovations deliver excellent returns in this desirable market.',
               },
             ].map((item, index) => (
               <div key={index} className="p-6">
@@ -224,8 +215,8 @@ export default function SanDiegoPage() {
       </Section>
 
       <CTABanner
-        title="Ready to Remodel Your San Diego Home?"
-        subtitle="From kitchen makeovers to complete home renovations, BNC Builders is San Diego's trusted remodeling partner. Contact us today for a free in-home consultation and detailed project estimate."
+        title="Ready to Transform Your La Mesa Home?"
+        subtitle="Whether it is a kitchen renovation near La Mesa Village or an ADU on Mount Helix, BNC Builders brings local expertise and proven craftsmanship to every La Mesa project. Contact us for a free estimate."
         primaryAction={{ label: 'Get Your Free Estimate', href: '/contact-us' }}
       />
     </>

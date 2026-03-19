@@ -51,6 +51,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/areas/encinitas',
     '/areas/vista',
     '/areas/chula-vista',
+    '/areas/solana-beach',
+    '/areas/valley-center',
+    '/areas/rancho-santa-fe',
+    '/areas/el-cajon',
+    '/areas/la-mesa',
+    '/areas/national-city',
   ];
 
   const staticSitemap: MetadataRoute.Sitemap = staticPages.map((path) => ({

@@ -145,8 +145,11 @@ const nextConfig: NextConfig = {
 
       // Old blog structure catch-alls
       { source: '/blog/:year/:month/:slug', destination: '/blog', permanent: true },
-      { source: '/blog/:year/:month', destination: '/blog', permanent: true },
-      { source: '/blog/:year', destination: '/blog', permanent: true },
+      { source: '/blog/2021/:path*', destination: '/blog', permanent: true },
+      { source: '/blog/2022/:path*', destination: '/blog', permanent: true },
+      { source: '/blog/2023/:path*', destination: '/blog', permanent: true },
+      { source: '/blog/2024/:path*', destination: '/blog', permanent: true },
+      { source: '/blog/2025/:path*', destination: '/blog', permanent: true },
       { source: '/blog/categories/:category', destination: '/blog', permanent: true },
       { source: '/blog/categories/:category/', destination: '/blog', permanent: true },
       { source: '/blog/feed', destination: '/blog', permanent: true },
