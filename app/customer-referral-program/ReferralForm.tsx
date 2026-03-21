@@ -87,6 +87,12 @@ Project Interest: ${formData.projectInterest || 'Not specified'}`,
       if (response.ok && data.success) {
         setSubmitted(true);
         setFormData(initialFormData);
+
+        // Push generate_lead event to dataLayer for GTM tracking
+        if (typeof window !== 'undefined') {
+          (window as any).dataLayer = (window as any).dataLayer || [];
+          (window as any).dataLayer.push({ event: 'generate_lead', form_name: 'referral_form' });
+        }
       } else {
         setError(data.message || 'Failed to submit. Please try again.');
       }

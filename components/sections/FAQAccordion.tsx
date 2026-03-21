@@ -7,6 +7,7 @@ import { Container, Section, AnimatedSection } from '@/components/ui';
 import { FAQ } from '@/lib/types';
 import { ChevronDown, HelpCircle } from 'lucide-react';
 import { useInView } from '@/lib/hooks/useInView';
+import { trackPhoneClick } from '@/lib/tracking';
 
 interface FAQAccordionProps {
   title?: string;
@@ -64,7 +65,7 @@ export function FAQAccordion({
           </p>
           <p className={`text-xs sm:text-sm mt-1 ${isDark ? 'text-zinc-400' : 'text-zinc-500'}`}>
             Contact us at{' '}
-            <a href="tel:+17606586238" className="text-gold hover:underline font-semibold link-underline">
+            <a href="tel:+17606586238" onClick={trackPhoneClick} className="text-gold hover:underline font-semibold link-underline">
               (760) 658-6238
             </a>
           </p>

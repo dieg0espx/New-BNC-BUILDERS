@@ -4,6 +4,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { useReCaptchaV3 } from '@/components/ui/ReCaptcha';
 
 interface FormData {
   firstName: string;
@@ -31,6 +32,7 @@ export function ServiceAreaContact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const { executeRecaptcha } = useReCaptchaV3();
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -45,10 +47,19 @@ export function ServiceAreaContact() {
     setError(null);
 
     try {
+      // Execute reCAPTCHA v3
+      const recaptchaToken = await executeRecaptcha('service_area_contact');
+
+      if (!recaptchaToken) {
+        setError('Failed to verify reCAPTCHA. Please try again.');
+        setIsSubmitting(false);
+        return;
+      }
+
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, recaptchaToken }),
       });
 
       const data = await response.json();
@@ -56,6 +67,12 @@ export function ServiceAreaContact() {
       if (response.ok && data.success) {
         setSubmitted(true);
         setFormData(initialFormData);
+
+        // Push generate_lead event to dataLayer for GTM tracking
+        if (typeof window !== 'undefined') {
+          (window as any).dataLayer = (window as any).dataLayer || [];
+          (window as any).dataLayer.push({ event: 'generate_lead', form_name: 'service_area_contact' });
+        }
       } else {
         setError(data.message || 'Failed to send message. Please try again.');
       }

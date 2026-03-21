@@ -4,6 +4,7 @@
 
 import { Container, Section, Button, AnimatedSection } from '@/components/ui';
 import { company } from '@/lib/constants/company';
+import { trackPhoneClick } from '@/lib/tracking';
 
 interface CTABannerProps {
   title?: string;
@@ -57,6 +58,7 @@ export function CTABanner({
             {showPhone && (
               <a
                 href={`tel:${company.phoneLink}`}
+                onClick={trackPhoneClick}
                 className="inline-flex items-center gap-2 bg-white text-gold hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition-all hover:scale-105"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -6,6 +6,7 @@
 import { useState, forwardRef } from 'react';
 import { useReCaptchaV3 } from '@/components/ui/ReCaptcha';
 import { CheckCircle, ArrowRight } from 'lucide-react';
+import { trackPhoneClick } from '@/lib/tracking';
 
 interface FormData {
   firstName: string;
@@ -320,7 +321,7 @@ export const LandingPageForm = forwardRef<HTMLDivElement, LandingPageFormProps>(
           </button>
 
           <p className="text-center text-zinc-600 text-sm">
-            Or call <a href="tel:+17606586238" className="text-gold font-semibold hover:underline">(760) 658-6238</a>
+            Or call <a href="tel:+17606586238" onClick={trackPhoneClick} className="text-gold font-semibold hover:underline">(760) 658-6238</a>
           </p>
 
           <p className="text-center text-sm text-zinc-500">

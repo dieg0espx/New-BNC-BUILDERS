@@ -12,6 +12,7 @@ import { mainNavigation } from '@/lib/constants/navigation';
 import { Navigation } from './Navigation';
 import { MobileMenu } from './MobileMenu';
 import { MapPin, Clock, Phone, Menu } from 'lucide-react';
+import { trackPhoneClick } from '@/lib/tracking';
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -55,6 +56,7 @@ export function Header() {
               <span className="text-white font-medium">Hablamos Español</span>
               <a
                 href={`tel:${company.phoneLink}`}
+                onClick={trackPhoneClick}
                 className="flex items-center gap-2 font-semibold text-white hover:text-zinc-800 transition-colors"
               >
                 <Phone className="w-4 h-4" />
@@ -90,6 +92,7 @@ export function Header() {
             <div className="hidden lg:block">
               <a
                 href={`tel:${company.phoneLink}`}
+                onClick={trackPhoneClick}
                 className="flex items-center gap-2 bg-gold hover:bg-gold-light text-white px-6 py-3 rounded font-bold uppercase tracking-wide transition-all"
               >
                 <Phone className="w-5 h-5" />
@@ -102,6 +105,7 @@ export function Header() {
               {/* Mobile Phone Button */}
               <a
                 href={`tel:${company.phoneLink}`}
+                onClick={trackPhoneClick}
                 className="flex items-center justify-center w-10 h-10 bg-gold text-white rounded-full"
                 aria-label="Call us"
               >

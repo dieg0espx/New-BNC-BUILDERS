@@ -1,8 +1,11 @@
 // BNC Builders - Team Contact Info Section
 
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui';
+import { trackPhoneClick } from '@/lib/tracking';
 
 export function TeamContactInfo() {
   return (
@@ -56,6 +59,7 @@ export function TeamContactInfo() {
                 <h3 className="font-semibold text-secondary mb-1">Request A Free Estimate!</h3>
                 <a
                   href="tel:+17606586238"
+                  onClick={trackPhoneClick}
                   className="text-xl sm:text-2xl md:text-3xl font-bold text-secondary hover:text-primary transition-colors"
                 >
                   760-658-6238

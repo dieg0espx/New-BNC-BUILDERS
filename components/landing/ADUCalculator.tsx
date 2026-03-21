@@ -6,6 +6,7 @@
 import { useState } from 'react';
 import { useReCaptchaV3 } from '@/components/ui/ReCaptcha';
 import { CheckCircle, ArrowRight, ArrowLeft, Calculator, Home } from 'lucide-react';
+import { trackPhoneClick } from '@/lib/tracking';
 
 interface CalculatorData {
   bedrooms: number | null;
@@ -271,6 +272,7 @@ export function ADUCalculator({ city = 'Escondido' }: { city?: string }) {
           </p>
           <a
             href="tel:+17606586238"
+            onClick={trackPhoneClick}
             className="inline-block bg-gold hover:bg-gold-light text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-bold uppercase tracking-wide transition-all text-sm md:text-base"
           >
             Call Us Now: (760) 658-6238
